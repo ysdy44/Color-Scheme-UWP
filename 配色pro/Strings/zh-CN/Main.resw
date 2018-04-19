@@ -147,14 +147,14 @@
   <data name="OK.Content" xml:space="preserve">
     <value>确定</value>
   </data>
+  <data name="Opensource.Text" xml:space="preserve">
+    <value>开源</value>
+  </data>
   <data name="Setting.Text" xml:space="preserve">
     <value>设置</value>
   </data>
   <data name="Share.Text" xml:space="preserve">
     <value>分享</value>
-  </data>
-  <data name="ShareText.Text" xml:space="preserve">
-    <value>分享链接</value>
   </data>
   <data name="Versin.Text" xml:space="preserve">
     <value>2018.3.28 版本</value>

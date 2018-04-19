@@ -38,9 +38,11 @@
                         <Image Source="ms-appx:///Icon/More/RetouchPhoto/Logo.png" Stretch="Uniform"/>
                     </Border>
 
+                   
+
                     <HyperlinkButton   Grid.Column="1" FontSize="20" Margin="20,0" Background="#00000000"
                                        Content="Retouch Photo   " 
-                                       NavigateUri="https://www.microsoft.com/store/productId/9N2SVF2769GH"
+                                       NavigateUri=" ms-windows-store://pdp/?ProductId=9N2SVF2769GH"
                     />
 
                     <TextBlock   Grid.Column="1"  Grid.Row="1"  Margin="2" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"
@@ -52,7 +54,7 @@
             </Border>
 
 
-            <Border   BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}"   Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
+            <Border   BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}"   Background="{ThemeResource SystemControlBackgroundAltHighBrush}" >
                 <Grid Background="#16f0f0ff" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="120"/>
@@ -69,7 +71,8 @@
 
                     <HyperlinkButton   Grid.Column="1" FontSize="20" Margin="20,0" Background="#00000000"
                                        Content="ColorScheme pro  " 
-                                       NavigateUri="https://www.microsoft.com/store/productId/9NJXVM10VX16"
+                                       NavigateUri="ms-windows-store://pdp/?ProductId=9NJXVM10VX16"
+
                     />
 
                     <TextBlock   Grid.Column="1"  Grid.Row="1"  Margin="2" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"

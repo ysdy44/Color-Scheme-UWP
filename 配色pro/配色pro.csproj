@@ -226,6 +226,10 @@
     <Content Include="Icon\More\ColorScheme pro\Logo.png" />
     <Content Include="Icon\More\RetouchPhoto\Logo.png" />
     <Content Include="Icon\Photo.png" />
+    <Content Include="Icon\Screenshots\01.PNG" />
+    <Content Include="Icon\Screenshots\02.PNG" />
+    <Content Include="Icon\Screenshots\03.PNG" />
+    <Content Include="Icon\Screenshots\04.PNG" />
     <Content Include="Icon\Square.png" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />

@@ -132,22 +132,21 @@
 
 
             <!--设置按钮-->
-            <Button x:Name="ShareButton" Grid.Row="3" Style="{StaticResource Button}" Height="Auto" Tapped="ShareButton_Tapped" >
-                <Grid    Height="50" Width="320" Padding="4" >
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="60"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <FontIcon Grid.RowSpan="2" Glyph="&#xE1CB;" FontSize="24" FontFamily="Segoe UI Symbol" />
-                    <TextBlock  x:Uid="/Main/Share" Grid.Column="1" Style="{StaticResource TextBlock}" />
+            <Grid Grid.Row="3" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
 
-                    <TextBlock x:Uid="/Main/ShareText" Grid.Column="1" Grid.Row="1"  FontSize="11" Foreground="{ThemeResource SystemControlDisabledChromeDisabledLowBrush}" Style="{StaticResource TextBlock}" />
-                </Grid>
-            </Button>
+                <Button x:Name="ShareButton" Style="{StaticResource Button}" Height="Auto" Tapped="ShareButton_Tapped" >
+                    <TextBlock  x:Uid="/Main/Share" Grid.Column="1" Style="{StaticResource TextBlock}" />
+                </Button>
+                
+                <Button x:Name="OpensourceButton" Grid.Column="1" Style="{StaticResource Button}" Height="Auto" Tapped="OpensourceButton_Tapped" >
+                    <TextBlock  x:Uid="/Main/Opensource" Grid.Column="1" Style="{StaticResource TextBlock}" />
+                </Button>
+
+            </Grid>
 
 
         </Grid>

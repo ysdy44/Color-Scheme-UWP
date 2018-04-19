@@ -147,14 +147,14 @@
   <data name="OK.Content" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Opensource.Text" xml:space="preserve">
+    <value>Open source</value>
+  </data>
   <data name="Setting.Text" xml:space="preserve">
     <value>Setting</value>
   </data>
   <data name="Share.Text" xml:space="preserve">
     <value>Share</value>
-  </data>
-  <data name="ShareText.Text" xml:space="preserve">
-    <value>To share with people</value>
   </data>
   <data name="Versin.Text" xml:space="preserve">
     <value>2018.3.28 Versin</value>

@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -164,10 +165,16 @@ namespace 配色pro.Control
                     )
                 );
         }
-         
+
+
+
 
         #endregion
 
+        private void OpensourceButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+         Launcher.LaunchUriAsync(new Uri("https://github.com/ysdy44/Color-Scheme-pro-UWP"));
+         }
 
 
     }
