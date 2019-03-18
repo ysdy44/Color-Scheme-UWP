@@ -2,155 +2,76 @@
     x:Class="配色pro.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:配色pro"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
-    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
-    xmlns:Pic="using:配色pro.Picker"
-    xmlns:Con="using:配色pro.Control"
+    xmlns:control="using:配色pro.Controls"
+    xmlns:pages="using:配色pro.Pages"
     mc:Ignorable="d"
-    
-    KeyDown="Page_KeyDown"
-    SizeChanged="Page_SizeChanged"
-    
-    AllowDrop="True"
-    Drop="UserControl_Drop"
-    DragOver="UserControl_DragOver"
-    
-    Background="{ThemeResource SystemControlBackgroundAltHighBrush}" >
+    d:DesignHeight="300"
+    d:DesignWidth="200"
+    Background="{ThemeResource AppBackground}">
 
-    
-    <Grid  Background="#226a6a7b">
-
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="44"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--主体-->
-        <Pivot x:Name="MainPivot" Grid.Row="2" IsLocked="True" SelectedIndex="{Binding SelectedIndex,Mode=OneWay}" SelectionChanged="MainPivot_SelectionChanged" Margin="0,-50,0,0">
+        <Grid Background="{ThemeResource AppFill}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="1*"/>
 
-            <PivotItem x:Name="HomePivotItem" Margin="0">
-                <ScrollViewer  x:Name="HomeScrollViewer" Style="{StaticResource ScrollViewerStyle1}"   ViewChanged="HomeScrollViewer_ViewChanged">
-                    <StackPanel >
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
 
-                        <!--Copy-->
-                        <Border  x:Name="CopyPanel"  Margin="0,4" MaxWidth="800" MinWidth="300" Height="200"   BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}"     Background="{ThemeResource SystemControlBackgroundAltHighBrush}"  >
-                            <Con:CopyControl  Hsl="{Binding Hsl,Mode=OneWay}" Color="{Binding Color,Mode=OneWay}" />
-                        </Border>
-                        <!--RGB-->
-                        <Border  x:Name="RGBPanel" Margin="0,4" MaxWidth="800" MinWidth="300"  BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"  >
-                            <Con:RGBControl Color="{Binding Color,Mode=OneWay}" />
-                        </Border>
-                        <!--HSL-->
-                        <Border  x:Name="HSLPanel"  Margin="0,4" MaxWidth="800" MinWidth="300" BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"  >
-                            <Con:HSLControl  Hsl="{Binding Hsl,Mode=OneWay}"/>
-                        </Border>
-                        <!--Gradient-->
-                        <Border  x:Name="GradientPanel"  Margin="0,4" MaxWidth="800" MinWidth="300" BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"  >
-                            <Con:GradientControl/>
-                        </Border>
-                        <!--Blend-->
-                        <Border  x:Name="BlendPanel"  Margin="0,4" MaxWidth="800" MinWidth="300" BorderThickness="1,1,1,2"  BorderBrush="{StaticResource LineColor}" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"  >
-                            <Con:BlendControl/>
-                        </Border>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
 
-                        <Pic:VersionPicker/>
-
-                    </StackPanel>
-                </ScrollViewer>
-            </PivotItem>
-
-            <PivotItem x:Name="EnumPivotItem"  Margin="0">
-                <ScrollViewer  x:Name="EnumScrollViewer" Style="{StaticResource ScrollViewerStyle1}"   ViewChanged="EnumScrollViewer_ViewChanged">
-                    <Con:EnmuControl/>
-                </ScrollViewer>
-            </PivotItem>
-
-            <PivotItem x:Name="ImagePivotItem" Margin="0">
-                <Con:MainCanvasControl x:Name="mainCanvasControl"  Refresh="{Binding  Refresh,Mode=OneWay}" />
-            </PivotItem>
-
-            <PivotItem Margin="0">
-                <ScrollViewer  x:Name="MoneyScrollViewer" Style="{StaticResource ScrollViewerStyle1}"   ViewChanged="MoneyScrollViewer_ViewChanged">
-                    <Con:MoneyControl/>
-                </ScrollViewer>
-            </PivotItem>
-
-            <PivotItem Margin="0">
-                <ScrollViewer  x:Name="MoreScrollViewer" Style="{StaticResource ScrollViewerStyle1}"   ViewChanged="MoneyScrollViewer_ViewChanged">
-                    <Con:MoreControl/>
-                </ScrollViewer>
-            </PivotItem>
-
-            <PivotItem Margin="0">
-                <StackPanel   MaxWidth="1000"  MinWidth="300" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <FontIcon  Glyph="&#xE115;" FontSize="110" FontFamily="Segoe UI Symbol"   HorizontalAlignment="Center" Margin="30" Foreground="{ThemeResource SystemControlDisabledChromeDisabledLowBrush}"  />
-                    <Pic:VersionPicker/>
-                </StackPanel>
-            </PivotItem>
-
-        </Pivot>
+            <Button x:Name="SplitButton" Grid.Column="0" Style="{ThemeResource NavigationBackButtonNormalStyle}">
+                <FontIcon Glyph="&#xE154;" FontFamily="Segoe UI Symbol" />
+            </Button>
 
 
-        <!--顶栏-->
-        <Border  x:Name="TittleGrid" Height="44" Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
-            <Grid Background="{StaticResource PanelColor}" >
-                <Button x:Name="SpliteButton" Width="60" FontFamily="Segoe UI Symbol" Content="&#xE154;" VerticalAlignment="Bottom"   Style="{StaticResource NavigationBackButtonNormalStyle}" Tapped="SpliteButton_Tapped"/>
-
-                <TextBlock x:Name="TittleText" x:Uid="/Main/Name" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}" 
-                      FontSize="30"  Style="{ThemeResource SubheaderTextBlockStyle}"/>
-
-                <Con:ThemeButton HorizontalAlignment="Right"/>
-
-            </Grid>
-        </Border>
-
-        
-        <!--第二顶栏-->
-        <Border  x:Name="PivotGrid" Grid.Row="1" Height="44" MinWidth="400"  Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
-            <Grid Background="{StaticResource PanelColor}">
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                </Grid.ColumnDefinitions>
-
-                <Border x:Name="HomeBorder"  Grid.Column="0" Background="Transparent" Tapped="HomeBorder_Tapped">
-                    <TextBlock  x:Name="HomeText" x:Uid="/Main/Home"  HorizontalAlignment="Center"   FontSize="20"    Style="{ThemeResource TitleTextBlockStyle}"/>
-                </Border>
-                <Border x:Name="EnumBorder"  Grid.Column="1" Background="Transparent" Tapped="EnumBorder_Tapped">
-                    <TextBlock   x:Name="EnumText" x:Uid="/Main/Enum" HorizontalAlignment="Center"   FontSize="20"    Style="{ThemeResource TitleTextBlockStyle}"/>
-                </Border>
-                <Border x:Name="ImageBorder"  Grid.Column="2" Background="Transparent" Tapped="ImageBorder_Tapped">
-                    <TextBlock  x:Name="ImageText" x:Uid="/Main/Image" HorizontalAlignment="Center"   FontSize="20"    Style="{ThemeResource TitleTextBlockStyle}"/>
-                </Border>
-                
-                <Border    Background="{ThemeResource SystemControlForegroundChromeMediumBrush}"  Width="66" Height="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                
-                
-                <Border x:Name="ColorLine" Grid.Column="0" Background="{ThemeResource SystemControlFocusVisualPrimaryBrush}" Width="66" Height="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                <Border x:Name="EnumLine" Grid.Column="1" Background="{ThemeResource SystemControlFocusVisualPrimaryBrush}" Width="66" Height="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                <Border x:Name="ImageLine" Grid.Column="2" Background="{ThemeResource SystemControlFocusVisualPrimaryBrush}" Width="66" Height="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-
-            </Grid>
-        </Border>
+            <control:LabelControl x:Name="HomeLabelControl" Grid.Column="2" TabIndex="0" 
+                                                   SeletedData="M13.387,15.879c0,0 -0.895,0 -1.633,0c-0.53,0 -0.96,0.429 -0.96,0.959c0,1.536 0,4.512 0,5.881c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.136,0 -3.33,0 -4.466,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.715 0,-6.056 0,-8.174c0,-0.663 -0.537,-1.2 -1.2,-1.2c-0.243,0 -0.51,0 -0.784,0c-0.486,0 -0.924,-0.293 -1.109,-0.742c-0.186,-0.448 -0.083,-0.965 0.261,-1.308c2.467,-2.459 6.587,-6.565 9.12,-9.091c0.587,-0.584 1.381,-0.912 2.209,-0.91c0.828,0.001 1.621,0.332 2.205,0.919c2.516,2.527 6.6,6.629 9.045,9.085c0.342,0.344 0.444,0.86 0.258,1.308c-0.186,0.447 -0.624,0.739 -1.109,0.739c-0.292,0 -0.577,0 -0.836,0c-0.318,0 -0.623,0.127 -0.848,0.352c-0.225,0.225 -0.352,0.53 -0.352,0.848c0,2.118 0,6.459 0,8.174c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.114,0 -3.244,0 -4.358,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.369 0,-4.345 0,-5.881c0,-0.53 -0.43,-0.959 -0.96,-0.959c-0.728,0 -1.603,0 -1.603,0Z"
+                                                   UsualData="M13.726,18.867c-0.53,0 -0.96,0.43 -0.96,0.96c0,1.536 0,4.512 0,5.88c0,0.191 -0.075,0.374 -0.21,0.509c-0.135,0.135 -0.319,0.211 -0.51,0.211c-1.135,0 -3.329,0 -4.465,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.715 0,-6.055 0,-8.174c0,-0.662 -0.537,-1.2 -1.2,-1.2c-0.244,0 -0.51,0 -0.785,0c-0.486,0 -0.923,-0.293 -1.109,-0.741c-0.185,-0.449 -0.082,-0.966 0.262,-1.309c2.467,-2.459 6.586,-6.565 9.12,-9.091c0.586,-0.584 1.381,-0.912 2.209,-0.91c0.827,0.002 1.621,0.332 2.205,0.919c2.516,2.527 6.6,6.63 9.045,9.086c0.342,0.343 0.443,0.859 0.257,1.307c-0.186,0.447 -0.623,0.739 -1.108,0.739c-0.293,0 -0.577,0 -0.836,0c-0.318,0 -0.624,0.127 -0.849,0.352c-0.225,0.225 -0.351,0.53 -0.351,0.848c0,2.119 0,6.459 0,8.174c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.115,0 -3.244,0 -4.359,0c-0.19,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.368 0,-4.344 0,-5.88c0,-0.531 -0.429,-0.96 -0.96,-0.96l-1.602,0l-1.634,0Zm11.52,-3.44c0.194,0 0.369,-0.116 0.443,-0.295c0.075,-0.179 0.034,-0.386 -0.103,-0.523c-1.883,-1.893 -6.554,-6.586 -8.877,-8.92c-0.359,-0.361 -0.847,-0.564 -1.356,-0.565c-0.51,-0.001 -0.999,0.2 -1.36,0.56c-2.339,2.331 -7.052,7.029 -8.954,8.923c-0.137,0.138 -0.179,0.344 -0.104,0.524c0.074,0.179 0.249,0.296 0.443,0.296c0.245,0 0.509,0 0.768,0c0.446,0 0.873,0.177 1.188,0.493c0.315,0.315 0.492,0.742 0.492,1.187c0,2.882 0,8.461 0,8.461l4.031,0l0,-5.737c0,-0.509 0.202,-0.997 0.562,-1.357c0.36,-0.36 0.849,-0.563 1.358,-0.563l3.127,0c0.509,0 0.997,0.203 1.357,0.563c0.36,0.36 0.563,0.848 0.563,1.357c0,2.268 0,5.737 0,5.737l3.935,0l0,-8.461c0,-0.445 0.177,-0.872 0.493,-1.187c0.315,-0.315 0.742,-0.492 1.187,-0.493l0.807,0Z"
+                                                   />
+            <control:LabelControl x:Name="EunmLabelControl" Grid.Column="3" TabIndex="1" 
+                                                   SeletedData="M13.145,15.966c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536l-6.528,0c-0.847,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.689,-1.536 1.536,-1.536l6.528,0Zm10.958,0c0.847,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.689,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Zm-10.958,-10.812c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536l-6.528,0c-0.847,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.689,-1.536 1.536,-1.536l6.528,0Zm10.958,0c0.847,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.689,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Z"
+                                                   UsualData="M13.145,25.566l-6.528,0c-0.847,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.689,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536Zm10.958,0l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.847,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.689,1.536 -1.536,1.536Zm-11.15,-8.64l-6.144,0c-0.423,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.345,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Zm10.958,0l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.423,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.345,-0.768 -0.768,-0.768Zm0.192,-2.172l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.847,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.689,1.536 -1.536,1.536Zm-10.958,0l-6.528,0c-0.847,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.689,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536Zm10.766,-8.64l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.423,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.345,-0.768 -0.768,-0.768Zm-10.958,0l-6.144,0c-0.423,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.345,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Z"
+                                                   />
+            <control:LabelControl x:Name="ImageLabelControl" Grid.Column="4" TabIndex="2"
+                                                   SeletedData="M25.631,8.734l0,14.4l-20.64,0l0,-14.4l20.64,0Zm-6.585,4.812c0.106,-0.019 0.219,0.01 0.304,0.088c0.028,0.025 0.05,0.053 0.068,0.084l4.128,3.843c0.145,0.135 0.153,0.363 0.018,0.508c-0.136,0.146 -0.364,0.154 -0.509,0.019l-3.936,-3.665l-3.255,3.573l1.681,1.67c0.141,0.14 0.141,0.368 0.001,0.509c-0.14,0.141 -0.368,0.142 -0.509,0.002l-3.656,-3.633l-5.7,5.071c-0.149,0.132 -0.376,0.119 -0.509,-0.03c-0.132,-0.148 -0.118,-0.376 0.03,-0.508l5.804,-5.163c0.016,-0.059 0.046,-0.113 0.092,-0.159c0.122,-0.123 0.311,-0.139 0.451,-0.049c0.047,0.02 0.091,0.051 0.128,0.092c0.021,0.024 0.038,0.05 0.052,0.077l1.623,1.613l3.417,-3.751c0.015,-0.028 0.034,-0.055 0.056,-0.079c0.061,-0.065 0.14,-0.103 0.221,-0.112Zm-8.452,-2.127c1.126,0 2.04,0.915 2.04,2.04c0,1.126 -0.914,2.04 -2.04,2.04c-1.126,0 -2.04,-0.914 -2.04,-2.04c0,-1.125 0.914,-2.04 2.04,-2.04Z"
+                                                   UsualData="M25.631,23.134l-20.64,0l0,-14.4l20.64,0l0,14.4Zm-0.72,-13.685l-19.2,0l0,12.97l19.2,0l0,-12.97Zm-5.865,4.097c0.106,-0.019 0.219,0.01 0.304,0.088c0.028,0.025 0.05,0.053 0.068,0.084l4.128,3.843c0.145,0.135 0.153,0.363 0.018,0.508c-0.136,0.146 -0.364,0.154 -0.509,0.019l-3.936,-3.665l-3.255,3.573l1.681,1.67c0.141,0.14 0.141,0.368 0.001,0.509c-0.14,0.141 -0.368,0.142 -0.509,0.002l-3.656,-3.633l-5.7,5.071c-0.149,0.132 -0.376,0.119 -0.509,-0.03c-0.132,-0.148 -0.118,-0.376 0.03,-0.508l5.804,-5.163c0.016,-0.059 0.046,-0.113 0.092,-0.159c0.122,-0.123 0.311,-0.139 0.451,-0.049c0.047,0.02 0.091,0.051 0.128,0.092c0.021,0.024 0.038,0.05 0.052,0.077l1.623,1.613l3.417,-3.751c0.015,-0.028 0.034,-0.055 0.056,-0.079c0.061,-0.065 0.14,-0.103 0.221,-0.112Zm-8.452,-2.127c1.126,0 2.04,0.915 2.04,2.04c0,1.126 -0.914,2.04 -2.04,2.04c-1.126,0 -2.04,-0.914 -2.04,-2.04c0,-1.125 0.914,-2.04 2.04,-2.04Z"
+                                                   />
 
 
+            <Button x:Name="ThemeButton" Grid.Column="6" Style="{ThemeResource NavigationBackButtonNormalStyle}">
+                <control:ThemeControl x:Name="ThemeControl" Brush="{ThemeResource AppFill}"/>
+            </Button>
 
-        <!--顶栏：阴影-->
-        <Border x:Name="Shadow" Grid.Row="2" Height="8" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="{StaticResource HorizontalShadow}"/>
-
-
-        <Con:DialogControl Grid.RowSpan="3"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  DialogVisibility="{Binding DialogVisibility,Mode=OneWay}"  SelectedIndex="{Binding SelectedIndex,Mode=OneWay}"  Image="DialogControl_Image"/>
-        <Con:SpliteControl Grid.RowSpan="3"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SpliteVisibility="{Binding SpliteVisibility,Mode=OneWay}"/>
-
-        <!--提示-->
-        <Pic:TipPicker Margin="0,22,0,0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TipVisibility="{Binding TipVisibility,Mode=OneWay}" />
+        </Grid>
 
 
+        <pages:HomePage x:Name="HomePage" Grid.Row="1"/>
+        <pages:EunmPage x:Name="EunmPage" Grid.Row="1"/>
+        <pages:ImagePage x:Name="ImagePage" Grid.Row="1"/>
+
+
+        <!--Shadow-->
+        <Border Grid.Row="1" Height="12" IsHitTestVisible="False" VerticalAlignment="Top" Background="{ThemeResource AppVerticalShadow}"/>
+
+
+        <control:SplitPanelControl x:Name="SplitPanelControl" Grid.RowSpan="2">
+            <control:SplitPanelControl.ContentChild>
+                <ListView>
+
+
+                </ListView>
+            </control:SplitPanelControl.ContentChild>
+        </control:SplitPanelControl>
     </Grid>
 </Page>

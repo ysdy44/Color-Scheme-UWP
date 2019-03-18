@@ -5,11 +5,11 @@
 
     运行时指令记录在 https://go.microsoft.com/fwlink/?LinkID=391919
 
-    完全启用对 App1.MyClass 及其所有公共/私有成员的反射
-    <Type Name="App1.MyClass" Dynamic="Required All"/>
+    完全启用对 配色pro.MyClass 及其所有公共/私有成员的反射
+    <Type Name="配色pro.MyClass" Dynamic="Required All"/>
 
     通过 System.Int32 启用 AppClass<T> 的特定实例的动态创建
-    <TypeInstantiation Name="App1.AppClass" Arguments="System.Int32" Activate="Required Public" />
+    <TypeInstantiation Name="配色pro.AppClass" Arguments="System.Int32" Activate="Required Public" />
 
     使用 Namespace 指令将反射策略应用于特定命名空间中的所有类型
     <Namespace Name="DataClasses.ViewModels" Serialize="All" />

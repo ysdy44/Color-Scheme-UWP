@@ -22,6 +22,9 @@
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     <PackageCertificateThumbprint>58D01557DF609ACFB34665924E90A2C2241C5941</PackageCertificateThumbprint>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -99,62 +102,33 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\BlendControl.xaml.cs">
-      <DependentUpon>BlendControl.xaml</DependentUpon>
+    <Compile Include="Controls\LabelControl.xaml.cs">
+      <DependentUpon>LabelControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\CopyControl.xaml.cs">
-      <DependentUpon>CopyControl.xaml</DependentUpon>
+    <Compile Include="Controls\SplitPanelControl.xaml.cs">
+      <DependentUpon>SplitPanelControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\DialogControl.xaml.cs">
-      <DependentUpon>DialogControl.xaml</DependentUpon>
+    <Compile Include="Controls\StrawControl.xaml.cs">
+      <DependentUpon>StrawControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\EnmuControl.xaml.cs">
-      <DependentUpon>EnmuControl.xaml</DependentUpon>
+    <Compile Include="Controls\ThemeControl.xaml.cs">
+      <DependentUpon>ThemeControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\GradientControl.xaml.cs">
-      <DependentUpon>GradientControl.xaml</DependentUpon>
+    <Compile Include="Pages\EunmPage.xaml.cs">
+      <DependentUpon>EunmPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\HSLControl.xaml.cs">
-      <DependentUpon>HSLControl.xaml</DependentUpon>
+    <Compile Include="Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\MainCanvasControl.xaml.cs">
-      <DependentUpon>MainCanvasControl.xaml</DependentUpon>
+    <Compile Include="Pages\ImagePage.xaml.cs">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\MoneyControl.xaml.cs">
-      <DependentUpon>MoneyControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Control\MoreControl.xaml.cs">
-      <DependentUpon>MoreControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Control\RGBControl.xaml.cs">
-      <DependentUpon>RGBControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Control\SpliteControl.xaml.cs">
-      <DependentUpon>SpliteControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Control\ThemeButton.xaml.cs">
-      <DependentUpon>ThemeButton.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Library\DataRequestExtensions.cs" />
-    <Compile Include="Library\Judge.cs" />
-    <Compile Include="Library\Library.cs" />
-    <Compile Include="Library\Method.cs" />
-    <Compile Include="Library\ShareSourceData.cs" />
-    <Compile Include="Library\ShareSourceItem.cs" />
+    <Compile Include="Library\CanvasDraw.cs" />
+    <Compile Include="Library\CanvasOperator.cs" />
+    <Compile Include="Library\ColorsItem.cs" />
+    <Compile Include="Library\Transformer.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ColorBrushCode.cs" />
-    <Compile Include="Model\HSL.cs" />
-    <Compile Include="Model\Model.cs" />
-    <Compile Include="Picker\NumberPicker.xaml.cs">
-      <DependentUpon>NumberPicker.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Picker\TipPicker.xaml.cs">
-      <DependentUpon>TipPicker.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Picker\VersionPicker.xaml.cs">
-      <DependentUpon>VersionPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -162,10 +136,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <PRIResource Include="Strings\en-US\Resources.resw" />
     <PRIResource Include="Strings\zh-CN\Resources.resw" />
-    <PRIResource Include="Strings\en-US\Main.resw" />
-    <PRIResource Include="Strings\zh-CN\Main.resw" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <Content Include="Json\Enumerate.json" />
     <None Include="配色pro_StoreKey.pfx" />
     <None Include="配色pro_TemporaryKey.pfx" />
   </ItemGroup>
@@ -223,7 +196,9 @@
     <Content Include="Icon\Money\QQText.png" />
     <Content Include="Icon\Money\Wechat.png" />
     <Content Include="Icon\Money\WechatText.png" />
+    <Content Include="Icon\More\buka\Logo.png" />
     <Content Include="Icon\More\ColorScheme pro\Logo.png" />
+    <Content Include="Icon\More\FanKit\Logo.png" />
     <Content Include="Icon\More\RetouchPhoto\Logo.png" />
     <Content Include="Icon\Photo.png" />
     <Content Include="Icon\Screenshots\01.PNG" />
@@ -232,6 +207,7 @@
     <Content Include="Icon\Screenshots\04.PNG" />
     <Content Include="Icon\Square.png" />
     <None Include="Package.StoreAssociation.xml" />
+    <None Include="Package.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -245,88 +221,56 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Control\BlendControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\LabelControl.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\CopyControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\SplitPanelControl.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\DialogControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\StrawControl.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\EnmuControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\ThemeControl.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\GradientControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Pages\EunmPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\HSLControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Pages\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\MainCanvasControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Pages\ImagePage.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\MoneyControl.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\MoreControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\RGBControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\SpliteControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Control\ThemeButton.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Picker\NumberPicker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Picker\TipPicker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Picker\VersionPicker.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Style\Style.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.2.4</Version>
+      <Version>6.1.5</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Animations">
-      <Version>2.2.0</Version>
+      <Version>3.0.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
-      <Version>2.2.0</Version>
+      <Version>3.0.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\配色pro.Pickers\配色pro.Pickers.csproj">
+      <Project>{a98e1d13-aed8-4f50-88ac-a2eaa3473891}</Project>
+      <Name>配色pro.Pickers</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
