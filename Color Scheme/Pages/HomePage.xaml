@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="Color_Scheme.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Color_Scheme.Controls"
+    xmlns:pickers="using:Color_Scheme.Pickers"
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"
+    mc:Ignorable="d"
+    >
+
+    <animations:Implicit.ShowAnimations>
+        <animations:OpacityAnimation Duration="0:0:0.6" From="0.0" To="1.0"/>
+    </animations:Implicit.ShowAnimations>
+
+    <ScrollViewer  >
+        <StackPanel >
+
+            <!--Wheel-->
+            <Border  Style="{StaticResource AppBorderStyle}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="222"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <pickers:WheelPicker x:Name="WheelPicker"/>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <controls:PasteControl x:Name="RedPasteControl" Label="R"/>
+                        <ContentControl Height="12"/>
+                        <controls:PasteControl x:Name="GreenPasteControl" Label="G"/>
+                        <ContentControl Height="12"/>
+                        <controls:PasteControl x:Name="BluePasteControl" Label="B"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                        <controls:PasteControl x:Name="HueasteControl" Label="H" Unit="º"/>
+                        <ContentControl Height="12"/>
+                        <controls:PasteControl x:Name="SaturationPasteControl" Label="S" Unit="%"/>
+                        <ContentControl Height="12"/>
+                        <controls:PasteControl x:Name="LightnessPasteControl" Label="L" Unit="%"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!--RGB-->
+            <Border  Style="{StaticResource AppBorderStyle}">
+                <pickers:RGBPicker x:Name="RGBPicker"/>
+            </Border>
+
+            <!--HSL-->
+            <Border  Style="{StaticResource AppBorderStyle}">
+                <pickers:HSLPicker x:Name="HSLPicker"/>
+            </Border>
+
+            <!--Gradient-->
+            <Border  Style="{StaticResource AppBorderStyle}">
+                <StackPanel>
+                    <controls:GradientControl/>
+                    <controls:GradientControl/>
+                    <controls:GradientControl/>
+                </StackPanel>
+            </Border>
+
+            <!--Palette-->
+            <Grid Height="320" MaxWidth="800">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="Column1"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition x:Name="Column2"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition x:Name="Column3"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="HueBorder" MinWidth="100" Padding="2,0" Style="{StaticResource AppBorderStyle}"/>
+                <Border x:Name="SaturationBorder" MinWidth="100" Padding="2,0" Style="{StaticResource AppBorderStyle}"/>
+                <Border x:Name="LightnessBorder" Grid.Column="4" MinWidth="100" Padding="2,0" Style="{StaticResource AppBorderStyle}"/>
+            </Grid>
+
+            <Border Height="44">
+                <TextBlock Text="Color Scheme" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
+            </Border>
+            
+        </StackPanel>
+    </ScrollViewer>
+</Page>
