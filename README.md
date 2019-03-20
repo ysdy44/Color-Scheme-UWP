@@ -21,16 +21,16 @@ https://www.microsoft.com/store/productId/9NJXVM10VX16
 
 ##  Color Wheel & Gradient & HSL & Palette
 
-![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone001.PNG)
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone001.jpg)
 
 
 
 ## Colors
 
-![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone002.PNG)
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone002.jpg)
 
 
 
 ## Straw 
 
-![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone003.PNG)
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone003.jpg)
