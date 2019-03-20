@@ -1,15 +1,36 @@
-# Color-Scheme-pro-UWP
+# Color-Scheme-UWP
 Used to select the color application, support the hexadecimal color, support the RGB an HSL toning, support choose color from the picture
-[form windows10 app-store](https://www.microsoft.com/store/productId/9NJXVM10VX16)   
 
-1.This is a paletted interface. All properties can be changed on this page and reflected on the oval buttons in the lower right corner.
-![](https://github.com/ysdy44/Color-Scheme-pro-UWP/blob/master/配色pro/Icon/Screenshots/01.PNG)  
 
-2.You are free to add, remove, move your color collection
-![](https://github.com/ysdy44/Color-Scheme-pro-UWP/blob/master/配色pro/Icon/Screenshots/02.PNG)  
+## Get it
 
- 3.Use a magnifying glass to extract the color of a pixel from a picture you have selected
- ![](https://github.com/ysdy44/Color-Scheme-pro-UWP/blob/master/配色pro/Icon/Screenshots/03.PNG)  
+Get it from windows 10 store:<br>
+https://www.microsoft.com/store/productId/9NJXVM10VX16
 
-4.if u click the oval button in the lower right corner……
- ![](https://github.com/ysdy44/Color-Scheme-pro-UWP/blob/master/配色pro/Icon/Screenshots/04.PNG)  
+
+## Development environment
+
+|Key|Value|
+|:-|:-|
+|System requirements| Windows10 November Update or upper|
+|Development tool|Visual Studio 2017|
+|Programing language|C#|
+|Display language|English|
+|Comment language|English|
+
+
+##  Color Wheel & Gradient & HSL & Palette
+
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone001.PNG)
+
+
+
+## Colors
+
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone002.PNG)
+
+
+
+## Straw 
+
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/phone003.PNG)
