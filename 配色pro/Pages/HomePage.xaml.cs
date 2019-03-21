@@ -58,9 +58,9 @@ namespace 配色pro.Pages
             this.RGBPicker.ColorChange += (s, value) => this.SetColor(value, HSL.RGBtoHSL(value), isRGBPicker: false);
             this.HSLPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isHSLPicker: false);
 
-            this.HuePicker.ColorChange += (s, value) => this.SetColor(value, HSL.RGBtoHSL(value), isRGBPicker: false);
-            this.SaturationPicker.ColorChange += (s, value) => this.SetColor(value, HSL.RGBtoHSL(value), isRGBPicker: false);
-            this.LightnessPicker.ColorChange += (s, value) => this.SetColor(value, HSL.RGBtoHSL(value), isRGBPicker: false);
+            this.HuePicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isHuePicker: false);
+            this.SaturationPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isSaturationPicker: false);
+            this.LightnessPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isLightnessPicker: false);
 
             this.HueBorder.Child = this.HuePicker; 
             this.SaturationBorder.Child = this.SaturationPicker;

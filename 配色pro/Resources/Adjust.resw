@@ -117,19 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppName" xml:space="preserve">
-    <value>配色pro</value>
+  <data name="Blue.Text" xml:space="preserve">
+    <value>Blue</value>
   </data>
-  <data name="ColorScheme.Text" xml:space="preserve">
-    <value>配色</value>
+  <data name="Color.Content" xml:space="preserve">
+    <value>Color ▼</value>
   </data>
-  <data name="Enum.Text" xml:space="preserve">
-    <value>枚举</value>
+  <data name="Contrast.Text" xml:space="preserve">
+    <value>Contrast</value>
   </data>
-  <data name="Home.Text" xml:space="preserve">
-    <value>主页</value>
+  <data name="Exposure.Text" xml:space="preserve">
+    <value>Exposure</value>
   </data>
-  <data name="Image.Text" xml:space="preserve">
-    <value>图片</value>
+  <data name="Gamma.Content" xml:space="preserve">
+    <value>Gamma ▼</value>
+  </data>
+  <data name="Green.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Highlights.Text" xml:space="preserve">
+    <value>Highlights</value>
+  </data>
+  <data name="HueRotation.Text" xml:space="preserve">
+    <value>HueRotation</value>
+  </data>
+  <data name="Light.Content" xml:space="preserve">
+    <value>Light ▼</value>
+  </data>
+  <data name="Red.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Shadows.Text" xml:space="preserve">
+    <value>Shadows</value>
+  </data>
+  <data name="Temperature.Text" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <data name="Vignette.Text" xml:space="preserve">
+    <value>Vignette</value>
   </data>
 </root>

@@ -133,8 +133,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EunmPage.xaml.cs">
-      <DependentUpon>EunmPage.xaml</DependentUpon>
+    <Compile Include="Pages\EnumPage.xaml.cs">
+      <DependentUpon>EnumPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
@@ -195,6 +195,7 @@
     <Content Include="Icon\Photo.png" />
     <Content Include="Icon\Square.png" />
     <Content Include="Json\Enumerate.json" />
+    <None Include="Resources\Adjust.resw" />
     <None Include="配色pro_StoreKey.pfx" />
     <None Include="配色pro_TemporaryKey.pfx" />
   </ItemGroup>
@@ -249,7 +250,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\EunmPage.xaml">
+    <Page Include="Pages\EnumPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

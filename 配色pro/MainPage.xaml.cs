@@ -44,15 +44,15 @@ namespace 配色pro
             set
             {
                 this.HomeLabelControl.SeletedIndex =
-                this.EunmLabelControl.SeletedIndex =
+                this.EnumLabelControl.SeletedIndex =
                 this.ImageLabelControl.SeletedIndex = (int)value;
 
                 this.HomeLabelControl2.SeletedIndex =
-                this.EunmLabelControl2.SeletedIndex =
+                this.EnumLabelControl2.SeletedIndex =
                 this.ImageLabelControl2.SeletedIndex = (int)value;
 
                 this.HomePage.State =
-                this.EunmPage.State =
+                this.EnumPage.State =
                 this.ImagePage.State = value;
 
                 this.DropShadowPanel2.Visibility =
@@ -119,7 +119,7 @@ namespace 配色pro
             this.State = MainPageState.HomeType;
 
             this.HomeLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
-            this.EunmLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
+            this.EnumLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
             this.ImageLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
 
             this.HomeLabelControl2.SeletedChanged += (value) =>
@@ -127,7 +127,7 @@ namespace 配色pro
                 SplitPanelControl.IsOpen = false;
                 this.State = (MainPageState)value;
             };
-            this.EunmLabelControl2.SeletedChanged += (value) =>
+            this.EnumLabelControl2.SeletedChanged += (value) =>
             {
                 SplitPanelControl.IsOpen = false;
                 this.State = (MainPageState)value;

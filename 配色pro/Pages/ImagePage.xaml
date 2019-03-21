@@ -30,7 +30,7 @@
         <Button x:Name="Button" Content="&#xEB9F;" FontSize="44" FontFamily="Segoe MDL2 Assets" Width="100" Height="100"   HorizontalAlignment="Center" Style="{StaticResource NavigationBackButtonNormalStyle}"/>
 
         <Border x:Name="Border" IsHitTestVisible="False" Height="44" VerticalAlignment="Bottom">
-            <TextBlock Text="Color Scheme" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
+            <TextBlock x:Uid="/Resources/ColorScheme" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
         </Border>
         
     </Grid>

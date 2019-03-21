@@ -120,4 +120,16 @@
   <data name="AppName" xml:space="preserve">
     <value>Color Scheme pro</value>
   </data>
+  <data name="ColorScheme.Text" xml:space="preserve">
+    <value>Color Scheme</value>
+  </data>
+  <data name="Enum.Text" xml:space="preserve">
+    <value>Enum</value>
+  </data>
+  <data name="Home.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Image.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
 </root>

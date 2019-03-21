@@ -77,7 +77,7 @@
             </Grid>
 
             <Border Height="44">
-                <TextBlock Text="Color Scheme" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
+                <TextBlock x:Uid="/Resources/ColorScheme" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
             </Border>
             
         </StackPanel>

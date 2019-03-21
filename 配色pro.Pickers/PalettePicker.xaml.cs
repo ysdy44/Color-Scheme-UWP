@@ -24,7 +24,7 @@ namespace 配色pro.Pickers
     public partial class PalettePicker : UserControl
     {
         //Delegate
-        public event ColorChangeHandler ColorChange = null;
+        public event HSLChangeHandler HSLChange = null;
 
 
         #region DependencyProperty
@@ -36,7 +36,7 @@ namespace 配色pro.Pickers
             get => this.hsl;
             set
             {
-                this.ColorChange?.Invoke(this, HSL.HSLtoRGB(value.A, value.H, value.S, value.L));
+                this.HSLChange?.Invoke(this, value);
 
                 this.hsl = value;
             }

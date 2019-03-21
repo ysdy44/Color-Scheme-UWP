@@ -9,29 +9,29 @@ using Windows.UI.Xaml.Controls;
 
 namespace 配色pro.Pages
 {
-    public sealed partial class EunmPage : Page
+    public sealed partial class EnumPage : Page
     {
         //State
         public MainPageState State { set => this.Visibility = (value == MainPageState.EunmType) ? Visibility.Visible : Visibility.Collapsed; }
 
-        public EunmPage()
+        public EnumPage()
         {
             this.InitializeComponent();
             this.GridView.IsItemClickEnabled = true;
             this.GridView.ItemClick += (s, e) =>MainPage.Color= ((ColorsItem)e.ClickedItem).Color;
-            this.GridView.Loaded +=async (s, e) => this.GridView.ItemsSource =await EunmPage.GetFilterSource();
+            this.GridView.Loaded +=async (s, e) => this.GridView.ItemsSource =await EnumPage.GetFilterSource();
         }
 
 
         //ColorsItem
         public static async Task<IEnumerable<ColorsItem>> GetFilterSource()
         {
-            string json = await EunmPage.ReadFromLocalFolder("Enumerate.json");
+            string json = await EnumPage.ReadFromLocalFolder("Enumerate.json");
 
             if (json == null)
             {
-                json = await EunmPage.ReadFromApplicationPackage("ms-appx:///Json/Enumerate.json");
-                EunmPage.WriteToLocalFolder(json, "ms-appx:///Json/Enumerate.json");
+                json = await EnumPage.ReadFromApplicationPackage("ms-appx:///Json/Enumerate.json");
+                EnumPage.WriteToLocalFolder(json, "ms-appx:///Json/Enumerate.json");
             }
             IEnumerable<ColorsItem> source = JsonConvert.DeserializeObject<IEnumerable<ColorsItem>>(json);
 
