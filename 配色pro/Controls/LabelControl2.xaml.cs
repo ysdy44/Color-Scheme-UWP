@@ -34,28 +34,16 @@ namespace 配色pro.Controls
 
 
         /// <summary>Usual IconPath' geometry data</summary>
-        public Geometry UsualData
-        {
-            get => this.UsualPath.Data;
-            set => this.UsualPath.Data = value;
-        }
+        public Geometry UsualData { get => this.UsualPath.Data; set => this.UsualPath.Data = value; }
         /// <summary>Seleted IconPath' geometry data</summary>
-        public Geometry SeletedData
-        {
-            get => this.SeletedPath.Data;
-            set => this.SeletedPath.Data = value;
-        }
-        public string Text
-        {
-            get => this.TextBlock.Text;
-            set => this.TextBlock.Text = value;
-        }
+        public Geometry SeletedData { get => this.SeletedPath.Data; set => this.SeletedPath.Data = value; }
+        public string Text { get => this.TextBlock.Text; set => this.TextBlock.Text = value; }
 
 
         #endregion
 
         //Delegate
-        public delegate void IndexChangedHandler(int value);
+        public delegate void IndexChangedHandler();
         public event IndexChangedHandler RefreshChanged = null;
         public event IndexChangedHandler SeletedChanged = null;
 
@@ -66,9 +54,9 @@ namespace 配色pro.Controls
             this.Button.Tapped += (s, e) =>
             {
                 if (this.SeletedIndex != this.TabIndex)
-                    this.SeletedChanged?.Invoke(this.TabIndex); //Delegate
+                    this.SeletedChanged?.Invoke(); //Delegate
                 else
-                    this.RefreshChanged?.Invoke(this.TabIndex); //Delegate
+                    this.RefreshChanged?.Invoke(); //Delegate
             };
         }
     }

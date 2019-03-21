@@ -134,24 +134,13 @@
         <Border Grid.Row="1" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <StackPanel>
 
-                <!--FloatActionButton2-->
-                <controls:DropShadowPanel x:Name="DropShadowPanel2" Color="{ThemeResource AppStrokeColor}" BlurRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" >
-                    <animations:Implicit.ShowAnimations>
-                        <animations:TranslationAnimation Duration="0:0:0.6" From="50,0,0" To="0,0,0"/>
-                        <animations:OpacityAnimation Duration="0:0:0.6" From="0.0" To="1.0"/>
-                    </animations:Implicit.ShowAnimations>
-                    <Border x:Name="FloatActionButton2" Width="40" Height="40" BorderThickness="1" BorderBrush="White" >
-                        <Border.Background>
-                            <SolidColorBrush x:Name="FloatActionButtonBrush2"/>
-                        </Border.Background>
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEB9F;" Foreground="{Binding Foreground,Mode=OneWay}"/>
-                    </Border>
-                </controls:DropShadowPanel>
-
+                <control:DropShadowControl x:Name="PasteDropShadowControl" Glyph="&#xE16D;" FontFamily="Segoe UI Symbol"/>
                 <ContentControl Height="12"/>
+                <control:DropShadowControl x:Name="ImageDropShadowControl" Glyph="&#xEB9F;" FontFamily="Segoe MDL2 Assets"/>
+                <ContentControl Height="12"/>         
 
                 <!--FloatActionButton1-->
-                <controls:DropShadowPanel x:Name="DropShadowPanel" Color="{ThemeResource AppStrokeColor}" BlurRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <controls:DropShadowPanel Color="{ThemeResource AppStrokeColor}" BlurRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" >
                     <Ellipse x:Name="FloatActionButton" Width="50" Height="50" StrokeThickness="1" Stroke="White" >
                         <Ellipse.Fill>
                             <SolidColorBrush x:Name="FloatActionButtonBrush"/>

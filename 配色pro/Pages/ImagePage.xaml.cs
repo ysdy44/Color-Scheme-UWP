@@ -1,16 +1,14 @@
-﻿using 配色pro.Library;
-using Microsoft.Graphics.Canvas;
+﻿using Microsoft.Graphics.Canvas;
 using Microsoft.Graphics.Canvas.Effects;
 using System;
-using System.Linq;
 using System.Numerics;
-using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
-using Windows.Storage.Pickers;
 using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using 配色pro.Library;
 
 namespace 配色pro.Pages
 {
@@ -26,7 +24,7 @@ namespace 配色pro.Pages
         //State
         public MainPageState State { set => this.Visibility = (value == MainPageState.ImageType) ? Visibility.Visible : Visibility.Collapsed; }
 
-        private ImagePageState imageState; 
+        private ImagePageState imageState;
         public ImagePageState ImageState
         {
             get => this.imageState;
@@ -63,7 +61,7 @@ namespace 配色pro.Pages
         float ControlHeight;
         Vector2 ControlCenter => new Vector2(this.ControlWidth / 2, this.ControlHeight / 2);
         Transformer Transformer = Transformer.One;
-                     
+
 
         //Operator: Right
         Vector2 rightStartPoint;
@@ -87,7 +85,18 @@ namespace 配色pro.Pages
                 this.ControlHeight = (float)e.NewSize.Height;
             };
 
-            
+            //Drop
+            this.AllowDrop = true;
+            this.Drop += (s, e) => this.BitmapPicker(e);
+            this.DragOver += (s, e) =>
+            {
+                e.AcceptedOperation = DataPackageOperation.Copy;
+                e.DragUIOverride.IsCaptionVisible = e.DragUIOverride.IsContentVisible = e.DragUIOverride.IsGlyphVisible = true;
+            };
+
+            //Key
+            this.KeyDown += (s, e) => this.BitmapClipboard();
+
             //Draw
             this.StrawControl.CanvasControl.Draw += (s, args) =>
             {
@@ -130,7 +139,7 @@ namespace 配色pro.Pages
                 this.CanvasControl.Invalidate();
                 this.StrawControl.Invalidate();
 
-                MainPage.Color = ImagePage.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
+                MainPage.Color =ImagePicker.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
             };
             this.Operator.Single_Delta += (point) =>
             {
@@ -139,7 +148,7 @@ namespace 配色pro.Pages
                 this.CanvasControl.Invalidate();
                 this.StrawControl.Invalidate();
 
-                MainPage.Color = ImagePage.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
+                MainPage.Color = ImagePicker.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
             };
             this.Operator.Single_Complete += (point) =>
             {
@@ -149,7 +158,7 @@ namespace 配色pro.Pages
                 this.CanvasControl.Invalidate();
                 this.StrawControl.Invalidate();
 
-                MainPage.Color = ImagePage.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
+                MainPage.Color = ImagePicker.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
             };
 
             //Operator: Right
@@ -166,8 +175,8 @@ namespace 配色pro.Pages
 
                 this.CanvasControl.Invalidate();
             };
-            this.Operator.Right_Complete += (point) =>    this.CanvasControl.Invalidate();
-  
+            this.Operator.Right_Complete += (point) => this.CanvasControl.Invalidate();
+
             //Operator: Double
             this.Operator.Double_Start += (center, space) =>
             {
@@ -186,7 +195,7 @@ namespace 配色pro.Pages
 
                 this.CanvasControl.Invalidate();
             };
-            this.Operator.Double_Complete += (center, space) =>  this.CanvasControl.Invalidate();
+            this.Operator.Double_Complete += (center, space) => this.CanvasControl.Invalidate();
 
             //Operator: Wheel Changed
             this.Operator.Wheel_Changed += (point, space) =>
@@ -212,52 +221,39 @@ namespace 配色pro.Pages
             };
         }
 
-        /// <summary> Change <see cref = "CanvasBitmap" />. </summary>
-        public async void BitmapPicker()
-        {
-            CanvasBitmap bitmap = await ImagePage.GetCanvasBitmap(this.CanvasControl, await ImagePage.GetStorageFile());
-            if (bitmap == null) return;
+        public async void BitmapPicker() => this.SetBitmap(await ImagePicker.GetFileFromPicker());
+        public async void BitmapPicker(DragEventArgs e) => this.SetBitmap(await ImagePicker.GetFileFromDrop(e));
 
+        public async void BitmapClipboard()
+        {
+            using (IRandomAccessStream stream =await ImagePicker.GetStreamFromClipboard())
+            {
+                if (stream == null) return;
+                this.SetBitmap(await CanvasBitmap.LoadAsync(this.CanvasControl, stream));
+            }
+        }
+
+        private async void SetBitmap(StorageFile file)
+        {
+            try
+            {
+                using (IRandomAccessStreamWithContentType stream = await file.OpenReadAsync())
+                {
+                    this.SetBitmap(await CanvasBitmap.LoadAsync(this.CanvasControl, stream));
+                }
+            }
+            catch (Exception) { }
+        }
+        private void SetBitmap(CanvasBitmap bitmap)
+        {
+            if (bitmap == null) return;
             this.Bitmap = bitmap;
+
             this.Transformer.Position = this.ControlCenter;
+            this.Transformer.Scale = 0.9f * Math.Min(this.ControlWidth / bitmap.SizeInPixels.Width, this.ControlHeight / bitmap.SizeInPixels.Height);
+
             this.ImageState = ImagePageState.ImageType;
             this.CanvasControl.Invalidate();
-        }
-
-
-        public static async Task<StorageFile> GetStorageFile() => await new FileOpenPicker
-        {
-            ViewMode = PickerViewMode.Thumbnail,
-            SuggestedStartLocation = PickerLocationId.PicturesLibrary,
-            FileTypeFilter =
-            {
-                ".jpg",
-                ".jpeg",
-                ".png",
-                ".bmp"
-            }
-        }.PickSingleFileAsync();
-
-        public static async Task<CanvasBitmap> GetCanvasBitmap(ICanvasResourceCreator creator, StorageFile file)
-        {
-            if (file == null) return null;
-
-            using (IRandomAccessStream stream = await file.OpenReadAsync())
-            {
-                return await CanvasBitmap.LoadAsync(creator, stream);
-            }
-        }
-        
-        public static Color? GetColorFromBitmap(CanvasBitmap bitmap, Vector2 vector)
-        {
-            int x = (int)vector.X;
-            int y = (int)vector.Y;
-
-            if (x > 0 && x < bitmap.SizeInPixels.Width && y > 0 && y < bitmap.SizeInPixels.Height)
-            {
-                return bitmap.GetPixelColors(x, y, 1, 1).Single();
-            }
-            return null;
         }
     }
 }

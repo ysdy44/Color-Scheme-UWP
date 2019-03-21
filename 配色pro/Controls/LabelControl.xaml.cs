@@ -34,17 +34,9 @@ namespace 配色pro.Controls
 
 
         /// <summary>Usual IconPath' geometry data</summary>
-        public Geometry UsualData
-        {
-            get => this.UsualPath.Data;
-            set => this.UsualPath.Data = value;
-        }
+        public Geometry UsualData { get => this.UsualPath.Data; set => this.UsualPath.Data = value; }
         /// <summary>Seleted IconPath' geometry data</summary>
-        public Geometry SeletedData
-        {
-            get => this.SeletedPath.Data;
-            set => this.SeletedPath.Data = value;
-        }
+        public Geometry SeletedData { get => this.SeletedPath.Data; set => this.SeletedPath.Data = value; }
 
 
         #endregion

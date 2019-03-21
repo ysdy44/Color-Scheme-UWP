@@ -1,7 +1,8 @@
-﻿using 配色pro.Pickers;
-using Windows.UI;
+﻿using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using 配色pro.Library;
+using 配色pro.Pickers;
 
 namespace 配色pro.Pages
 {

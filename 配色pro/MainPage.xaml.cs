@@ -1,24 +1,18 @@
 ﻿using System;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.System;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using 配色pro.Library;
 
 namespace 配色pro
 {
-
     public enum MainPageState
     {
         HomeType,
         EunmType,
-        ImageType,
-        PaletteType,
-    }
-    public enum LayoutState
-    {
-        Phone,
-        Pad,
-        PC
+        ImageType
     }
 
     public sealed partial class MainPage : Page
@@ -43,20 +37,11 @@ namespace 配色pro
             get => this.state;
             set
             {
-                this.HomeLabelControl.SeletedIndex =
-                this.EnumLabelControl.SeletedIndex =
-                this.ImageLabelControl.SeletedIndex = (int)value;
+                this.HomePage.State = this.EnumPage.State = this.ImagePage.State = value;
 
-                this.HomeLabelControl2.SeletedIndex =
-                this.EnumLabelControl2.SeletedIndex =
-                this.ImageLabelControl2.SeletedIndex = (int)value;
-
-                this.HomePage.State =
-                this.EnumPage.State =
-                this.ImagePage.State = value;
-
-                this.DropShadowPanel2.Visibility =
-                    (value == MainPageState.ImageType) ? Visibility.Visible : Visibility.Collapsed;
+                this.HomeLabelControl.SeletedIndex = this.EnumLabelControl.SeletedIndex = this.ImageLabelControl.SeletedIndex = (int)value;
+                this.HomeLabelControl2.SeletedIndex = this.EnumLabelControl2.SeletedIndex = this.ImageLabelControl2.SeletedIndex = (int)value;
+                this.PasteDropShadowControl.Visibility = this.ImageDropShadowControl.Visibility = (value == MainPageState.ImageType) ? Visibility.Visible : Visibility.Collapsed;
 
                 if (value == MainPageState.HomeType) this.HomePage.Color = MainPage.Color;
 
@@ -70,14 +55,8 @@ namespace 配色pro
             get => this.layoutState;
             set
             {
-                this.SplitButton.Visibility =
-                this.SplitPanelControl.Visibility =
-                this.TitleTextBlock.Visibility =
-                    (value == LayoutState.Phone) ? Visibility.Visible : Visibility.Collapsed;
-
-                this.AvatarButton.Visibility =
-                this.TitleGrid.Visibility =
-                    (value == LayoutState.Phone) ? Visibility.Collapsed : Visibility.Visible;
+                this.SplitButton.Visibility = this.SplitPanelControl.Visibility = this.TitleTextBlock.Visibility = (value == LayoutState.Phone) ? Visibility.Visible : Visibility.Collapsed;
+                this.AvatarButton.Visibility = this.TitleGrid.Visibility = (value == LayoutState.Phone) ? Visibility.Collapsed : Visibility.Visible;
 
                 this.layoutState = value;
             }
@@ -86,7 +65,7 @@ namespace 配色pro
         public MainPage()
         {
             this.InitializeComponent();
-            MainPage.colorAction = (color) => this.FloatActionButtonBrush.Color = this.FloatActionButtonBrush2.Color = color;
+            MainPage.colorAction = (color) => this.FloatActionButtonBrush.Color = this.PasteDropShadowControl.Color = this.ImageDropShadowControl.Color = color;
             MainPage.Color = MainPage.ThemeColor;
             this.Loaded += (s, e) => this.HomePage.Color = MainPage.ThemeColor;
             this.SizeChanged += (s, e) =>
@@ -94,9 +73,36 @@ namespace 配色pro
                 if (e.NewSize == e.PreviousSize) return;
                 this.LayoutState = MainPage.GetLayoutState(e.NewSize.Width);
             };
+
+            //Drop
+            this.AllowDrop = true;
+            this.Drop += (s, e) =>
+            {
+                this.State = MainPageState.ImageType;
+                this.ImagePage.BitmapPicker(e);
+            };
+            this.DragOver += (s, e) =>
+            {
+                e.AcceptedOperation = DataPackageOperation.Copy;
+                e.DragUIOverride.IsCaptionVisible = e.DragUIOverride.IsContentVisible = e.DragUIOverride.IsGlyphVisible = true;
+            };
+
+            //Key
+            this.KeyDown += (s, e) =>
+            {
+                if (this.ShowDialogControl.IsOpen) return;
+                if (e.Key != VirtualKey.V) return;
+
+                this.State = MainPageState.ImageType;
+                this.ImagePage.BitmapClipboard();
+                e.Handled = true;
+            };
+
+            //Button
             this.ThemeButton.Tapped += (s, e) => this.ThemeControl.Theme = (this.ThemeControl.Theme == ElementTheme.Dark) ? ElementTheme.Light : ElementTheme.Dark;
             this.SplitButton.Tapped += (s, e) => this.SplitPanelControl.IsOpen = true;
-            this.FloatActionButton2.Tapped += (s, e) => this.ImagePage.BitmapPicker();
+            this.PasteDropShadowControl.Tapped += (s, e) => this.ImagePage.BitmapClipboard();
+            this.ImageDropShadowControl.Tapped += (s, e) => this.ImagePage.BitmapPicker();
 
             //Avatar
             this.AvatarButton.Tapped += async (s, e) => await Launcher.LaunchUriAsync(new Uri("https://github.com/ysdy44/Color-Scheme-pro-UWP"));
@@ -122,24 +128,14 @@ namespace 配色pro
             this.EnumLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
             this.ImageLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
 
-            this.HomeLabelControl2.SeletedChanged += (value) =>
-            {
-                SplitPanelControl.IsOpen = false;
-                this.State = (MainPageState)value;
-            };
-            this.EnumLabelControl2.SeletedChanged += (value) =>
-            {
-                SplitPanelControl.IsOpen = false;
-                this.State = (MainPageState)value;
-            };
-            this.ImageLabelControl2.SeletedChanged += (value) =>
-            {
-                SplitPanelControl.IsOpen = false;
-                this.State = (MainPageState)value;
-            };
+            this.HomeLabelControl2.SeletedChanged += () => this.SeletedChanged(MainPageState.HomeType);  
+            this.EnumLabelControl2.SeletedChanged += () => this.SeletedChanged(MainPageState.EunmType); 
+            this.ImageLabelControl2.SeletedChanged += () => this.SeletedChanged(MainPageState.ImageType);           
+        }
+        private void SeletedChanged(MainPageState value)
+        {
+            this.SplitPanelControl.IsOpen = false;
+            this.State = value;
         }
     }
 }
-
-
-
