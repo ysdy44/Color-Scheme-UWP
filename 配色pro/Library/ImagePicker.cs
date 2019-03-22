@@ -15,12 +15,12 @@ namespace 配色pro.Library
 {
     public class ImagePicker
     {
-        public readonly static string JPG = "JPG";
-        public readonly static string JPEG = "JPEG";
-        public readonly static string PNG = "PNG";
-        public readonly static string GIF = "GIF";
-        public readonly static string BMP = "BMP";
-        public static bool ContainsFormat(String type) => type.Contains(ImagePicker.JPG) || type.Contains(ImagePicker.JPEG) || type.Contains(ImagePicker.PNG) || type.Contains(ImagePicker.GIF) || type.Contains(ImagePicker.BMP);
+        public readonly static string JPG = ".JPG";
+        public readonly static string JPEG = ".JPEG";
+        public readonly static string PNG = ".PNG";
+        public readonly static string GIF = ".GIF";
+        public readonly static string BMP = ".BMP";
+        public static bool ContainsFormat(String type) => type == ImagePicker.JPG || type == ImagePicker.JPEG || type == ImagePicker.PNG || type == ImagePicker.GIF || type == ImagePicker.BMP;
 
         //Color
         public static Color? GetColorFromBitmap(CanvasBitmap bitmap, Vector2 vector) => ImagePicker.GetColorFromBitmap(bitmap, (int)vector.X, (int)vector.Y);

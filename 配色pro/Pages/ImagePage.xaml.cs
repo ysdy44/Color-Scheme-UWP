@@ -139,7 +139,7 @@ namespace 配色pro.Pages
                 this.CanvasControl.Invalidate();
                 this.StrawControl.Invalidate();
 
-                MainPage.Color =ImagePicker.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
+                MainPage.Color = ImagePicker.GetColorFromBitmap(this.Bitmap, this.Transformer.BitmapPoint(point)) ?? Colors.White;
             };
             this.Operator.Single_Delta += (point) =>
             {
@@ -226,7 +226,7 @@ namespace 配色pro.Pages
 
         public async void BitmapClipboard()
         {
-            using (IRandomAccessStream stream =await ImagePicker.GetStreamFromClipboard())
+            using (IRandomAccessStream stream = await ImagePicker.GetStreamFromClipboard())
             {
                 if (stream == null) return;
                 this.SetBitmap(await CanvasBitmap.LoadAsync(this.CanvasControl, stream));
