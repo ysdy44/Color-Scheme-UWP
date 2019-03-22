@@ -42,7 +42,7 @@ namespace 配色pro.Controls
         #endregion
 
         //Delegate
-        public delegate void IndexChangedHandler(int value);
+        public delegate void IndexChangedHandler();
         public event IndexChangedHandler RefreshChanged = null;
         public event IndexChangedHandler SeletedChanged = null;
 
@@ -53,9 +53,9 @@ namespace 配色pro.Controls
             this.Button.Tapped += (s, e) =>
             {
                 if (this.SeletedIndex != this.TabIndex)
-                    this.SeletedChanged?.Invoke(this.TabIndex); //Delegate
+                    this.SeletedChanged?.Invoke(); //Delegate
                 else
-                    this.RefreshChanged?.Invoke(this.TabIndex); //Delegate
+                    this.RefreshChanged?.Invoke(); //Delegate
             };
         }
     }

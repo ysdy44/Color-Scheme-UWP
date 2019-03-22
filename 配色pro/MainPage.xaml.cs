@@ -124,9 +124,9 @@ namespace 配色pro
             //State
             this.State = MainPageState.HomeType;
 
-            this.HomeLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
-            this.EnumLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
-            this.ImageLabelControl.SeletedChanged += (value) => this.State = (MainPageState)value;
+            this.HomeLabelControl.SeletedChanged += () => this.SeletedChanged(MainPageState.HomeType);
+            this.EnumLabelControl.SeletedChanged += () => this.SeletedChanged(MainPageState.EunmType);
+            this.ImageLabelControl.SeletedChanged += () => this.SeletedChanged(MainPageState.ImageType);
 
             this.HomeLabelControl2.SeletedChanged += () => this.SeletedChanged(MainPageState.HomeType);  
             this.EnumLabelControl2.SeletedChanged += () => this.SeletedChanged(MainPageState.EunmType); 

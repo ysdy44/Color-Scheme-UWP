@@ -55,7 +55,7 @@ namespace 配色pro.Pages
                 this.LayoutState = MainPage.GetLayoutState(e.NewSize.Width);
             };
 
-            this.WheelPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isHSLPicker: false);
+            this.WheelPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isWheelPicker: false);
             this.RGBPicker.ColorChange += (s, value) => this.SetColor(value, HSL.RGBtoHSL(value), isRGBPicker: false);
             this.HSLPicker.HSLChange += (s, value) => this.SetColor(HSL.HSLtoRGB(value), value, isHSLPicker: false);
 
