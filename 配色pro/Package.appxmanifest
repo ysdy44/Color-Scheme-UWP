@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="43956ysdy44.pro" Publisher="CN=9DF2B1A6-C2CE-481C-9997-A3B93DA91100" Version="3.5.1.0" />
+  <Identity Name="43956ysdy44.pro" Publisher="CN=9DF2B1A6-C2CE-481C-9997-A3B93DA91100" Version="3.5.2.0" />
   <mp:PhoneIdentity PhoneProductId="00b0cb6f-a80b-492b-8e3d-7088faa95d2b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>配色pro</DisplayName>
