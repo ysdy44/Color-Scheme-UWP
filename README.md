@@ -4,9 +4,9 @@ Used to select the color application, support the hexadecimal color, support the
 
 ## Get it
 
-![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/logo.jpg)
-Get it from windows 10 store:<br>
+Get it from windows 10 store:<br>  
 https://www.microsoft.com/store/productId/9NJXVM10VX16
+![](https://github.com/ysdy44/Color-Scheme-UWP/blob/master/ScreenShot/logo.png)
 
 
 ## Development environment
