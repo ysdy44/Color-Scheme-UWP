@@ -1,0 +1,1987 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Root>
+  <Item A="255" R="255" G="255" B="255" Title="White">
+    <Strings>
+      <String Key="en" Value="White" />
+      <String Key="zh" Value="白" />
+      <String Key="ar" Value="أبيض" />
+      <String Key="de" Value="Weiß" />
+      <String Key="es" Value="blanco" />
+      <String Key="fr" Value="blanche" />
+      <String Key="it" Value="bianco" />
+      <String Key="ja" Value="白" />
+      <String Key="ko" Value="하얀색" />
+      <String Key="nl" Value="wit" />
+      <String Key="pt" Value="Branco" />
+      <String Key="ru" Value="белый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="223" G="223" B="223" Title="Gray">
+    <Strings>
+      <String Key="en" Value="Gray" />
+      <String Key="zh" Value="灰白" />
+      <String Key="ar" Value="رمادي" />
+      <String Key="de" Value="Grau" />
+      <String Key="es" Value="gris" />
+      <String Key="fr" Value="gris" />
+      <String Key="it" Value="Grigio" />
+      <String Key="ja" Value="グレー" />
+      <String Key="ko" Value="회색" />
+      <String Key="nl" Value="Grijs" />
+      <String Key="pt" Value="cinza" />
+      <String Key="ru" Value="серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="191" G="191" B="191" Title="White Grey">
+    <Strings>
+      <String Key="en" Value="White Grey" />
+      <String Key="zh" Value="白灰" />
+      <String Key="ar" Value="أبيض رمادي" />
+      <String Key="de" Value="Weiß grau" />
+      <String Key="es" Value="Gris blanco" />
+      <String Key="fr" Value="Blanc gris" />
+      <String Key="it" Value="Bianco Grigio" />
+      <String Key="ja" Value="ホワイトグレー" />
+      <String Key="ko" Value="화이트 그레이" />
+      <String Key="nl" Value="Wit grijs" />
+      <String Key="pt" Value="Branco Cinza" />
+      <String Key="ru" Value="Белый Серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="159" G="159" B="159" Title="Light Grey">
+    <Strings>
+      <String Key="en" Value="Light Grey" />
+      <String Key="zh" Value="浅灰" />
+      <String Key="ar" Value="رمادي فاتح" />
+      <String Key="de" Value="Hellgrau" />
+      <String Key="es" Value="gris claro" />
+      <String Key="fr" Value="Gris clair" />
+      <String Key="it" Value="Grigio chiaro" />
+      <String Key="ja" Value="ライトグレー" />
+      <String Key="ko" Value="라이트 그레이" />
+      <String Key="nl" Value="Lichtgrijs" />
+      <String Key="pt" Value="Cinza claro" />
+      <String Key="ru" Value="Светло-серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="127" G="127" B="127" Title="Dark Grey">
+    <Strings>
+      <String Key="en" Value="Dark Grey" />
+      <String Key="zh" Value="深灰" />
+      <String Key="ar" Value="رمادي غامق" />
+      <String Key="de" Value="Dunkelgrau" />
+      <String Key="es" Value="Gris oscuro" />
+      <String Key="fr" Value="Gris foncé" />
+      <String Key="it" Value="Grigio scuro" />
+      <String Key="ja" Value="濃い灰色" />
+      <String Key="ko" Value="어두운 회색" />
+      <String Key="nl" Value="Donker grijs" />
+      <String Key="pt" Value="Cinza escuro" />
+      <String Key="ru" Value="Темно-серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="63" G="63" B="63" Title="Black Grey">
+    <Strings>
+      <String Key="en" Value="Black Grey" />
+      <String Key="zh" Value="黑灰" />
+      <String Key="ar" Value="أسود رمادي" />
+      <String Key="de" Value="Schwarzgrau" />
+      <String Key="es" Value="Gris oscuro" />
+      <String Key="fr" Value="Gris noir" />
+      <String Key="it" Value="Nero Grigio" />
+      <String Key="ja" Value="ブラックグレー" />
+      <String Key="ko" Value="블랙 그레이" />
+      <String Key="nl" Value="Zwart grijs" />
+      <String Key="pt" Value="Cinza escuro" />
+      <String Key="ru" Value="черный серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="31" G="31" B="31" Title="Gray And Black">
+    <Strings>
+      <String Key="en" Value="Gray And Black" />
+      <String Key="zh" Value="灰黑" />
+      <String Key="ar" Value="الرمادي والأسود" />
+      <String Key="de" Value="Grau und Schwarz" />
+      <String Key="es" Value="gris y negro" />
+      <String Key="fr" Value="Gris et noir" />
+      <String Key="it" Value="Grigio e nero" />
+      <String Key="ja" Value="グレーとブラック" />
+      <String Key="ko" Value="회색과 검정" />
+      <String Key="nl" Value="Grijs en zwart" />
+      <String Key="pt" Value="cinza e preto" />
+      <String Key="ru" Value="серый и черный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="0" B="0" Title="Black">
+    <Strings>
+      <String Key="en" Value="Black" />
+      <String Key="zh" Value="黑" />
+      <String Key="ar" Value="أسود" />
+      <String Key="de" Value="Schwarz" />
+      <String Key="es" Value="Negro" />
+      <String Key="fr" Value="Le noir" />
+      <String Key="it" Value="Nero" />
+      <String Key="ja" Value="黒" />
+      <String Key="ko" Value="검은 색" />
+      <String Key="nl" Value="zwart" />
+      <String Key="pt" Value="Preto" />
+      <String Key="ru" Value="Чернить" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="192" B="203" Title="Pink">
+    <Strings>
+      <String Key="en" Value="Pink" />
+      <String Key="zh" Value="粉红" />
+      <String Key="ar" Value="لون القرنفل" />
+      <String Key="de" Value="Rosa" />
+      <String Key="es" Value="Rosa" />
+      <String Key="fr" Value="Rose" />
+      <String Key="it" Value="Rosa" />
+      <String Key="ja" Value="ピンク" />
+      <String Key="ko" Value="분홍색" />
+      <String Key="nl" Value="Roze" />
+      <String Key="pt" Value="Cor de rosa" />
+      <String Key="ru" Value="Розовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="220" G="20" B="60" Title="Scarlet">
+    <Strings>
+      <String Key="en" Value="Scarlet" />
+      <String Key="zh" Value="猩红" />
+      <String Key="ar" Value="اللون القرمزي" />
+      <String Key="de" Value="Scharlachrot" />
+      <String Key="es" Value="Escarlata" />
+      <String Key="fr" Value="Écarlate" />
+      <String Key="it" Value="Scarlatto" />
+      <String Key="ja" Value="スカーレット" />
+      <String Key="ko" Value="주홍" />
+      <String Key="nl" Value="Scharlaken" />
+      <String Key="pt" Value="Escarlate" />
+      <String Key="ru" Value="Скарлет" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="240" B="245" Title="Pale Violet Red">
+    <Strings>
+      <String Key="en" Value="Pale Violet Red" />
+      <String Key="zh" Value="苍白紫罗兰红" />
+      <String Key="ar" Value="أحمر بنفسجي شاحب" />
+      <String Key="de" Value="Hellviolettes Rot" />
+      <String Key="es" Value="Rojo violeta pálido" />
+      <String Key="fr" Value="Rouge violet pâle" />
+      <String Key="it" Value="Rosso violetto pallido" />
+      <String Key="ja" Value="淡いバイオレットレッド" />
+      <String Key="ko" Value="페일 바이올렛 레드" />
+      <String Key="nl" Value="Licht violet rood" />
+      <String Key="pt" Value="Vermelho Violeta Pálido" />
+      <String Key="ru" Value="Бледно-фиолетовый красный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="219" G="112" B="147" Title="Lavender">
+    <Strings>
+      <String Key="en" Value="Lavender" />
+      <String Key="zh" Value="淡紫红" />
+      <String Key="ar" Value="لافندر" />
+      <String Key="de" Value="Lavendel" />
+      <String Key="es" Value="Lavanda" />
+      <String Key="fr" Value="Lavande" />
+      <String Key="it" Value="Lavanda" />
+      <String Key="ja" Value="ラベンダー" />
+      <String Key="ko" Value="라벤더" />
+      <String Key="nl" Value="Lavendel" />
+      <String Key="pt" Value="Lavanda" />
+      <String Key="ru" Value="лаванда" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="105" B="180" Title="Passionate Pink">
+    <Strings>
+      <String Key="en" Value="Passionate Pink" />
+      <String Key="zh" Value="热情粉红" />
+      <String Key="ar" Value="وردي عاطفي" />
+      <String Key="de" Value="Leidenschaftliches Rosa" />
+      <String Key="es" Value="Rosa apasionado" />
+      <String Key="fr" Value="Rose passionné" />
+      <String Key="it" Value="Rosa appassionato" />
+      <String Key="ja" Value="情熱的なピンク" />
+      <String Key="ko" Value="열정적인 핑크" />
+      <String Key="nl" Value="Hartstochtelijk roze" />
+      <String Key="pt" Value="Rosa Apaixonado" />
+      <String Key="ru" Value="страстный розовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="199" G="21" B="133" Title="Moderate Violet Red">
+    <Strings>
+      <String Key="en" Value="Moderate Violet Red" />
+      <String Key="zh" Value="适中紫罗兰红" />
+      <String Key="ar" Value="معتدل بنفسجي أحمر" />
+      <String Key="de" Value="Moderates Violettrot" />
+      <String Key="es" Value="Rojo violeta moderado" />
+      <String Key="fr" Value="Modéré Violet Rouge" />
+      <String Key="it" Value="Rosso violaceo moderato" />
+      <String Key="ja" Value="中程度のバイオレットレッド" />
+      <String Key="ko" Value="적당한 바이올렛 레드" />
+      <String Key="nl" Value="Matig violet rood" />
+      <String Key="pt" Value="Vermelho Violeta Moderado" />
+      <String Key="ru" Value="Умеренный фиолетово-красный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="218" G="112" B="214" Title="Orchid Purple">
+    <Strings>
+      <String Key="en" Value="Orchid Purple" />
+      <String Key="zh" Value="兰花紫" />
+      <String Key="ar" Value="الأوركيد الأرجواني" />
+      <String Key="de" Value="Orchidee Lila" />
+      <String Key="es" Value="Orquídea Púrpura" />
+      <String Key="fr" Value="Orchidée violette" />
+      <String Key="it" Value="Orchidea viola" />
+      <String Key="ja" Value="オーキッドパープル" />
+      <String Key="ko" Value="난초 보라색" />
+      <String Key="nl" Value="Orchidee Paars" />
+      <String Key="pt" Value="Roxo Orquídea" />
+      <String Key="ru" Value="Орхидея Фиолетовая" />
+    </Strings>
+  </Item>
+  <Item A="255" R="216" G="191" B="216" Title="Blue Purple">
+    <Strings>
+      <String Key="en" Value="Blue Purple" />
+      <String Key="zh" Value="苍紫" />
+      <String Key="ar" Value="الأزرق الأرجواني" />
+      <String Key="de" Value="Blau Lila" />
+      <String Key="es" Value="Azul púrpura" />
+      <String Key="fr" Value="Bleu violet" />
+      <String Key="it" Value="Blu Viola" />
+      <String Key="ja" Value="ブルーパープル" />
+      <String Key="ko" Value="블루 퍼플" />
+      <String Key="nl" Value="Blauw paars" />
+      <String Key="pt" Value="Azul Roxo" />
+      <String Key="ru" Value="Синий Фиолетовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="221" G="160" B="221" Title="Light Purple">
+    <Strings>
+      <String Key="en" Value="Light Purple" />
+      <String Key="zh" Value="轻紫" />
+      <String Key="ar" Value="ضوء ارجواني" />
+      <String Key="de" Value="Helles Lila" />
+      <String Key="es" Value="Púrpura claro" />
+      <String Key="fr" Value="Violet clair" />
+      <String Key="it" Value="Viola chiaro" />
+      <String Key="ja" Value="ライトパープル" />
+      <String Key="ko" Value="라이트 퍼플" />
+      <String Key="nl" Value="Lichtpaars" />
+      <String Key="pt" Value="Luz roxa" />
+      <String Key="ru" Value="Светло-фиолетовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="238" G="130" B="238" Title="Violets">
+    <Strings>
+      <String Key="en" Value="Violets" />
+      <String Key="zh" Value="紫罗兰" />
+      <String Key="ar" Value="البنفسج" />
+      <String Key="de" Value="Veilchen" />
+      <String Key="es" Value="violetas" />
+      <String Key="fr" Value="Violettes" />
+      <String Key="it" Value="Violette" />
+      <String Key="ja" Value="スミレ" />
+      <String Key="ko" Value="제비꽃" />
+      <String Key="nl" Value="viooltjes" />
+      <String Key="pt" Value="Violetas" />
+      <String Key="ru" Value="Фиалки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="0" B="255" Title="Magenta">
+    <Strings>
+      <String Key="en" Value="Magenta" />
+      <String Key="zh" Value="洋紫" />
+      <String Key="ar" Value="أرجواني" />
+      <String Key="de" Value="Magenta" />
+      <String Key="es" Value="Magenta" />
+      <String Key="fr" Value="Magenta" />
+      <String Key="it" Value="Magenta" />
+      <String Key="ja" Value="赤紫色" />
+      <String Key="ko" Value="마젠타" />
+      <String Key="nl" Value="Magenta" />
+      <String Key="pt" Value="Magenta" />
+      <String Key="ru" Value="Пурпурный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="139" G="0" B="139" Title="Deep Magenta">
+    <Strings>
+      <String Key="en" Value="Deep Magenta" />
+      <String Key="zh" Value="深洋紫" />
+      <String Key="ar" Value="أرجواني عميق" />
+      <String Key="de" Value="Tiefes Magenta" />
+      <String Key="es" Value="Magenta profundo" />
+      <String Key="fr" Value="Magenta profond" />
+      <String Key="it" Value="Magenta intenso" />
+      <String Key="ja" Value="ディープマゼンタ" />
+      <String Key="ko" Value="딥 마젠타" />
+      <String Key="nl" Value="Diep Magenta" />
+      <String Key="pt" Value="Magenta Profundo" />
+      <String Key="ru" Value="Глубокий пурпурный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="128" G="0" B="128" Title="Purple">
+    <Strings>
+      <String Key="en" Value="Purple" />
+      <String Key="zh" Value="紫" />
+      <String Key="ar" Value="أرجواني" />
+      <String Key="de" Value="Violett" />
+      <String Key="es" Value="Púrpura" />
+      <String Key="fr" Value="Mauve" />
+      <String Key="it" Value="Viola" />
+      <String Key="ja" Value="紫の" />
+      <String Key="ko" Value="보라색" />
+      <String Key="nl" Value="Purper" />
+      <String Key="pt" Value="Roxa" />
+      <String Key="ru" Value="Пурпурный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="186" G="85" B="211" Title="Moderate Orchid Purple">
+    <Strings>
+      <String Key="en" Value="Moderate Orchid Purple" />
+      <String Key="zh" Value="适中兰花紫" />
+      <String Key="ar" Value="معتدل الأوركيد الأرجواني" />
+      <String Key="de" Value="Moderates Orchideen-Purpur" />
+      <String Key="es" Value="Púrpura orquídea moderado" />
+      <String Key="fr" Value="Orchidée violette modérée" />
+      <String Key="it" Value="Viola orchidea moderata" />
+      <String Key="ja" Value="適度なオーキッドパープル" />
+      <String Key="ko" Value="모더레이트 오키드 퍼플" />
+      <String Key="nl" Value="Matige orchidee paars" />
+      <String Key="pt" Value="Roxo Orquídea Moderado" />
+      <String Key="ru" Value="Умеренная фиолетовая орхидея" />
+    </Strings>
+  </Item>
+  <Item A="255" R="148" G="0" B="211" Title="Deep Violet">
+    <Strings>
+      <String Key="en" Value="Deep Violet" />
+      <String Key="zh" Value="深紫罗兰" />
+      <String Key="ar" Value="ديب فيوليت" />
+      <String Key="de" Value="Tiefes Violett" />
+      <String Key="es" Value="violeta profundo" />
+      <String Key="fr" Value="Violet profond" />
+      <String Key="it" Value="viola intenso" />
+      <String Key="ja" Value="ディープバイオレット" />
+      <String Key="ko" Value="딥 바이올렛" />
+      <String Key="nl" Value="Diep violet" />
+      <String Key="pt" Value="Violeta Profundo" />
+      <String Key="ru" Value="Глубокий фиолетовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="75" G="0" B="130" Title="Pretty Green">
+    <Strings>
+      <String Key="en" Value="Pretty Green" />
+      <String Key="zh" Value="靓青" />
+      <String Key="ar" Value="جميلة الخضراء" />
+      <String Key="de" Value="Ziemlich grün" />
+      <String Key="es" Value="bastante verde" />
+      <String Key="fr" Value="Assez vert" />
+      <String Key="it" Value="Abbastanza verde" />
+      <String Key="ja" Value="プリティグリーン" />
+      <String Key="ko" Value="프리티 그린" />
+      <String Key="nl" Value="Vrij groen" />
+      <String Key="pt" Value="Bem Verde" />
+      <String Key="ru" Value="довольно зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="138" G="43" B="226" Title="Blue Violet">
+    <Strings>
+      <String Key="en" Value="Blue Violet" />
+      <String Key="zh" Value="蓝紫罗兰" />
+      <String Key="ar" Value="بنفسجي مزرق" />
+      <String Key="de" Value="Blau Violett" />
+      <String Key="es" Value="Violeta Azul" />
+      <String Key="fr" Value="Bleu Violette" />
+      <String Key="it" Value="Blu viola" />
+      <String Key="ja" Value="青紫色" />
+      <String Key="ko" Value="블루 바이올렛" />
+      <String Key="nl" Value="Blauw Violet" />
+      <String Key="pt" Value="Azul Violeta" />
+      <String Key="ru" Value="Сине-фиолетовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="147" G="112" B="219" Title="Moderate Purple">
+    <Strings>
+      <String Key="en" Value="Moderate Purple" />
+      <String Key="zh" Value="适中的紫" />
+      <String Key="ar" Value="معتدل الأرجواني" />
+      <String Key="de" Value="Moderates Lila" />
+      <String Key="es" Value="Púrpura moderado" />
+      <String Key="fr" Value="Violet modéré" />
+      <String Key="it" Value="Viola moderato" />
+      <String Key="ja" Value="適度な紫" />
+      <String Key="ko" Value="보통 보라색" />
+      <String Key="nl" Value="Matig paars" />
+      <String Key="pt" Value="Roxo moderado" />
+      <String Key="ru" Value="Умеренный фиолетовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="123" G="104" B="238" Title="Moderate Slate Blue">
+    <Strings>
+      <String Key="en" Value="Moderate Slate Blue" />
+      <String Key="zh" Value="适中板岩蓝" />
+      <String Key="ar" Value="معتدل سليت بلو" />
+      <String Key="de" Value="Moderates Schieferblau" />
+      <String Key="es" Value="Azul pizarra moderado" />
+      <String Key="fr" Value="Bleu ardoise modéré" />
+      <String Key="it" Value="Blu ardesia moderato" />
+      <String Key="ja" Value="中程度のスレートブルー" />
+      <String Key="ko" Value="적당한 슬레이트 블루" />
+      <String Key="nl" Value="Matig leisteenblauw" />
+      <String Key="pt" Value="Azul Ardósia Moderado" />
+      <String Key="ru" Value="Умеренный сланцево-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="106" G="90" B="205" Title="Slate Blue">
+    <Strings>
+      <String Key="en" Value="Slate Blue" />
+      <String Key="zh" Value="板岩蓝" />
+      <String Key="ar" Value="لائحة الأزرق" />
+      <String Key="de" Value="Schieferblau" />
+      <String Key="es" Value="Azul pizarra" />
+      <String Key="fr" Value="Bleu Ardoise" />
+      <String Key="it" Value="Blu ardesia" />
+      <String Key="ja" Value="スレートブルー" />
+      <String Key="ko" Value="슬레이트 블루" />
+      <String Key="nl" Value="Leisteenblauw" />
+      <String Key="pt" Value="Azul ardósia" />
+      <String Key="ru" Value="Сланцево-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="72" G="61" B="139" Title="Deep Slate Blue">
+    <Strings>
+      <String Key="en" Value="Deep Slate Blue" />
+      <String Key="zh" Value="深板岩蓝" />
+      <String Key="ar" Value="ديب سليت بلو" />
+      <String Key="de" Value="Tiefes Schieferblau" />
+      <String Key="es" Value="Azul pizarra profundo" />
+      <String Key="fr" Value="Bleu ardoise profond" />
+      <String Key="it" Value="Blu ardesia profondo" />
+      <String Key="ja" Value="ディープスレートブルー" />
+      <String Key="ko" Value="딥 슬레이트 블루" />
+      <String Key="nl" Value="Diep leisteenblauw" />
+      <String Key="pt" Value="Azul Ardósia Profundo" />
+      <String Key="ru" Value="Глубокий сланцево-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="230" G="230" B="250" Title="Lavender Lilac">
+    <Strings>
+      <String Key="en" Value="Lavender Lilac" />
+      <String Key="zh" Value="薰衣草淡紫" />
+      <String Key="ar" Value="لافندر ليلك" />
+      <String Key="de" Value="Lavendel Flieder" />
+      <String Key="es" Value="lavanda lila" />
+      <String Key="fr" Value="Lilas lavande" />
+      <String Key="it" Value="Lilla lavanda" />
+      <String Key="ja" Value="ラベンダーライラック" />
+      <String Key="ko" Value="라벤더 라일락" />
+      <String Key="nl" Value="Lavendel Lila" />
+      <String Key="pt" Value="Lavanda Lilás" />
+      <String Key="ru" Value="Лаванда Сирень" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="0" B="205" Title="Blue">
+    <Strings>
+      <String Key="en" Value="Blue" />
+      <String Key="zh" Value="蓝" />
+      <String Key="ar" Value="أزرق" />
+      <String Key="de" Value="Blau" />
+      <String Key="es" Value="Azul" />
+      <String Key="fr" Value="Bleu" />
+      <String Key="it" Value="Blu" />
+      <String Key="ja" Value="青い" />
+      <String Key="ko" Value="푸른" />
+      <String Key="nl" Value="Blauw" />
+      <String Key="pt" Value="Azul" />
+      <String Key="ru" Value="Синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="25" G="25" B="112" Title="Midnight Blue">
+    <Strings>
+      <String Key="en" Value="Midnight Blue" />
+      <String Key="zh" Value="午夜蓝" />
+      <String Key="ar" Value="منتصف الليل الأزرق" />
+      <String Key="de" Value="Mitternachtsblau" />
+      <String Key="es" Value="azul medianoche" />
+      <String Key="fr" Value="Bleu nuit" />
+      <String Key="it" Value="Blu notte" />
+      <String Key="ja" Value="ミッドナイトブルー" />
+      <String Key="ko" Value="자정 블루" />
+      <String Key="nl" Value="Middernacht blauw" />
+      <String Key="pt" Value="Azul da meia noite" />
+      <String Key="ru" Value="Темно-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="0" B="139" Title="Dark Blue">
+    <Strings>
+      <String Key="en" Value="Dark Blue" />
+      <String Key="zh" Value="深蓝" />
+      <String Key="ar" Value="أزرق غامق" />
+      <String Key="de" Value="Dunkelblau" />
+      <String Key="es" Value="Azul oscuro" />
+      <String Key="fr" Value="Bleu foncé" />
+      <String Key="it" Value="Blu scuro" />
+      <String Key="ja" Value="濃紺" />
+      <String Key="ko" Value="다크 블루" />
+      <String Key="nl" Value="Donkerblauw" />
+      <String Key="pt" Value="Azul escuro" />
+      <String Key="ru" Value="Темно-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="0" B="128" Title="Navy Blue">
+    <Strings>
+      <String Key="en" Value="Navy Blue" />
+      <String Key="zh" Value="海军蓝" />
+      <String Key="ar" Value="البحريه الزرقاء" />
+      <String Key="de" Value="Navy blau" />
+      <String Key="es" Value="Azul marino" />
+      <String Key="fr" Value="Bleu marine" />
+      <String Key="it" Value="Blu navy" />
+      <String Key="ja" Value="紺" />
+      <String Key="ko" Value="네이비 블루" />
+      <String Key="nl" Value="Marineblauw" />
+      <String Key="pt" Value="Azul-marinho" />
+      <String Key="ru" Value="Темно-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="65" G="105" B="225" Title="Royal Blue">
+    <Strings>
+      <String Key="en" Value="Royal Blue" />
+      <String Key="zh" Value="皇家蓝" />
+      <String Key="ar" Value="الأزرق الملكي" />
+      <String Key="de" Value="Königsblau" />
+      <String Key="es" Value="Azul real" />
+      <String Key="fr" Value="Bleu royal" />
+      <String Key="it" Value="Blu Reale" />
+      <String Key="ja" Value="ロイヤルブルー" />
+      <String Key="ko" Value="로얄 블루" />
+      <String Key="nl" Value="Koningsblauw" />
+      <String Key="pt" Value="Azul Real" />
+      <String Key="ru" Value="Королевский синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="100" G="149" B="237" Title="Cornflower Blue">
+    <Strings>
+      <String Key="en" Value="Cornflower Blue" />
+      <String Key="zh" Value="矢车菊蓝" />
+      <String Key="ar" Value="ردة الذرة الأزرق" />
+      <String Key="de" Value="Kornblumenblau" />
+      <String Key="es" Value="azul aciano" />
+      <String Key="fr" Value="Bleuet" />
+      <String Key="it" Value="Blu Fiordaliso" />
+      <String Key="ja" Value="コーンフラワーブルー" />
+      <String Key="ko" Value="수레국화 블루" />
+      <String Key="nl" Value="Korenblauw" />
+      <String Key="pt" Value="Azul Centáurea" />
+      <String Key="ru" Value="Василек синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="119" G="136" B="153" Title="Light Slate Grey">
+    <Strings>
+      <String Key="en" Value="Light Slate Grey" />
+      <String Key="zh" Value="浅石板灰" />
+      <String Key="ar" Value="سليت رمادي فاتح" />
+      <String Key="de" Value="Helles Schiefergrau" />
+      <String Key="es" Value="Gris pizarra claro" />
+      <String Key="fr" Value="Gris ardoise clair" />
+      <String Key="it" Value="Grigio ardesia chiaro" />
+      <String Key="ja" Value="ライトスレートグレー" />
+      <String Key="ko" Value="라이트 슬레이트 그레이" />
+      <String Key="nl" Value="Licht leigrijs" />
+      <String Key="pt" Value="Cinza ardósia claro" />
+      <String Key="ru" Value="Светло-сланцево-серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="112" G="128" B="144" Title="Slate Grey">
+    <Strings>
+      <String Key="en" Value="Slate Grey" />
+      <String Key="zh" Value="石板灰" />
+      <String Key="ar" Value="الرمادي الداكن" />
+      <String Key="de" Value="Schiefergrau" />
+      <String Key="es" Value="Pizarra gris" />
+      <String Key="fr" Value="Gris ardoise" />
+      <String Key="it" Value="Grigio ardesia" />
+      <String Key="ja" Value="スレートグレイ" />
+      <String Key="ko" Value="슬레이트 그레이" />
+      <String Key="nl" Value="Leisteengrijs" />
+      <String Key="pt" Value="Ardósia cinza" />
+      <String Key="ru" Value="Сланцево-серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="30" G="144" B="255" Title="Dodge Blue">
+    <Strings>
+      <String Key="en" Value="Dodge Blue" />
+      <String Key="zh" Value="道奇蓝" />
+      <String Key="ar" Value="دودج بلو" />
+      <String Key="de" Value="Blau ausweichen" />
+      <String Key="es" Value="esquivar azul" />
+      <String Key="fr" Value="Esquive Bleu" />
+      <String Key="it" Value="Schivare Blu" />
+      <String Key="ja" Value="ダッジブルー" />
+      <String Key="ko" Value="닷지 블루" />
+      <String Key="nl" Value="ontwijk blauw" />
+      <String Key="pt" Value="Dodge Blue" />
+      <String Key="ru" Value="Додж Синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="240" G="248" B="255" Title="Alice Blue">
+    <Strings>
+      <String Key="en" Value="Alice Blue" />
+      <String Key="zh" Value="爱丽丝蓝" />
+      <String Key="ar" Value="أليس الأزرق" />
+      <String Key="de" Value="Alice blau" />
+      <String Key="es" Value="Alice azul" />
+      <String Key="fr" Value="Alice Bleu" />
+      <String Key="it" Value="Alice Blu" />
+      <String Key="ja" Value="アリスブルー" />
+      <String Key="ko" Value="앨리스 블루" />
+      <String Key="nl" Value="Alice Blauw" />
+      <String Key="pt" Value="Alice Azul" />
+      <String Key="ru" Value="Алиса Блю" />
+    </Strings>
+  </Item>
+  <Item A="255" R="70" G="130" B="180" Title="Steel Blue">
+    <Strings>
+      <String Key="en" Value="Steel Blue" />
+      <String Key="zh" Value="钢蓝" />
+      <String Key="ar" Value="الأزرق الصلب" />
+      <String Key="de" Value="Stahlblau" />
+      <String Key="es" Value="Azul acero" />
+      <String Key="fr" Value="Bleu acier" />
+      <String Key="it" Value="Blu acciaio" />
+      <String Key="ja" Value="スチールブルー" />
+      <String Key="ko" Value="스틸 블루" />
+      <String Key="nl" Value="Staal blauw" />
+      <String Key="pt" Value="Azul Aço" />
+      <String Key="ru" Value="Стальной синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="135" G="206" B="250" Title="Light Blue">
+    <Strings>
+      <String Key="en" Value="Light Blue" />
+      <String Key="zh" Value="淡天蓝" />
+      <String Key="ar" Value="أزرق فاتح" />
+      <String Key="de" Value="Hellblau" />
+      <String Key="es" Value="Azul claro" />
+      <String Key="fr" Value="Bleu clair" />
+      <String Key="it" Value="Azzurro" />
+      <String Key="ja" Value="ライトブルー" />
+      <String Key="ko" Value="라이트 블루" />
+      <String Key="nl" Value="Lichtblauw" />
+      <String Key="pt" Value="Azul claro" />
+      <String Key="ru" Value="Светло-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="135" G="206" B="235" Title="Sky Blue">
+    <Strings>
+      <String Key="en" Value="Sky Blue" />
+      <String Key="zh" Value="天蓝" />
+      <String Key="ar" Value="السماء الزرقاء" />
+      <String Key="de" Value="Himmelblau" />
+      <String Key="es" Value="Cielo azul" />
+      <String Key="fr" Value="Bleu ciel" />
+      <String Key="it" Value="Cielo blu" />
+      <String Key="ja" Value="空色" />
+      <String Key="ko" Value="하늘색" />
+      <String Key="nl" Value="Hemelsblauw" />
+      <String Key="pt" Value="Céu azul" />
+      <String Key="ru" Value="Голубое небо" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="191" B="255" Title="Deep Sky Blue">
+    <Strings>
+      <String Key="en" Value="Deep Sky Blue" />
+      <String Key="zh" Value="深天蓝" />
+      <String Key="ar" Value="ديب سكاي بلو" />
+      <String Key="de" Value="Tiefes Himmelblau" />
+      <String Key="es" Value="Azul cielo profundo" />
+      <String Key="fr" Value="Bleu ciel profond" />
+      <String Key="it" Value="Blu cielo profondo" />
+      <String Key="ja" Value="ディープスカイブルー" />
+      <String Key="ko" Value="딥 스카이 블루" />
+      <String Key="nl" Value="Diep hemelsblauw" />
+      <String Key="pt" Value="Azul céu profundo" />
+      <String Key="ru" Value="Глубокий небесно-голубой" />
+    </Strings>
+  </Item>
+  <Item A="255" R="173" G="216" B="230" Title="Light Blue">
+    <Strings>
+      <String Key="en" Value="Light Blue" />
+      <String Key="zh" Value="淡蓝" />
+      <String Key="ar" Value="أزرق فاتح" />
+      <String Key="de" Value="Hellblau" />
+      <String Key="es" Value="Azul claro" />
+      <String Key="fr" Value="Bleu clair" />
+      <String Key="it" Value="Azzurro" />
+      <String Key="ja" Value="ライトブルー" />
+      <String Key="ko" Value="라이트 블루" />
+      <String Key="nl" Value="Lichtblauw" />
+      <String Key="pt" Value="Azul claro" />
+      <String Key="ru" Value="Светло-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="176" G="216" B="230" Title="Gunpowder Blue">
+    <Strings>
+      <String Key="en" Value="Gunpowder Blue" />
+      <String Key="zh" Value="火药蓝" />
+      <String Key="ar" Value="البارود الأزرق" />
+      <String Key="de" Value="Schießpulver Blau" />
+      <String Key="es" Value="Azul pólvora" />
+      <String Key="fr" Value="Bleu poudre à canon" />
+      <String Key="it" Value="Blu polvere da sparo" />
+      <String Key="ja" Value="火薬ブルー" />
+      <String Key="ko" Value="화약 블루" />
+      <String Key="nl" Value="Buskruit Blauw" />
+      <String Key="pt" Value="Azul pólvora" />
+      <String Key="ru" Value="Порох Синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="95" G="158" B="160" Title="Military Blue">
+    <Strings>
+      <String Key="en" Value="Military Blue" />
+      <String Key="zh" Value="军校蓝" />
+      <String Key="ar" Value="الأزرق العسكري" />
+      <String Key="de" Value="Militärblau" />
+      <String Key="es" Value="azul militar" />
+      <String Key="fr" Value="Bleu militaire" />
+      <String Key="it" Value="Blu militare" />
+      <String Key="ja" Value="ミリタリーブルー" />
+      <String Key="ko" Value="밀리터리 블루" />
+      <String Key="nl" Value="Militair Blauw" />
+      <String Key="pt" Value="Azul militar" />
+      <String Key="ru" Value="Военный синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="240" G="255" B="255" Title="Azure">
+    <Strings>
+      <String Key="en" Value="Azure" />
+      <String Key="zh" Value="蔚蓝" />
+      <String Key="ar" Value="أزور" />
+      <String Key="de" Value="Azurblau" />
+      <String Key="es" Value="Azur" />
+      <String Key="fr" Value="Azur" />
+      <String Key="it" Value="Azzurro" />
+      <String Key="ja" Value="Azure" />
+      <String Key="ko" Value="하늘빛" />
+      <String Key="nl" Value="azuurblauw" />
+      <String Key="pt" Value="Azure" />
+      <String Key="ru" Value="Лазурный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="224" G="255" B="255" Title="Light Blue">
+    <Strings>
+      <String Key="en" Value="Light Blue" />
+      <String Key="zh" Value="淡青" />
+      <String Key="ar" Value="أزرق فاتح" />
+      <String Key="de" Value="Hellblau" />
+      <String Key="es" Value="Azul claro" />
+      <String Key="fr" Value="Bleu clair" />
+      <String Key="it" Value="Azzurro" />
+      <String Key="ja" Value="ライトブルー" />
+      <String Key="ko" Value="라이트 블루" />
+      <String Key="nl" Value="Lichtblauw" />
+      <String Key="pt" Value="Azul claro" />
+      <String Key="ru" Value="Светло-синий" />
+    </Strings>
+  </Item>
+  <Item A="255" R="175" G="238" B="238" Title="Pale Sapphire Green">
+    <Strings>
+      <String Key="en" Value="Pale Sapphire Green" />
+      <String Key="zh" Value="苍白宝石绿" />
+      <String Key="ar" Value="شاحب ياقوت أخضر" />
+      <String Key="de" Value="Blasses Saphirgrün" />
+      <String Key="es" Value="Verde zafiro pálido" />
+      <String Key="fr" Value="Vert saphir pâle" />
+      <String Key="it" Value="Verde zaffiro pallido" />
+      <String Key="ja" Value="淡いサファイアグリーン" />
+      <String Key="ko" Value="페일 사파이어 그린" />
+      <String Key="nl" Value="Licht saffiergroen" />
+      <String Key="pt" Value="Verde Safira Pálido" />
+      <String Key="ru" Value="Бледно-зеленый сапфир" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="255" B="255" Title="Green">
+    <Strings>
+      <String Key="en" Value="Green" />
+      <String Key="zh" Value="青" />
+      <String Key="ar" Value="أخضر" />
+      <String Key="de" Value="Grün" />
+      <String Key="es" Value="Verde" />
+      <String Key="fr" Value="Vert" />
+      <String Key="it" Value="Verde" />
+      <String Key="ja" Value="緑" />
+      <String Key="ko" Value="녹색" />
+      <String Key="nl" Value="Groente" />
+      <String Key="pt" Value="Verde" />
+      <String Key="ru" Value="Зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="206" B="209" Title="Deep Sapphire Green">
+    <Strings>
+      <String Key="en" Value="Deep Sapphire Green" />
+      <String Key="zh" Value="深宝石绿" />
+      <String Key="ar" Value="عميق ياقوت أخضر" />
+      <String Key="de" Value="Tiefes Saphirgrün" />
+      <String Key="es" Value="Verde zafiro profundo" />
+      <String Key="fr" Value="Vert saphir profond" />
+      <String Key="it" Value="Verde zaffiro intenso" />
+      <String Key="ja" Value="ディープサファイアグリーン" />
+      <String Key="ko" Value="딥 사파이어 그린" />
+      <String Key="nl" Value="Diep saffiergroen" />
+      <String Key="pt" Value="Verde Safira Profundo" />
+      <String Key="ru" Value="Глубокий сапфировый зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="47" G="79" B="79" Title="Dark Slate Grey">
+    <Strings>
+      <String Key="en" Value="Dark Slate Grey" />
+      <String Key="zh" Value="深石板灰" />
+      <String Key="ar" Value="سليت رمادي غامق" />
+      <String Key="de" Value="Dunkles Schiefergrau" />
+      <String Key="es" Value="Gris pizarra oscuro" />
+      <String Key="fr" Value="Gris ardoise foncé" />
+      <String Key="it" Value="Grigio ardesia scuro" />
+      <String Key="ja" Value="ダークスレートグレー" />
+      <String Key="ko" Value="다크 슬레이트 그레이" />
+      <String Key="nl" Value="Donker leigrijs" />
+      <String Key="pt" Value="Cinza Ardósia Escuro" />
+      <String Key="ru" Value="Темно-сланцево-серый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="139" B="139" Title="Teal">
+    <Strings>
+      <String Key="en" Value="Teal" />
+      <String Key="zh" Value="深青色" />
+      <String Key="ar" Value="بط نهري صغير" />
+      <String Key="de" Value="Blaugrün" />
+      <String Key="es" Value="verde azulado" />
+      <String Key="fr" Value="Sarcelle" />
+      <String Key="it" Value="Alzavola" />
+      <String Key="ja" Value="ティール" />
+      <String Key="ko" Value="물오리" />
+      <String Key="nl" Value="groenblauw" />
+      <String Key="pt" Value="Cerceta" />
+      <String Key="ru" Value="Бирюзовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="128" B="128" Title="Teal">
+    <Strings>
+      <String Key="en" Value="Teal" />
+      <String Key="zh" Value="水鸭色" />
+      <String Key="ar" Value="بط نهري صغير" />
+      <String Key="de" Value="Blaugrün" />
+      <String Key="es" Value="verde azulado" />
+      <String Key="fr" Value="Sarcelle" />
+      <String Key="it" Value="Alzavola" />
+      <String Key="ja" Value="ティール" />
+      <String Key="ko" Value="물오리" />
+      <String Key="nl" Value="groenblauw" />
+      <String Key="pt" Value="Cerceta" />
+      <String Key="ru" Value="Бирюзовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="72" G="209" B="204" Title="Moderate Emerald Green">
+    <Strings>
+      <String Key="en" Value="Moderate Emerald Green" />
+      <String Key="zh" Value="适中宝石绿" />
+      <String Key="ar" Value="معتدل الزمرد الأخضر" />
+      <String Key="de" Value="Moderates Smaragdgrün" />
+      <String Key="es" Value="Verde esmeralda moderado" />
+      <String Key="fr" Value="Vert émeraude modéré" />
+      <String Key="it" Value="Verde smeraldo moderato" />
+      <String Key="ja" Value="中程度のエメラルドグリーン" />
+      <String Key="ko" Value="보통 에메랄드 그린" />
+      <String Key="nl" Value="Matig smaragdgroen" />
+      <String Key="pt" Value="Verde esmeralda moderado" />
+      <String Key="ru" Value="Умеренный изумрудно-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="32" G="178" B="170" Title="Light Ocean Green">
+    <Strings>
+      <String Key="en" Value="Light Ocean Green" />
+      <String Key="zh" Value="浅海洋绿" />
+      <String Key="ar" Value="ضوء المحيط الأخضر" />
+      <String Key="de" Value="Helles Ozeangrün" />
+      <String Key="es" Value="Verde océano claro" />
+      <String Key="fr" Value="Vert océan clair" />
+      <String Key="it" Value="Verde oceano chiaro" />
+      <String Key="ja" Value="ライトオーシャングリーン" />
+      <String Key="ko" Value="라이트 오션 그린" />
+      <String Key="nl" Value="Licht oceaangroen" />
+      <String Key="pt" Value="Verde Oceano Claro" />
+      <String Key="ru" Value="Светло-зеленый океан" />
+    </Strings>
+  </Item>
+  <Item A="255" R="64" G="224" B="208" Title="Emerald Green">
+    <Strings>
+      <String Key="en" Value="Emerald Green" />
+      <String Key="zh" Value="宝石绿" />
+      <String Key="ar" Value="الزمرد الأخضر" />
+      <String Key="de" Value="Smaragdgrün" />
+      <String Key="es" Value="Verde esmeralda" />
+      <String Key="fr" Value="Vert émeraude" />
+      <String Key="it" Value="Verde smeraldo" />
+      <String Key="ja" Value="エメラルドグリーン" />
+      <String Key="ko" Value="에메랄드 그린" />
+      <String Key="nl" Value="Smaragdgroen" />
+      <String Key="pt" Value="Verde esmeralda" />
+      <String Key="ru" Value="Изумрудно-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="127" G="255" B="212" Title="Green">
+    <Strings>
+      <String Key="en" Value="Green" />
+      <String Key="zh" Value="碧绿" />
+      <String Key="ar" Value="أخضر" />
+      <String Key="de" Value="Grün" />
+      <String Key="es" Value="Verde" />
+      <String Key="fr" Value="Vert" />
+      <String Key="it" Value="Verde" />
+      <String Key="ja" Value="緑" />
+      <String Key="ko" Value="녹색" />
+      <String Key="nl" Value="Groente" />
+      <String Key="pt" Value="Verde" />
+      <String Key="ru" Value="Зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="102" G="205" B="170" Title="Moderate Green">
+    <Strings>
+      <String Key="en" Value="Moderate Green" />
+      <String Key="zh" Value="适中碧绿" />
+      <String Key="ar" Value="معتدل أخضر" />
+      <String Key="de" Value="Moderates Grün" />
+      <String Key="es" Value="Verde moderado" />
+      <String Key="fr" Value="Vert modéré" />
+      <String Key="it" Value="Verde moderato" />
+      <String Key="ja" Value="中程度の緑" />
+      <String Key="ko" Value="중간 녹색" />
+      <String Key="nl" Value="Matig groen" />
+      <String Key="pt" Value="Verde moderado" />
+      <String Key="ru" Value="Умеренный зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="250" B="154" Title="Moderate Spring Green">
+    <Strings>
+      <String Key="en" Value="Moderate Spring Green" />
+      <String Key="zh" Value="适中春天绿" />
+      <String Key="ar" Value="معتدل الربيع الأخضر" />
+      <String Key="de" Value="Moderates Frühlingsgrün" />
+      <String Key="es" Value="Verde primavera moderado" />
+      <String Key="fr" Value="Vert printanier modéré" />
+      <String Key="it" Value="Verde primaverile moderato" />
+      <String Key="ja" Value="中程度のスプリンググリーン" />
+      <String Key="ko" Value="적당한 봄 녹색" />
+      <String Key="nl" Value="Matig lentegroen" />
+      <String Key="pt" Value="Verde primavera moderado" />
+      <String Key="ru" Value="Умеренный весенне-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="245" G="255" B="250" Title="Peppermint Cream">
+    <Strings>
+      <String Key="en" Value="Peppermint Cream" />
+      <String Key="zh" Value="薄荷奶油" />
+      <String Key="ar" Value="كريم النعناع" />
+      <String Key="de" Value="Pfefferminzcreme" />
+      <String Key="es" Value="Crema de menta" />
+      <String Key="fr" Value="Crème de menthe poivrée" />
+      <String Key="it" Value="Crema di menta piperita" />
+      <String Key="ja" Value="ペパーミントクリーム" />
+      <String Key="ko" Value="페퍼민트 크림" />
+      <String Key="nl" Value="Pepermunt Crème" />
+      <String Key="pt" Value="Creme de Hortelã" />
+      <String Key="ru" Value="Мятный крем" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="255" B="127" Title="Spring Green">
+    <Strings>
+      <String Key="en" Value="Spring Green" />
+      <String Key="zh" Value="春天绿" />
+      <String Key="ar" Value="ربيع اخضر" />
+      <String Key="de" Value="Frühlingsgrün" />
+      <String Key="es" Value="Primavera verde" />
+      <String Key="fr" Value="Vert printanier" />
+      <String Key="it" Value="Verde primavera" />
+      <String Key="ja" Value="スプリンググリーン" />
+      <String Key="ko" Value="스프링 그린" />
+      <String Key="nl" Value="Lente groen" />
+      <String Key="pt" Value="Primavera verde" />
+      <String Key="ru" Value="Весенний зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="60" G="179" B="113" Title="Moderate Marine Green">
+    <Strings>
+      <String Key="en" Value="Moderate Marine Green" />
+      <String Key="zh" Value="适中海洋绿" />
+      <String Key="ar" Value="معتدلة البحرية الخضراء" />
+      <String Key="de" Value="Moderates Marinegrün" />
+      <String Key="es" Value="Verde marino moderado" />
+      <String Key="fr" Value="Vert marin modéré" />
+      <String Key="it" Value="Verde marino moderato" />
+      <String Key="ja" Value="中程度のマリングリーン" />
+      <String Key="ko" Value="보통 마린 그린" />
+      <String Key="nl" Value="Matig maritiem groen" />
+      <String Key="pt" Value="Verde Marinho Moderado" />
+      <String Key="ru" Value="Умеренный морской зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="46" G="139" B="87" Title="Ocean Green">
+    <Strings>
+      <String Key="en" Value="Ocean Green" />
+      <String Key="zh" Value="海洋绿" />
+      <String Key="ar" Value="المحيط الأخضر" />
+      <String Key="de" Value="Ozeangrün" />
+      <String Key="es" Value="Verde océano" />
+      <String Key="fr" Value="Vert océan" />
+      <String Key="it" Value="Verde Oceano" />
+      <String Key="ja" Value="オーシャングリーン" />
+      <String Key="ko" Value="오션 그린" />
+      <String Key="nl" Value="Oceaan Groen" />
+      <String Key="pt" Value="Oceano Verde" />
+      <String Key="ru" Value="Зеленый океан" />
+    </Strings>
+  </Item>
+  <Item A="255" R="144" G="238" B="144" Title="Light Green">
+    <Strings>
+      <String Key="en" Value="Light Green" />
+      <String Key="zh" Value="浅绿" />
+      <String Key="ar" Value="اخضر فاتح" />
+      <String Key="de" Value="Hellgrün" />
+      <String Key="es" Value="Verde claro" />
+      <String Key="fr" Value="Vert clair" />
+      <String Key="it" Value="Verde chiaro" />
+      <String Key="ja" Value="ライトグリーン" />
+      <String Key="ko" Value="연한 초록색" />
+      <String Key="nl" Value="Licht groen" />
+      <String Key="pt" Value="Luz verde" />
+      <String Key="ru" Value="Светло-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="152" G="251" B="152" Title="Pale Green">
+    <Strings>
+      <String Key="en" Value="Pale Green" />
+      <String Key="zh" Value="苍白绿" />
+      <String Key="ar" Value="أخضر باهت" />
+      <String Key="de" Value="Blasses Grün" />
+      <String Key="es" Value="Verde pálido" />
+      <String Key="fr" Value="Vert pâle" />
+      <String Key="it" Value="Verde pallido" />
+      <String Key="ja" Value="薄緑色" />
+      <String Key="ko" Value="옅은 녹색" />
+      <String Key="nl" Value="Lichtgroen" />
+      <String Key="pt" Value="Verde pálido" />
+      <String Key="ru" Value="Бледно-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="143" G="188" B="143" Title="Deep Ocean Green">
+    <Strings>
+      <String Key="en" Value="Deep Ocean Green" />
+      <String Key="zh" Value="深海洋绿" />
+      <String Key="ar" Value="أعماق المحيط الأخضر" />
+      <String Key="de" Value="Tiefes Ozeangrün" />
+      <String Key="es" Value="Verde océano profundo" />
+      <String Key="fr" Value="Vert océan profond" />
+      <String Key="it" Value="Verde oceano profondo" />
+      <String Key="ja" Value="ディープオーシャングリーン" />
+      <String Key="ko" Value="딥 오션 그린" />
+      <String Key="nl" Value="Diep Oceaan Groen" />
+      <String Key="pt" Value="Verde Oceano Profundo" />
+      <String Key="ru" Value="Глубокий морской зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="50" G="205" B="50" Title="Lemon Green">
+    <Strings>
+      <String Key="en" Value="Lemon Green" />
+      <String Key="zh" Value="柠檬绿" />
+      <String Key="ar" Value="الليمون الأخضر" />
+      <String Key="de" Value="Zitronengrün" />
+      <String Key="es" Value="verde limon" />
+      <String Key="fr" Value="Vert citron" />
+      <String Key="it" Value="Verde limone" />
+      <String Key="ja" Value="レモングリーン" />
+      <String Key="ko" Value="레몬 그린" />
+      <String Key="nl" Value="Citroen Groen" />
+      <String Key="pt" Value="Verde limão" />
+      <String Key="ru" Value="лимонно-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="0" G="255" B="0" Title="Lemon">
+    <Strings>
+      <String Key="en" Value="Lemon" />
+      <String Key="zh" Value="柠檬" />
+      <String Key="ar" Value="ليمون" />
+      <String Key="de" Value="Zitrone" />
+      <String Key="es" Value="Limón" />
+      <String Key="fr" Value="Citron" />
+      <String Key="it" Value="Limone" />
+      <String Key="ja" Value="レモン" />
+      <String Key="ko" Value="레몬" />
+      <String Key="nl" Value="Citroen" />
+      <String Key="pt" Value="Limão" />
+      <String Key="ru" Value="Лимон" />
+    </Strings>
+  </Item>
+  <Item A="255" R="34" G="139" B="34" Title="Forest Green">
+    <Strings>
+      <String Key="en" Value="Forest Green" />
+      <String Key="zh" Value="森林绿" />
+      <String Key="ar" Value="فورست جرين" />
+      <String Key="de" Value="Waldgrün" />
+      <String Key="es" Value="Bosque verde" />
+      <String Key="fr" Value="Forêt verte" />
+      <String Key="it" Value="Verde foresta" />
+      <String Key="ja" Value="フォレストグリーン" />
+      <String Key="ko" Value="포레스트 그린" />
+      <String Key="nl" Value="Bos Groen" />
+      <String Key="pt" Value="Verde floresta" />
+      <String Key="ru" Value="Зеленый лес" />
+    </Strings>
+  </Item>
+  <Item A="255" R="127" G="255" B="0" Title="Charter Green">
+    <Strings>
+      <String Key="en" Value="Charter Green" />
+      <String Key="zh" Value="查特酒绿" />
+      <String Key="ar" Value="الميثاق الأخضر" />
+      <String Key="de" Value="Charta Grün" />
+      <String Key="es" Value="carta verde" />
+      <String Key="fr" Value="Charte verte" />
+      <String Key="it" Value="Carta Verde" />
+      <String Key="ja" Value="チャーターグリーン" />
+      <String Key="ko" Value="차터 그린" />
+      <String Key="nl" Value="Handvest Groen" />
+      <String Key="pt" Value="Carta Verde" />
+      <String Key="ru" Value="Чартер Грин" />
+    </Strings>
+  </Item>
+  <Item A="255" R="124" G="252" B="0" Title="Lawn Green">
+    <Strings>
+      <String Key="en" Value="Lawn Green" />
+      <String Key="zh" Value="草坪绿" />
+      <String Key="ar" Value="العشب الأخضر" />
+      <String Key="de" Value="Rasen grün" />
+      <String Key="es" Value="césped verde" />
+      <String Key="fr" Value="Vert pelouse" />
+      <String Key="it" Value="Verde prato" />
+      <String Key="ja" Value="ローングリーン" />
+      <String Key="ko" Value="잔디 그린" />
+      <String Key="nl" Value="Gazon groen" />
+      <String Key="pt" Value="Gramado Verde" />
+      <String Key="ru" Value="Лужайка Грин" />
+    </Strings>
+  </Item>
+  <Item A="255" R="173" G="255" B="47" Title="Green Yellow">
+    <Strings>
+      <String Key="en" Value="Green Yellow" />
+      <String Key="zh" Value="绿黄" />
+      <String Key="ar" Value="أصفر أخضر" />
+      <String Key="de" Value="Grün Gelb" />
+      <String Key="es" Value="Verde amarillo" />
+      <String Key="fr" Value="Vert jaune" />
+      <String Key="it" Value="Verde giallo" />
+      <String Key="ja" Value="黄緑" />
+      <String Key="ko" Value="녹색 황색" />
+      <String Key="nl" Value="Groen Geel" />
+      <String Key="pt" Value="Verde amarelo" />
+      <String Key="ru" Value="Желто-зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="85" G="107" B="47" Title="Dark Olive Green">
+    <Strings>
+      <String Key="en" Value="Dark Olive Green" />
+      <String Key="zh" Value="深橄榄绿" />
+      <String Key="ar" Value="زيتون أخضر غامق" />
+      <String Key="de" Value="Dunkles Olivgrün" />
+      <String Key="es" Value="verde oliva oscuro" />
+      <String Key="fr" Value="Vert olive foncé" />
+      <String Key="it" Value="Verde oliva scuro" />
+      <String Key="ja" Value="ダークオリーブグリーン" />
+      <String Key="ko" Value="다크 올리브 그린" />
+      <String Key="nl" Value="Donker Olijfgroen" />
+      <String Key="pt" Value="Verde oliva escuro" />
+      <String Key="ru" Value="Темно-оливковый зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="154" G="205" B="50" Title="Yellow-green">
+    <Strings>
+      <String Key="en" Value="Yellow-green" />
+      <String Key="zh" Value="黄绿" />
+      <String Key="ar" Value="الأخضر الأصفر" />
+      <String Key="de" Value="Gelbgrün" />
+      <String Key="es" Value="Amarillo verde" />
+      <String Key="fr" Value="Vert jaunâtre" />
+      <String Key="it" Value="Giallo verde" />
+      <String Key="ja" Value="黄緑色" />
+      <String Key="ko" Value="연두색" />
+      <String Key="nl" Value="Geel groen" />
+      <String Key="pt" Value="Amarelo verde" />
+      <String Key="ru" Value="Желтый зеленый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="107" G="142" B="35" Title="Olive Brown">
+    <Strings>
+      <String Key="en" Value="Olive Brown" />
+      <String Key="zh" Value="橄榄褐" />
+      <String Key="ar" Value="زيتون بني" />
+      <String Key="de" Value="Olivbraun" />
+      <String Key="es" Value="marrón oliva" />
+      <String Key="fr" Value="Brun olive" />
+      <String Key="it" Value="Marrone oliva" />
+      <String Key="ja" Value="オリーブブラウン" />
+      <String Key="ko" Value="올리브 브라운" />
+      <String Key="nl" Value="Olijfbruin" />
+      <String Key="pt" Value="Castanho-oliva" />
+      <String Key="ru" Value="Оливково-коричневый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="245" G="245" B="220" Title="Beige">
+    <Strings>
+      <String Key="en" Value="Beige" />
+      <String Key="zh" Value="米色" />
+      <String Key="ar" Value="اللون البيج" />
+      <String Key="de" Value="Beige" />
+      <String Key="es" Value="Beige" />
+      <String Key="fr" Value="Beige" />
+      <String Key="it" Value="Beige" />
+      <String Key="ja" Value="ベージュ" />
+      <String Key="ko" Value="베이지" />
+      <String Key="nl" Value="Beige" />
+      <String Key="pt" Value="Bege" />
+      <String Key="ru" Value="Бежевый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="250" G="250" B="210" Title="Light Autumn Yellow">
+    <Strings>
+      <String Key="en" Value="Light Autumn Yellow" />
+      <String Key="zh" Value="浅秋黄" />
+      <String Key="ar" Value="ضوء الخريف الأصفر" />
+      <String Key="de" Value="Helles Herbstgelb" />
+      <String Key="es" Value="Amarillo otoñal claro" />
+      <String Key="fr" Value="Jaune d'automne clair" />
+      <String Key="it" Value="Giallo autunnale chiaro" />
+      <String Key="ja" Value="ライトオータムイエロー" />
+      <String Key="ko" Value="라이트 가을 옐로우" />
+      <String Key="nl" Value="Licht herfstgeel" />
+      <String Key="pt" Value="Amarelo claro de outono" />
+      <String Key="ru" Value="Светло-желтый осенний" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="255" B="240" Title="Ivory">
+    <Strings>
+      <String Key="en" Value="Ivory" />
+      <String Key="zh" Value="象牙白" />
+      <String Key="ar" Value="عاج" />
+      <String Key="de" Value="Elfenbein" />
+      <String Key="es" Value="Marfil" />
+      <String Key="fr" Value="Ivoire" />
+      <String Key="it" Value="Avorio" />
+      <String Key="ja" Value="象牙" />
+      <String Key="ko" Value="상아" />
+      <String Key="nl" Value="ivoor" />
+      <String Key="pt" Value="Marfim" />
+      <String Key="ru" Value="слоновая кость" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="255" B="224" Title="Light Yellow">
+    <Strings>
+      <String Key="en" Value="Light Yellow" />
+      <String Key="zh" Value="浅黄" />
+      <String Key="ar" Value="أصفر فاتح" />
+      <String Key="de" Value="Hellgelb" />
+      <String Key="es" Value="Amarillo claro" />
+      <String Key="fr" Value="Jaune clair" />
+      <String Key="it" Value="Giallo chiaro" />
+      <String Key="ja" Value="ライトイエロー" />
+      <String Key="ko" Value="연노랑" />
+      <String Key="nl" Value="Licht geel" />
+      <String Key="pt" Value="Luz amarela" />
+      <String Key="ru" Value="Светло-желтого" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="255" B="0" Title="Yellow">
+    <Strings>
+      <String Key="en" Value="Yellow" />
+      <String Key="zh" Value="黄" />
+      <String Key="ar" Value="الأصفر" />
+      <String Key="de" Value="Gelb" />
+      <String Key="es" Value="Amarillo" />
+      <String Key="fr" Value="Jaune" />
+      <String Key="it" Value="Giallo" />
+      <String Key="ja" Value="黄" />
+      <String Key="ko" Value="노란색" />
+      <String Key="nl" Value="Geel" />
+      <String Key="pt" Value="Amarelo" />
+      <String Key="ru" Value="Желтый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="128" G="128" B="0" Title="Olives">
+    <Strings>
+      <String Key="en" Value="Olives" />
+      <String Key="zh" Value="橄榄" />
+      <String Key="ar" Value="زيتون" />
+      <String Key="de" Value="Oliven" />
+      <String Key="es" Value="Aceitunas" />
+      <String Key="fr" Value="Olives" />
+      <String Key="it" Value="Olive" />
+      <String Key="ja" Value="オリーブ" />
+      <String Key="ko" Value="올리브" />
+      <String Key="nl" Value="Olijven" />
+      <String Key="pt" Value="Azeitonas" />
+      <String Key="ru" Value="Оливки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="189" G="183" B="107" Title="Deep Khaki">
+    <Strings>
+      <String Key="en" Value="Deep Khaki" />
+      <String Key="zh" Value="深卡其布" />
+      <String Key="ar" Value="عميق كاكي" />
+      <String Key="de" Value="Tiefes Khaki" />
+      <String Key="es" Value="caqui profundo" />
+      <String Key="fr" Value="Kaki profond" />
+      <String Key="it" Value="Cachi profondo" />
+      <String Key="ja" Value="ディープカーキ" />
+      <String Key="ko" Value="딥카키" />
+      <String Key="nl" Value="Diep kaki" />
+      <String Key="pt" Value="Cáqui Profundo" />
+      <String Key="ru" Value="Глубокий хаки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="250" B="205" Title="Lemonade">
+    <Strings>
+      <String Key="en" Value="Lemonade" />
+      <String Key="zh" Value="柠檬沙" />
+      <String Key="ar" Value="عصير الليمون" />
+      <String Key="de" Value="Limonade" />
+      <String Key="es" Value="Limonada" />
+      <String Key="fr" Value="Limonade" />
+      <String Key="it" Value="Limonata" />
+      <String Key="ja" Value="レモネード" />
+      <String Key="ko" Value="레몬 에이드" />
+      <String Key="nl" Value="Limonade" />
+      <String Key="pt" Value="Limonada" />
+      <String Key="ru" Value="Лимонад" />
+    </Strings>
+  </Item>
+  <Item A="255" R="238" G="232" B="170" Title="Grey Autumn">
+    <Strings>
+      <String Key="en" Value="Grey Autumn" />
+      <String Key="zh" Value="灰秋" />
+      <String Key="ar" Value="الخريف الرمادي" />
+      <String Key="de" Value="Grauer Herbst" />
+      <String Key="es" Value="Otoño gris" />
+      <String Key="fr" Value="Automne gris" />
+      <String Key="it" Value="Autunno grigio" />
+      <String Key="ja" Value="灰色の秋" />
+      <String Key="ko" Value="회색 가을" />
+      <String Key="nl" Value="Grijze herfst" />
+      <String Key="pt" Value="Outono Cinzento" />
+      <String Key="ru" Value="Серая осень" />
+    </Strings>
+  </Item>
+  <Item A="255" R="240" G="230" B="140" Title="Khaki">
+    <Strings>
+      <String Key="en" Value="Khaki" />
+      <String Key="zh" Value="卡其布" />
+      <String Key="ar" Value="الكاكي" />
+      <String Key="de" Value="Khaki" />
+      <String Key="es" Value="Caqui" />
+      <String Key="fr" Value="Kaki" />
+      <String Key="it" Value="Cachi" />
+      <String Key="ja" Value="カーキ" />
+      <String Key="ko" Value="카키색 옷감" />
+      <String Key="nl" Value="Khaki" />
+      <String Key="pt" Value="cáqui" />
+      <String Key="ru" Value="Цвет хаки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="215" B="0" Title="Gold">
+    <Strings>
+      <String Key="en" Value="Gold" />
+      <String Key="zh" Value="金" />
+      <String Key="ar" Value="ذهب" />
+      <String Key="de" Value="Gold" />
+      <String Key="es" Value="Oro" />
+      <String Key="fr" Value="Or" />
+      <String Key="it" Value="Oro" />
+      <String Key="ja" Value="ゴールド" />
+      <String Key="ko" Value="금" />
+      <String Key="nl" Value="Goud" />
+      <String Key="pt" Value="Ouro" />
+      <String Key="ru" Value="Золото" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="248" B="220" Title="Corn">
+    <Strings>
+      <String Key="en" Value="Corn" />
+      <String Key="zh" Value="玉米" />
+      <String Key="ar" Value="حبوب ذرة" />
+      <String Key="de" Value="Mais" />
+      <String Key="es" Value="Maíz" />
+      <String Key="fr" Value="Maïs" />
+      <String Key="it" Value="Mais" />
+      <String Key="ja" Value="トウモロコシ" />
+      <String Key="ko" Value="옥수수" />
+      <String Key="nl" Value="Maïs" />
+      <String Key="pt" Value="Milho" />
+      <String Key="ru" Value="Кукуруза" />
+    </Strings>
+  </Item>
+  <Item A="255" R="218" G="165" B="32" Title="Autumn">
+    <Strings>
+      <String Key="en" Value="Autumn" />
+      <String Key="zh" Value="秋" />
+      <String Key="ar" Value="الخريف" />
+      <String Key="de" Value="Herbst" />
+      <String Key="es" Value="Otoño" />
+      <String Key="fr" Value="Automne" />
+      <String Key="it" Value="Autunno" />
+      <String Key="ja" Value="秋" />
+      <String Key="ko" Value="가을" />
+      <String Key="nl" Value="Herfst" />
+      <String Key="pt" Value="Outono" />
+      <String Key="ru" Value="Осень" />
+    </Strings>
+  </Item>
+  <Item A="255" R="184" G="134" B="11" Title="Late Autumn">
+    <Strings>
+      <String Key="en" Value="Late Autumn" />
+      <String Key="zh" Value="深秋" />
+      <String Key="ar" Value="أواخر الخريف" />
+      <String Key="de" Value="Spätherbst" />
+      <String Key="es" Value="finales de otoño" />
+      <String Key="fr" Value="Fin de l'automne" />
+      <String Key="it" Value="Tardo autunno" />
+      <String Key="ja" Value="晩秋" />
+      <String Key="ko" Value="늦가을" />
+      <String Key="nl" Value="Late herfst" />
+      <String Key="pt" Value="Final de Outono" />
+      <String Key="ru" Value="поздняя осень" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="250" B="240" Title="White Flower">
+    <Strings>
+      <String Key="en" Value="White Flower" />
+      <String Key="zh" Value="白花" />
+      <String Key="ar" Value="زهرة بيضاء" />
+      <String Key="de" Value="Weiße Blume" />
+      <String Key="es" Value="Flor blanca" />
+      <String Key="fr" Value="Fleur blanche" />
+      <String Key="it" Value="Fiore bianco" />
+      <String Key="ja" Value="白い花" />
+      <String Key="ko" Value="흰 꽃" />
+      <String Key="nl" Value="Witte bloem" />
+      <String Key="pt" Value="Flor branca" />
+      <String Key="ru" Value="Белый цветок" />
+    </Strings>
+  </Item>
+  <Item A="255" R="253" G="245" B="230" Title="Light Beige">
+    <Strings>
+      <String Key="en" Value="Light Beige" />
+      <String Key="zh" Value="浅米色" />
+      <String Key="ar" Value="البيج الفاتح" />
+      <String Key="de" Value="Hell beige" />
+      <String Key="es" Value="Beige claro" />
+      <String Key="fr" Value="Beige clair" />
+      <String Key="it" Value="Beige chiaro" />
+      <String Key="ja" Value="ライトベージュ" />
+      <String Key="ko" Value="라이트 베이지" />
+      <String Key="nl" Value="Licht beige" />
+      <String Key="pt" Value="Bege claro" />
+      <String Key="ru" Value="Светло-бежевый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="245" G="222" B="179" Title="Wheat">
+    <Strings>
+      <String Key="en" Value="Wheat" />
+      <String Key="zh" Value="小麦" />
+      <String Key="ar" Value="قمح" />
+      <String Key="de" Value="Weizen" />
+      <String Key="es" Value="Trigo" />
+      <String Key="fr" Value="Blé" />
+      <String Key="it" Value="Grano" />
+      <String Key="ja" Value="小麦" />
+      <String Key="ko" Value="밀" />
+      <String Key="nl" Value="Tarwe" />
+      <String Key="pt" Value="Trigo" />
+      <String Key="ru" Value="Пшеница" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="228" B="181" Title="Buckskin">
+    <Strings>
+      <String Key="en" Value="Buckskin" />
+      <String Key="zh" Value="鹿皮" />
+      <String Key="ar" Value="جلد الغزال" />
+      <String Key="de" Value="Wildleder" />
+      <String Key="es" Value="Ante" />
+      <String Key="fr" Value="Peau de daim" />
+      <String Key="it" Value="Pelle di daino" />
+      <String Key="ja" Value="バックスキン" />
+      <String Key="ko" Value="녹비" />
+      <String Key="nl" Value="Buckskin" />
+      <String Key="pt" Value="Pele de gamo" />
+      <String Key="ru" Value="Оленья кожа" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="165" B="0" Title="Orange">
+    <Strings>
+      <String Key="en" Value="Orange" />
+      <String Key="zh" Value="橙" />
+      <String Key="ar" Value="البرتقالي" />
+      <String Key="de" Value="Orange" />
+      <String Key="es" Value="naranja" />
+      <String Key="fr" Value="Orange" />
+      <String Key="it" Value="arancia" />
+      <String Key="ja" Value="オレンジ" />
+      <String Key="ko" Value="주황색" />
+      <String Key="nl" Value="Oranje" />
+      <String Key="pt" Value="laranja" />
+      <String Key="ru" Value="апельсин" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="239" B="213" Title="Pawpaw">
+    <Strings>
+      <String Key="en" Value="Pawpaw" />
+      <String Key="zh" Value="木瓜" />
+      <String Key="ar" Value="بابو" />
+      <String Key="de" Value="Pfote" />
+      <String Key="es" Value="Papaya" />
+      <String Key="fr" Value="Papaye" />
+      <String Key="it" Value="papaia" />
+      <String Key="ja" Value="ポーポー" />
+      <String Key="ko" Value="포포" />
+      <String Key="nl" Value="Pawpaw" />
+      <String Key="pt" Value="Pawpaw" />
+      <String Key="ru" Value="Папайя" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="235" B="205" Title="Blanched Almonds">
+    <Strings>
+      <String Key="en" Value="Blanched Almonds" />
+      <String Key="zh" Value="漂白杏仁" />
+      <String Key="ar" Value="اللوز المقشر" />
+      <String Key="de" Value="Blanchierten Mandeln" />
+      <String Key="es" Value="Almendras blanqueadas" />
+      <String Key="fr" Value="Amandes blanchies" />
+      <String Key="it" Value="Mandorle Sbollentate" />
+      <String Key="ja" Value="ブランチングされたアーモンド" />
+      <String Key="ko" Value="데친 아몬드" />
+      <String Key="nl" Value="Geblancheerde amandelen" />
+      <String Key="pt" Value="Amêndoas descascadas" />
+      <String Key="ru" Value="Бланшированный миндаль" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="222" B="173" Title="Durable White">
+    <Strings>
+      <String Key="en" Value="Durable White" />
+      <String Key="zh" Value="耐而节白" />
+      <String Key="ar" Value="دائم الأبيض" />
+      <String Key="de" Value="Langlebiges Weiß" />
+      <String Key="es" Value="Blanco duradero" />
+      <String Key="fr" Value="Blanc résistant" />
+      <String Key="it" Value="Bianco durevole" />
+      <String Key="ja" Value="耐久性のある白" />
+      <String Key="ko" Value="튼튼한 흰색" />
+      <String Key="nl" Value="Duurzaam wit" />
+      <String Key="pt" Value="Branco durável" />
+      <String Key="ru" Value="Прочный белый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="250" G="235" B="215" Title="Ancient White">
+    <Strings>
+      <String Key="en" Value="Ancient White" />
+      <String Key="zh" Value="古白" />
+      <String Key="ar" Value="الأبيض القديم" />
+      <String Key="de" Value="Altes Weiß" />
+      <String Key="es" Value="Blanco antiguo" />
+      <String Key="fr" Value="Blanc antique" />
+      <String Key="it" Value="Bianco antico" />
+      <String Key="ja" Value="エンシェントホワイト" />
+      <String Key="ko" Value="고대 백색" />
+      <String Key="nl" Value="Oud wit" />
+      <String Key="pt" Value="Branco Antigo" />
+      <String Key="ru" Value="Древний белый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="210" G="180" B="140" Title="Show">
+    <Strings>
+      <String Key="en" Value="Show" />
+      <String Key="zh" Value="晒" />
+      <String Key="ar" Value="يعرض" />
+      <String Key="de" Value="Show" />
+      <String Key="es" Value="Show" />
+      <String Key="fr" Value="Montrer" />
+      <String Key="it" Value="Spettacolo" />
+      <String Key="ja" Value="見せる" />
+      <String Key="ko" Value="보여 주다" />
+      <String Key="nl" Value="Laten zien" />
+      <String Key="pt" Value="Mostrar" />
+      <String Key="ru" Value="Показывать" />
+    </Strings>
+  </Item>
+  <Item A="255" R="222" G="184" B="135" Title="Trunk">
+    <Strings>
+      <String Key="en" Value="Trunk" />
+      <String Key="zh" Value="树干" />
+      <String Key="ar" Value="جذع" />
+      <String Key="de" Value="Stamm" />
+      <String Key="es" Value="Maletero" />
+      <String Key="fr" Value="Tronc" />
+      <String Key="it" Value="Tronco" />
+      <String Key="ja" Value="トランク" />
+      <String Key="ko" Value="트렁크" />
+      <String Key="nl" Value="Kofferbak" />
+      <String Key="pt" Value="Tronco" />
+      <String Key="ru" Value="Ствол" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="228" B="196" Title="Butterfat">
+    <Strings>
+      <String Key="en" Value="Butterfat" />
+      <String Key="zh" Value="乳脂" />
+      <String Key="ar" Value="زبدة" />
+      <String Key="de" Value="Butterfett" />
+      <String Key="es" Value="Grasa de la leche" />
+      <String Key="fr" Value="Matière grasse" />
+      <String Key="it" Value="Grasso di burro" />
+      <String Key="ja" Value="乳脂肪" />
+      <String Key="ko" Value="유지방" />
+      <String Key="nl" Value="botervet" />
+      <String Key="pt" Value="Gordura de manteiga" />
+      <String Key="ru" Value="молочный жир" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="140" B="0" Title="Dark Orange">
+    <Strings>
+      <String Key="en" Value="Dark Orange" />
+      <String Key="zh" Value="深橙色" />
+      <String Key="ar" Value="برتقالي قاتم" />
+      <String Key="de" Value="Dunkelorange" />
+      <String Key="es" Value="Naranja oscuro" />
+      <String Key="fr" Value="Orange sombre" />
+      <String Key="it" Value="Arancione scuro" />
+      <String Key="ja" Value="ダークオレンジ" />
+      <String Key="ko" Value="다크 오렌지" />
+      <String Key="nl" Value="Donker oranje" />
+      <String Key="pt" Value="Laranja escuro" />
+      <String Key="ru" Value="Темно-оранжевый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="250" G="240" B="230" Title="Flax">
+    <Strings>
+      <String Key="en" Value="Flax" />
+      <String Key="zh" Value="亚麻" />
+      <String Key="ar" Value="الكتان" />
+      <String Key="de" Value="Flachs" />
+      <String Key="es" Value="Linaza" />
+      <String Key="fr" Value="Lin" />
+      <String Key="it" Value="Lino" />
+      <String Key="ja" Value="亜麻" />
+      <String Key="ko" Value="엷은 황갈색" />
+      <String Key="nl" Value="Vlas" />
+      <String Key="pt" Value="Linho" />
+      <String Key="ru" Value="Лен" />
+    </Strings>
+  </Item>
+  <Item A="255" R="205" G="133" B="63" Title="Peru">
+    <Strings>
+      <String Key="en" Value="Peru" />
+      <String Key="zh" Value="秘鲁" />
+      <String Key="ar" Value="بيرو" />
+      <String Key="de" Value="Peru" />
+      <String Key="es" Value="Perú" />
+      <String Key="fr" Value="Pérou" />
+      <String Key="it" Value="Perù" />
+      <String Key="ja" Value="ペルー" />
+      <String Key="ko" Value="페루" />
+      <String Key="nl" Value="Peru" />
+      <String Key="pt" Value="Peru" />
+      <String Key="ru" Value="Перу" />
+    </Strings>
+  </Item>
+  <Item A="255" R="244" G="164" B="96" Title="Sand Brown">
+    <Strings>
+      <String Key="en" Value="Sand Brown" />
+      <String Key="zh" Value="沙棕" />
+      <String Key="ar" Value="ساند براون" />
+      <String Key="de" Value="Sandbraun" />
+      <String Key="es" Value="marrón arena" />
+      <String Key="fr" Value="Brun Sable" />
+      <String Key="it" Value="Marrone sabbia" />
+      <String Key="ja" Value="サンドブラウン" />
+      <String Key="ko" Value="샌드 브라운" />
+      <String Key="nl" Value="Zandbruin" />
+      <String Key="pt" Value="Marrom Areia" />
+      <String Key="ru" Value="Песочно-коричневый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="210" G="105" B="30" Title="Chocolate">
+    <Strings>
+      <String Key="en" Value="Chocolate" />
+      <String Key="zh" Value="巧克力" />
+      <String Key="ar" Value="شوكولاتة" />
+      <String Key="de" Value="Schokolade" />
+      <String Key="es" Value="Chocolate" />
+      <String Key="fr" Value="Chocolat" />
+      <String Key="it" Value="Cioccolato" />
+      <String Key="ja" Value="チョコレート" />
+      <String Key="ko" Value="초콜릿" />
+      <String Key="nl" Value="Chocolade" />
+      <String Key="pt" Value="Chocolate" />
+      <String Key="ru" Value="Шоколад" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="245" B="238" Title="Sea ​​shells">
+    <Strings>
+      <String Key="en" Value="Sea ​​shells" />
+      <String Key="zh" Value="海贝" />
+      <String Key="ar" Value="قذائف البحر" />
+      <String Key="de" Value="Muscheln" />
+      <String Key="es" Value="conchas de mar" />
+      <String Key="fr" Value="Coquillages" />
+      <String Key="it" Value="Conchiglie di mare" />
+      <String Key="ja" Value="貝殻" />
+      <String Key="ko" Value="조개" />
+      <String Key="nl" Value="Zeeschelpen" />
+      <String Key="pt" Value="conchas do mar" />
+      <String Key="ru" Value="Морские ракушки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="160" G="82" B="45" Title="Khaki">
+    <Strings>
+      <String Key="en" Value="Khaki" />
+      <String Key="zh" Value="土黄褐" />
+      <String Key="ar" Value="الكاكي" />
+      <String Key="de" Value="Khaki" />
+      <String Key="es" Value="Caqui" />
+      <String Key="fr" Value="Kaki" />
+      <String Key="it" Value="Cachi" />
+      <String Key="ja" Value="カーキ" />
+      <String Key="ko" Value="카키색 옷감" />
+      <String Key="nl" Value="Khaki" />
+      <String Key="pt" Value="cáqui" />
+      <String Key="ru" Value="Цвет хаки" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="160" B="122" Title="Shallow Meat">
+    <Strings>
+      <String Key="en" Value="Shallow Meat" />
+      <String Key="zh" Value="浅肉" />
+      <String Key="ar" Value="لحم ضحل" />
+      <String Key="de" Value="Flaches Fleisch" />
+      <String Key="es" Value="carne poco profunda" />
+      <String Key="fr" Value="Viande peu profonde" />
+      <String Key="it" Value="Carne poco profonda" />
+      <String Key="ja" Value="浅い肉" />
+      <String Key="ko" Value="얕은 고기" />
+      <String Key="nl" Value="Ondiep vlees" />
+      <String Key="pt" Value="Carne Rasa" />
+      <String Key="ru" Value="Мелкое мясо" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="160" B="122" Title="Coral">
+    <Strings>
+      <String Key="en" Value="Coral" />
+      <String Key="zh" Value="珊瑚" />
+      <String Key="ar" Value="المرجان" />
+      <String Key="de" Value="Koralle" />
+      <String Key="es" Value="Coral" />
+      <String Key="fr" Value="corail" />
+      <String Key="it" Value="Corallo" />
+      <String Key="ja" Value="コーラル" />
+      <String Key="ko" Value="산호" />
+      <String Key="nl" Value="Koraal" />
+      <String Key="pt" Value="Coral" />
+      <String Key="ru" Value="коралловый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="69" B="0" Title="Orange Red">
+    <Strings>
+      <String Key="en" Value="Orange Red" />
+      <String Key="zh" Value="橙红" />
+      <String Key="ar" Value="أحمر برتقالي" />
+      <String Key="de" Value="Orange Rot" />
+      <String Key="es" Value="Rojo naranja" />
+      <String Key="fr" Value="Rouge-orange" />
+      <String Key="it" Value="Rosso-arancio" />
+      <String Key="ja" Value="オレンジレッド" />
+      <String Key="ko" Value="오렌지 레드" />
+      <String Key="nl" Value="Oranje rood" />
+      <String Key="pt" Value="Vermelho alaranjado" />
+      <String Key="ru" Value="Оранжево-красный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="99" B="71" Title="Tomato">
+    <Strings>
+      <String Key="en" Value="Tomato" />
+      <String Key="zh" Value="番茄色" />
+      <String Key="ar" Value="طماطم" />
+      <String Key="de" Value="Tomate" />
+      <String Key="es" Value="Tomate" />
+      <String Key="fr" Value="Tomate" />
+      <String Key="it" Value="Pomodoro" />
+      <String Key="ja" Value="トマト" />
+      <String Key="ko" Value="토마토" />
+      <String Key="nl" Value="Tomaat" />
+      <String Key="pt" Value="Tomate" />
+      <String Key="ru" Value="Помидор" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="228" B="225" Title="Rose In The Mist">
+    <Strings>
+      <String Key="en" Value="Rose In The Mist" />
+      <String Key="zh" Value="雾中玫瑰" />
+      <String Key="ar" Value="روز في الضباب" />
+      <String Key="de" Value="Rose im Nebel" />
+      <String Key="es" Value="rosa en la niebla" />
+      <String Key="fr" Value="Rose dans la brume" />
+      <String Key="it" Value="Rosa Nella Nebbia" />
+      <String Key="ja" Value="霧の中のバラ" />
+      <String Key="ko" Value="안개 속의 장미" />
+      <String Key="nl" Value="Roos in de mist" />
+      <String Key="pt" Value="Rosa na névoa" />
+      <String Key="ru" Value="Роза в тумане" />
+    </Strings>
+  </Item>
+  <Item A="255" R="250" G="128" B="114" Title="Meat">
+    <Strings>
+      <String Key="en" Value="Meat" />
+      <String Key="zh" Value="肉" />
+      <String Key="ar" Value="لحمة" />
+      <String Key="de" Value="Fleisch" />
+      <String Key="es" Value="Carne" />
+      <String Key="fr" Value="Moi à" />
+      <String Key="it" Value="Carne" />
+      <String Key="ja" Value="肉" />
+      <String Key="ko" Value="고기" />
+      <String Key="nl" Value="Vlees" />
+      <String Key="pt" Value="Eu no" />
+      <String Key="ru" Value="Мясо" />
+    </Strings>
+  </Item>
+  <Item A="255" R="255" G="250" B="250" Title="Snow">
+    <Strings>
+      <String Key="en" Value="Snow" />
+      <String Key="zh" Value="雪" />
+      <String Key="ar" Value="ثلج" />
+      <String Key="de" Value="Schnee" />
+      <String Key="es" Value="Nieve" />
+      <String Key="fr" Value="Neiger" />
+      <String Key="it" Value="Neve" />
+      <String Key="ja" Value="雪" />
+      <String Key="ko" Value="눈" />
+      <String Key="nl" Value="Sneeuw" />
+      <String Key="pt" Value="Neve" />
+      <String Key="ru" Value="Снег" />
+    </Strings>
+  </Item>
+  <Item A="255" R="240" G="128" B="128" Title="Shallow Coral">
+    <Strings>
+      <String Key="en" Value="Shallow Coral" />
+      <String Key="zh" Value="浅珊瑚" />
+      <String Key="ar" Value="مرجاني ضحل" />
+      <String Key="de" Value="Flache Koralle" />
+      <String Key="es" Value="coral poco profundo" />
+      <String Key="fr" Value="Corail peu profond" />
+      <String Key="it" Value="Corallo poco profondo" />
+      <String Key="ja" Value="浅い珊瑚" />
+      <String Key="ko" Value="얕은 산호" />
+      <String Key="nl" Value="Ondiep koraal" />
+      <String Key="pt" Value="Coral Raso" />
+      <String Key="ru" Value="Мелкий коралл" />
+    </Strings>
+  </Item>
+  <Item A="255" R="188" G="143" B="143" Title="Rose Brown">
+    <Strings>
+      <String Key="en" Value="Rose Brown" />
+      <String Key="zh" Value="玫瑰棕" />
+      <String Key="ar" Value="روز براون" />
+      <String Key="de" Value="Rosenbraun" />
+      <String Key="es" Value="marrón rosa" />
+      <String Key="fr" Value="Brun rosé" />
+      <String Key="it" Value="Marrone rosato" />
+      <String Key="ja" Value="ローズブラウン" />
+      <String Key="ko" Value="로즈 브라운" />
+      <String Key="nl" Value="Roze Bruin" />
+      <String Key="pt" Value="Rosa Marrom" />
+      <String Key="ru" Value="Роза Браун" />
+    </Strings>
+  </Item>
+  <Item A="255" R="205" G="92" B="92" Title="Light Pink">
+    <Strings>
+      <String Key="en" Value="Light Pink" />
+      <String Key="zh" Value="浅粉红" />
+      <String Key="ar" Value="وردي فاتح" />
+      <String Key="de" Value="Hell-Pink" />
+      <String Key="es" Value="Rosa claro" />
+      <String Key="fr" Value="Rose clair" />
+      <String Key="it" Value="Rosa chiaro" />
+      <String Key="ja" Value="ライトピンク" />
+      <String Key="ko" Value="라이트 핑크" />
+      <String Key="nl" Value="Lichtroze" />
+      <String Key="pt" Value="Luz rosa" />
+      <String Key="ru" Value="Светло-розовый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="165" G="42" B="42" Title="Brown">
+    <Strings>
+      <String Key="en" Value="Brown" />
+      <String Key="zh" Value="棕" />
+      <String Key="ar" Value="بني" />
+      <String Key="de" Value="Braun" />
+      <String Key="es" Value="marrón" />
+      <String Key="fr" Value="marron" />
+      <String Key="it" Value="Marrone" />
+      <String Key="ja" Value="茶色" />
+      <String Key="ko" Value="갈색" />
+      <String Key="nl" Value="bruin" />
+      <String Key="pt" Value="Castanho" />
+      <String Key="ru" Value="коричневый" />
+    </Strings>
+  </Item>
+  <Item A="255" R="178" G="34" B="34" Title="Fire Brick">
+    <Strings>
+      <String Key="en" Value="Fire Brick" />
+      <String Key="zh" Value="火砖" />
+      <String Key="ar" Value="طوب النار" />
+      <String Key="de" Value="Feuerstein" />
+      <String Key="es" Value="Ladrillo de fuego" />
+      <String Key="fr" Value="Brique Réfractaire" />
+      <String Key="it" Value="Mattone refrattario" />
+      <String Key="ja" Value="耐火レンガ" />
+      <String Key="ko" Value="파이어 브릭" />
+      <String Key="nl" Value="Vuurvaste steen" />
+      <String Key="pt" Value="Tijolo de Fogo" />
+      <String Key="ru" Value="огнеупорный кирпич" />
+    </Strings>
+  </Item>
+  <Item A="255" R="139" G="0" B="0" Title="Deep Red">
+    <Strings>
+      <String Key="en" Value="Deep Red" />
+      <String Key="zh" Value="深红" />
+      <String Key="ar" Value="ديب ريد" />
+      <String Key="de" Value="Tiefrot" />
+      <String Key="es" Value="Color rojo oscuro" />
+      <String Key="fr" Value="Rouge foncé" />
+      <String Key="it" Value="Profondo rosso" />
+      <String Key="ja" Value="ディープレッド" />
+      <String Key="ko" Value="딥 레드" />
+      <String Key="nl" Value="Dieprood" />
+      <String Key="pt" Value="Vermelho escuro" />
+      <String Key="ru" Value="Темно-красный" />
+    </Strings>
+  </Item>
+  <Item A="255" R="128" G="0" B="0" Title="Maroon">
+    <Strings>
+      <String Key="en" Value="Maroon" />
+      <String Key="zh" Value="栗色" />
+      <String Key="ar" Value="مارون" />
+      <String Key="de" Value="Kastanienbraun" />
+      <String Key="es" Value="Granate" />
+      <String Key="fr" Value="Bordeaux" />
+      <String Key="it" Value="Marrone" />
+      <String Key="ja" Value="あずき色" />
+      <String Key="ko" Value="적갈색" />
+      <String Key="nl" Value="Kastanjebruin" />
+      <String Key="pt" Value="marrom" />
+      <String Key="ru" Value="темно-бордовый" />
+    </Strings>
+  </Item>
+</Root>
