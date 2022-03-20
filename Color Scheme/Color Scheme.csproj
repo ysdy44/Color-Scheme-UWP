@@ -121,6 +121,10 @@
     <Compile Include="Model\StringList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strings\LanguageResourceDictionary.cs" />
+    <Compile Include="XMLs\XML.Item.cs" />
+    <Compile Include="XMLs\XML.Items.cs" />
+    <Compile Include="XMLs\XML.ItemsFile.cs" />
+    <Compile Include="XMLs\XML.Strings.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
