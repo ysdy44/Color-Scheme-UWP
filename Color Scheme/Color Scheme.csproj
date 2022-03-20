@@ -134,6 +134,8 @@
     <Compile Include="FileUtils\Clipboard.cs" />
     <Compile Include="FileUtils\FileUtil.cs" />
     <Compile Include="FileUtils\FileUtil.PickAndCopy.cs" />
+    <Compile Include="MainPage.Canvas.cs" />
+    <Compile Include="MainPage.Construct.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

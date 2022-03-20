@@ -4,11 +4,569 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:Color_Scheme"
+    xmlns:controls="using:Color_Scheme.Controls"
+    xmlns:elements="using:Color_Scheme.Elements"
+    xmlns:model="using:Color_Scheme.Model"
+    xmlns:transformers="using:FanKit.Transformers"
+    xmlns:hsvcolorpickers="using:HSVColorPickers"
+    xmlns:xaml="using:Microsoft.Graphics.Canvas.UI.Xaml"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     >
 
-    <Grid>
+
+    <FrameworkElement.Resources>
+        <!--Brush-->
+        <transformers:CanvasOperator x:Name="Operator" DestinationControl="{x:Bind CanvasControl}"/>
+        <transformers:CanvasTransformer x:Name="Transformer" />
+
+        <!--Brush-->
+        <SolidColorBrush x:Name="Brush" Color="BlueViolet"/>
+
+        <!--Geometry-->
+        <x:String x:Key="ASeletedData">
+            M10.05,14.585c-0.53,0 -0.96,0.43 -0.96,0.96c0,1.536 0,4.512 0,5.88c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.135,0 -3.33,0 -4.465,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.715 0,-6.055 0,-8.174c0,-0.662 -0.537,-1.2 -1.2,-1.2c-0.244,0 -0.51,0 -0.785,0c-0.486,0 -0.923,-0.293 -1.109,-0.741c-0.185,-0.449 -0.082,-0.966 0.262,-1.309c2.467,-2.459 6.586,-6.565 9.12,-9.091c0.586,-0.584 1.381,-0.912 2.208,-0.91c0.828,0.002 1.622,0.332 2.206,0.919c2.516,2.527 6.599,6.63 9.044,9.086c0.342,0.343 0.444,0.859 0.258,1.307c-0.186,0.447 -0.623,0.739 -1.108,0.739c-0.293,0 -0.577,0 -0.836,0c-0.319,0 -0.624,0.127 -0.849,0.352c-0.225,0.225 -0.351,0.53 -0.351,0.848c0,2.119 0,6.459 0,8.174c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.115,0 -3.244,0 -4.359,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.368 0,-4.344 0,-5.88c0,-0.531 -0.429,-0.96 -0.96,-0.96l-1.602,0l-1.634,0Zm11.52,-3.44c0.194,0 0.369,-0.116 0.443,-0.295c0.074,-0.179 0.034,-0.386 -0.103,-0.523c-1.883,-1.893 -6.554,-6.586 -8.877,-8.92c-0.359,-0.361 -0.847,-0.564 -1.357,-0.565c-0.509,-0.001 -0.998,0.2 -1.359,0.56c-2.339,2.331 -7.052,7.029 -8.954,8.923c-0.137,0.138 -0.179,0.344 -0.104,0.524c0.074,0.179 0.249,0.296 0.443,0.296c0.245,0 0.509,0 0.768,0c0.446,0 0.873,0.177 1.188,0.493c0.315,0.315 0.492,0.742 0.492,1.187c0,2.882 0,8.461 0,8.461l4.031,0l0,-5.737c0,-0.509 0.202,-0.997 0.562,-1.357c0.36,-0.36 0.849,-0.563 1.358,-0.563l3.127,0c0.509,0 0.997,0.203 1.357,0.563c0.36,0.36 0.563,0.848 0.563,1.357c0,2.268 0,5.737 0,5.737l3.935,0l0,-8.461c0,-0.445 0.177,-0.872 0.492,-1.187c0.315,-0.315 0.743,-0.492 1.188,-0.493l0.807,0Z
+        </x:String>
+        <x:String x:Key="AUsualData">
+            M13.387,15.879c0,0 -0.895,0 -1.633,0c-0.53,0 -0.96,0.429 -0.96,0.959c0,1.536 0,4.512 0,5.881c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.136,0 -3.33,0 -4.466,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.715 0,-6.056 0,-8.174c0,-0.663 -0.537,-1.2 -1.2,-1.2c-0.243,0 -0.51,0 -0.784,0c-0.486,0 -0.924,-0.293 -1.109,-0.742c-0.186,-0.448 -0.083,-0.965 0.261,-1.308c2.467,-2.459 6.587,-6.565 9.12,-9.091c0.587,-0.584 1.381,-0.912 2.209,-0.91c0.828,0.001 1.621,0.332 2.205,0.919c2.516,2.527 6.6,6.629 9.045,9.085c0.342,0.344 0.444,0.86 0.258,1.308c-0.186,0.447 -0.624,0.739 -1.109,0.739c-0.292,0 -0.577,0 -0.836,0c-0.318,0 -0.623,0.127 -0.848,0.352c-0.225,0.225 -0.352,0.53 -0.352,0.848c0,2.118 0,6.459 0,8.174c0,0.191 -0.076,0.374 -0.211,0.509c-0.135,0.135 -0.318,0.211 -0.509,0.211c-1.114,0 -3.244,0 -4.358,0c-0.191,0 -0.374,-0.076 -0.509,-0.211c-0.135,-0.135 -0.211,-0.318 -0.211,-0.509c0,-1.369 0,-4.345 0,-5.881c0,-0.53 -0.43,-0.959 -0.96,-0.959c-0.728,0 -1.603,0 -1.603,0Z
+        </x:String>
+        <x:String x:Key="BSeletedData">
+            M8.064,20.412l-6.528,0c-0.848,0 -1.536,-0.689 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.847 -0.688,1.536 -1.536,1.536Zm10.957,0l-6.528,0c-0.848,0 -1.536,-0.689 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.847 -0.688,1.536 -1.536,1.536Zm-11.149,-8.64l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Zm10.957,0l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Zm0.192,-2.172l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536Zm-10.957,0l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536Zm10.765,-8.64l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Zm-10.957,0l-6.144,0c-0.424,0 -0.768,0.344 -0.768,0.768l0,6.144c0,0.424 0.344,0.768 0.768,0.768l6.144,0c0.424,0 0.768,-0.344 0.768,-0.768l0,-6.144c0,-0.424 -0.344,-0.768 -0.768,-0.768Z
+        </x:String>
+        <x:String x:Key="BUsualData">
+            M8.064,10.812c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.847 -0.688,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.689 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Zm10.957,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.847 -0.688,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.689 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Zm-10.957,-10.812c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Zm10.957,0c0.848,0 1.536,0.688 1.536,1.536l0,6.528c0,0.848 -0.688,1.536 -1.536,1.536l-6.528,0c-0.848,0 -1.536,-0.688 -1.536,-1.536l0,-6.528c0,-0.848 0.688,-1.536 1.536,-1.536l6.528,0Z
+        </x:String>
+        <x:String x:Key="CSeletedData">
+            M21.235,15.869l-21.235,0l0,-15.869l21.235,0l0,15.869Zm-19.845,-1.547l13.582,0l-8.976,-8.642l-4.606,4.262l0,4.38Zm18.488,0l-4.522,-4.853l-1.71,1.715l3.111,3.138l3.121,0Zm-3.307,-10.483c0.415,0 0.751,0.337 0.751,0.751c0,0.415 -0.336,0.751 -0.751,0.751c-0.415,0 -0.751,-0.336 -0.751,-0.751c0,-0.414 0.336,-0.751 0.751,-0.751Zm-15.181,4.095l4.606,-4.341l6.77,6.457l2.415,-2.688l4.697,4.643l0,-10.729l-18.488,0l0,6.658Z
+        </x:String>
+        <x:String x:Key="CUsualData">
+            M21.235,15.869l-21.235,0l0,-15.869l21.235,0l0,15.869Zm-19.845,-7.935l0,1.995l4.617,-4.26l8.965,8.653l1.784,0l-3.122,-3.145l1.717,-1.717l4.527,4.862l0,-2.297l-4.706,-4.639l-2.408,2.721l-6.757,-6.512l-4.617,4.339Zm15.174,-4.085c0.41,0 0.744,0.334 0.744,0.744c0,0.41 -0.334,0.744 -0.744,0.744c-0.41,0 -0.744,-0.334 -0.744,-0.744c0,-0.41 0.334,-0.744 0.744,-0.744Z
+        </x:String>
+
+        <!--Style-->
+        <Style TargetType="PathIcon">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="hsvcolorpickers:RGBPicker" >
+            <Setter Property="ButtonStyle" >
+                <Setter.Value>
+                    <Style TargetType="Button" BasedOn="{StaticResource TextBlockButtonStyle}">
+                        <Setter Property="Foreground" Value="{ThemeResource SystemBaseHighColor}"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="hsvcolorpickers:HSVPicker" >
+            <Setter Property="ButtonStyle" >
+                <Setter.Value>
+                    <Style TargetType="Button" BasedOn="{StaticResource TextBlockButtonStyle}">
+                        <Setter Property="Foreground" Value="{ThemeResource SystemBaseHighColor}"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Storyboard-->
+        <Storyboard  x:Name="ShowStoryboard" >
+            <DoubleAnimation Duration="0:0:0.2" By="0" To="1" Storyboard.TargetProperty="ScaleX" Storyboard.TargetName="DraggerTransform" d:IsOptimized="True"/>
+            <DoubleAnimation Duration="0:0:0.2" By="0" To="1" Storyboard.TargetProperty="ScaleY" Storyboard.TargetName="DraggerTransform" d:IsOptimized="True"/>
+        </Storyboard>
+        <Storyboard  x:Name="HideStoryboard" >
+            <DoubleAnimation Duration="0:0:0.1" By="1" To="0" Storyboard.TargetProperty="ScaleX" Storyboard.TargetName="DraggerTransform" d:IsOptimized="True"/>
+            <DoubleAnimation Duration="0:0:0.1" By="1" To="0" Storyboard.TargetProperty="ScaleY" Storyboard.TargetName="DraggerTransform" d:IsOptimized="True"/>
+        </Storyboard>
+        
+        <Storyboard x:Name="CopyStoryboard">
+            <ColorAnimation From="Black" To="White" Storyboard.TargetProperty="Color" Storyboard.TargetName="CopyBrush" d:IsOptimized="True">
+                <ColorAnimation.EasingFunction>
+                    <BounceEase EasingMode="EaseOut"/>
+                </ColorAnimation.EasingFunction>
+            </ColorAnimation>
+        </Storyboard>
+        <Storyboard x:Name="PasteStoryboard">
+            <ColorAnimation From="Black" To="White" Storyboard.TargetProperty="Color" Storyboard.TargetName="PasteBrush" d:IsOptimized="True">
+                <ColorAnimation.EasingFunction>
+                    <BounceEase EasingMode="EaseOut"/>
+                </ColorAnimation.EasingFunction>
+            </ColorAnimation>
+        </Storyboard>
+        <Storyboard x:Name="AddStoryboard">
+            <ColorAnimation From="Black" To="White" Storyboard.TargetProperty="Color" Storyboard.TargetName="AddBrush" d:IsOptimized="True">
+                <ColorAnimation.EasingFunction>
+                    <BounceEase EasingMode="EaseOut"/>
+                </ColorAnimation.EasingFunction>
+            </ColorAnimation>
+        </Storyboard>
+    </FrameworkElement.Resources>
+
+
+    <Grid Background="{ThemeResource AppBackgroundDark}">
+
+
+        <!--VisualState-->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+
+                <!--Phone-->
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--SplitView-->
+                        <Setter Target="SplitView.IsPaneOpen" Value="False"/>
+
+                        <!--Button-->
+                        <Setter Target="PhoneSplitButton.Visibility" Value="Visible"/>
+                        <Setter Target="SettingButton.Visibility" Value="Collapsed"/>
+
+                        <!--Title-->
+                        <Setter Target="TitleTextBlock.Visibility" Value="Visible"/>
+                        <Setter Target="TitleGrid.Visibility" Value="Collapsed"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <!--Pad-->
+                <VisualState x:Name="Pad">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--SplitView-->
+                        <Setter Target="SplitView.IsPaneOpen" Value="False"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <!--PC-->
+                <VisualState x:Name="PC">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="900"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--SplitView-->
+                        <Setter Target="SplitView.IsPaneOpen" Value="False"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <!--Extension-->
+        <elements:ApplicationTitleBarExtension x:Name="ApplicationView" TitleBarColor="{ThemeResource AppBackgroundColor}"/>
+
+        <SplitView x:Name="SplitView"
+                   IsPaneOpen="True" DisplayMode="Overlay" OpenPaneLength="222" LightDismissOverlayMode="On"
+                   PaneBackground="{ThemeResource AppBackground}">
+
+
+            <SplitView.Pane>
+                <ListView x:Name="SplitListView" SelectionMode="Single" IsItemClickEnabled="True" >
+                    <FrameworkElement.Resources>
+                        <Style TargetType="Rectangle">
+                            <Setter Property="Width" Value="4"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                            <Setter Property="Fill" Value="{ThemeResource SystemAltHighColor}"/>
+                        </Style>
+                    </FrameworkElement.Resources>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Padding" Value="0"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.Header>
+                        <Button x:Name="PCSplitButton" Width="50" Height="50" HorizontalAlignment="Left">
+                            <ToolTipService.ToolTip>
+                                <ToolTip x:Name="PCSplitToolTip" Style="{StaticResource AppToolTipStyle}">
+                                    Split
+                                </ToolTip>
+                            </ToolTipService.ToolTip>
+                            <SymbolIcon Symbol="GlobalNavigationButton" />
+                        </Button>
+                    </ListView.Header>
+
+                    <ListView.Footer>
+                        <ListViewItem x:Name="SettingItem" Height="60">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="26" Height="26">
+                                    <SymbolIcon Symbol="Setting"/>
+                                </Border>
+                                <TextBlock x:Name="SettingTextBlock" Margin="12,2" VerticalAlignment="Center">
+                                    Setting
+                                </TextBlock>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView.Footer>
+
+                    <ListViewItem Height="60">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Visibility="{x:Bind ZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource AUsualData}" Visibility="{x:Bind ZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource ASeletedData}" Visibility="{x:Bind ReverseZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <TextBlock x:Name="WidgetTextBlock" Grid.Column="1" FontSize="16" VerticalAlignment="Center">
+                                Widget
+                            </TextBlock>
+                        </Grid>
+                    </ListViewItem>
+
+                    <ListViewItem Height="60">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Visibility="{x:Bind OneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource BUsualData}" Visibility="{x:Bind OneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource BSeletedData}" Visibility="{x:Bind ReverseOneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <TextBlock x:Name="EnumTextBlock" Grid.Column="1" FontSize="16" VerticalAlignment="Center">
+                                Enum
+                            </TextBlock>
+                        </Grid>
+                    </ListViewItem>
+
+                    <ListViewItem Height="60">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource CUsualData}" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <PathIcon Data="{StaticResource CSeletedData}" Visibility="{x:Bind ReverseTwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                            <TextBlock x:Name="BitmapTextBlock" Grid.Column="1" FontSize="16" VerticalAlignment="Center">
+                                Bitmap
+                            </TextBlock>
+                        </Grid>
+                    </ListViewItem>
+
+                </ListView>
+            </SplitView.Pane>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <!--Body-->
+                <Border Grid.Row="1" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}">
+                    <Button x:Name="AddButton2" MinWidth="100" MinHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                            Visibility="{x:Bind ReverseBooleanToVisibilityConverter(CanvasControl.IsHitTestVisible), Mode=OneWay}">
+                        <UIElement.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="N"/>
+                        </UIElement.KeyboardAccelerators>
+                        <ToolTipService.ToolTip>
+                            <ToolTip x:Name="AddToolTip2" Style="{StaticResource AppToolTipStyle}">
+                                Add Bitmap
+                            </ToolTip>
+                        </ToolTipService.ToolTip>
+                        <FontIcon Glyph="&#xEB9F;" FontSize="44" FontFamily="Segoe MDL2 Assets"/>
+                    </Button>
+                </Border>
+                <xaml:CanvasControl x:Name="CanvasControl" Grid.Row="1" IsHitTestVisible="False" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}"/>
+                <GridView x:Name="GridView" Grid.RowSpan="2" 
+                          IsItemClickEnabled="True" SelectionMode="Single" 
+                          HeaderTemplate="{StaticResource AppListViewBaseHeader}"
+                          FooterTemplate="{StaticResource AppListViewBaseFooter}"
+                          Visibility="{x:Bind OneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" >
+
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Item">
+                            <Grid Padding="0,8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="22"/>
+                                </Grid.RowDefinitions>
+                                <Ellipse Width="40" Height="40" >
+                                    <Ellipse.Fill>
+                                        <SolidColorBrush Color="{x:Bind Color}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <TextBlock Grid.Row="1" Text="{x:Bind ActualTitle}" TextTrimming="CharacterEllipsis" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+
+                    <GridView.ItemContainerStyle>
+                        <Style TargetType="GridViewItem">
+                            <Setter Property="Width" Value="100"/>
+                        </Style>
+                    </GridView.ItemContainerStyle>
+
+                    <GridView.Template>
+                        <ControlTemplate TargetType="GridView">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}">
+                                <ScrollViewer x:Name="ScrollViewer"
+                                              TabNavigation="{TemplateBinding TabNavigation}"
+                                              HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}"
+                                              HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
+                                              IsHorizontalScrollChainingEnabled="{TemplateBinding ScrollViewer.IsHorizontalScrollChainingEnabled}"
+                                              VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}"
+                                              VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
+                                              IsVerticalScrollChainingEnabled="{TemplateBinding ScrollViewer.IsVerticalScrollChainingEnabled}"
+                                              IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}"
+                                              IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}"
+                                              ZoomMode="{TemplateBinding ScrollViewer.ZoomMode}"
+                                              IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}"
+                                              BringIntoViewOnFocusChange="{TemplateBinding ScrollViewer.BringIntoViewOnFocusChange}"
+                                              AutomationProperties.AccessibilityView="Raw">
+                                    <ItemsPresenter HorizontalAlignment="Center"
+                                                  Header="{TemplateBinding Header}"
+                                                  HeaderTemplate="{TemplateBinding HeaderTemplate}"
+                                                  HeaderTransitions="{TemplateBinding HeaderTransitions}"
+                                                  Footer="{TemplateBinding Footer}"
+                                                  FooterTemplate="{TemplateBinding FooterTemplate}"
+                                                  FooterTransitions="{TemplateBinding FooterTransitions}"
+                                                  Padding="{TemplateBinding Padding}" />
+                                </ScrollViewer>
+                            </Border>
+                        </ControlTemplate>
+                    </GridView.Template>
+
+                </GridView>
+                <ListView x:Name="ListView" Grid.RowSpan="2" 
+                          SelectionMode="None" 
+                          ItemsSource="{x:Bind ItemsSource}"
+                          HeaderTemplate="{StaticResource AppListViewBaseHeader}"
+                          FooterTemplate="{StaticResource AppListViewBaseFooter}"
+                          Visibility="{x:Bind ZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListViewItem">
+                                        <Border CornerRadius="2" Margin="8,6" Padding="8,4" MaxWidth="800" 
+                                                BorderThickness="1,1,2,2"
+                                                BorderBrush="{ThemeResource AppStroke}"
+                                                Background="{ThemeResource AppBackground}">
+                                            <ContentPresenter Content="{TemplateBinding Content}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="controls:WidgetType">
+                            <controls:WidgetTypeContainer
+                                    Type="{x:Bind}" 
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                    HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ListView>
+
+
+                <!--Shadow-->
+                <Rectangle Grid.Row="1" IsHitTestVisible="False" Height="22" VerticalAlignment="Top" Fill="{ThemeResource AppVerticalShadowBrush}"/>
+                <!--Head-->
+                <Grid Background="{ThemeResource AppBackground}">
+                    <FrameworkElement.Resources>
+                        <Style TargetType="Rectangle">
+                            <Setter Property="Height" Value="2"/>
+                            <Setter Property="VerticalAlignment" Value="Bottom"/>
+                            <Setter Property="Fill" Value="{ThemeResource SystemBaseHighColor}"/>
+                        </Style>
+                    </FrameworkElement.Resources>
+
+                    <Panel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True"/>
+                        </TransitionCollection>
+                    </Panel.ChildrenTransitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" MinWidth="50" MaxWidth="80"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*" MinWidth="50" MaxWidth="80"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="TitleTextBlock" Visibility="Collapsed" Grid.Column="1" HorizontalAlignment="Center" Style="{StaticResource SubheaderTextBlockStyle}">
+                        <UIElement.Transitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition FromHorizontalOffset="50" FromVerticalOffset="0"/>
+                            </TransitionCollection>
+                        </UIElement.Transitions>
+                        Color Scheme
+                    </TextBlock>
+                    <Grid x:Name="TitleGrid" Grid.Column="1" HorizontalAlignment="Center" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Rectangle Grid.Column="0" Visibility="{x:Bind ZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                        <Rectangle Grid.Column="1" Visibility="{x:Bind OneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                        <Rectangle Grid.Column="2" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+
+                        <PathIcon Grid.Column="0" Data="{StaticResource AUsualData}" Visibility="{x:Bind ZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                        <PathIcon Grid.Column="1" Data="{StaticResource BUsualData}" Visibility="{x:Bind OneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+                        <PathIcon Grid.Column="2" Data="{StaticResource CUsualData}" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}" />
+
+                        <Button x:Name="AButton" Grid.Column="0" Visibility="{x:Bind ReverseZeroToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}">
+                            <ToolTipService.ToolTip>
+                                <ToolTip x:Name="WidgetToolTip" Style="{StaticResource AppToolTipStyle}">
+                                    Widget
+                                </ToolTip>
+                            </ToolTipService.ToolTip>
+                            <PathIcon Data="{StaticResource ASeletedData}"/>
+                        </Button>
+                        <Button x:Name="BButton" Grid.Column="1" Visibility="{x:Bind ReverseOneToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}">
+                            <ToolTipService.ToolTip>
+                                <ToolTip x:Name="EnumToolTip" Style="{StaticResource AppToolTipStyle}">
+                                    Enum
+                                </ToolTip>
+                            </ToolTipService.ToolTip>
+                            <PathIcon Data="{StaticResource BSeletedData}"/>
+                        </Button>
+                        <Button x:Name="CButton" Grid.Column="2" Visibility="{x:Bind ReverseTwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}">
+                            <ToolTipService.ToolTip>
+                                <ToolTip x:Name="BitmapToolTip" Style="{StaticResource AppToolTipStyle}">
+                                    Bitmap
+                                </ToolTip>
+                            </ToolTipService.ToolTip>
+                            <PathIcon Data="{StaticResource CSeletedData}"/>
+                        </Button>
+
+                    </Grid>
+
+                    <Button x:Name="PhoneSplitButton" Grid.Column="0" Visibility="Collapsed">
+                        <ToolTipService.ToolTip>
+                            <ToolTip x:Name="PhoneSplitToolTip" Style="{StaticResource AppToolTipStyle}">
+                                Split
+                            </ToolTip>
+                        </ToolTipService.ToolTip>
+                        <SymbolIcon Symbol="GlobalNavigationButton" />
+                    </Button>
+                    <Button x:Name="SettingButton" Grid.Column="0" >
+                        <ToolTipService.ToolTip>
+                            <ToolTip x:Name="SettingToolTip" Style="{StaticResource AppToolTipStyle}">
+                                Setting
+                            </ToolTip>
+                        </ToolTipService.ToolTip>
+                        <SymbolIcon Symbol="Setting"/>
+                    </Button>
+                    <Button x:Name="AboutButton" Grid.Column="2" >
+                        <ToolTipService.ToolTip>
+                            <ToolTip x:Name="AboutToolTip" Style="{StaticResource AppToolTipStyle}">
+                                About...
+                            </ToolTip>
+                        </ToolTipService.ToolTip>
+                        <SymbolIcon Symbol="Important"/>
+                    </Button>
+
+                </Grid>
+
+
+                <!--Dragger-->
+                <Canvas Grid.Row="1" IsHitTestVisible="False">
+                    <Canvas x:Name="Dragger" IsHitTestVisible="False" Width="130" Height="130" >
+                        <UIElement.RenderTransformOrigin>
+                            0.5,1
+                        </UIElement.RenderTransformOrigin>
+                        <UIElement.RenderTransform>
+                            <ScaleTransform x:Name="DraggerTransform" ScaleX="0" ScaleY="0"/>
+                        </UIElement.RenderTransform>
+                        <Path StrokeThickness="1" Stroke="Black" Fill="White">
+                            <Path.Data>
+                                M38.61,99.44l22.22,22.31l22.219,-22.31l35.627,-0c1.646,-0 2.983,-1.337 2.983,-2.983l0,-93.474c0,-1.646 -1.337,-2.983 -2.983,-2.983l-115.693,0c-1.646,0 -2.983,1.337 -2.983,2.983l-0,93.474c-0,1.646 1.337,2.983 2.983,2.983l35.627,-0Z
+                            </Path.Data>
+                        </Path>
+                        <xaml:CanvasControl x:Name="ThumbnailCanvasControl" Canvas.Left="5" Canvas.Top="4" ClearColor="Black" Width="112" Height="90" />
+                        <FontIcon Canvas.Left="44" Canvas.Top="22" FontSize="40" Glyph="&#x2BD0;" Foreground="White" FontFamily="Segoe UI Symbol" />
+                    </Canvas>
+                </Canvas>
+
+            </Grid>
+        </SplitView>
+
+
+        <!--FAB-->
+        <StackPanel Width="100" Margin="0,0,0,70" Padding="0,2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                    Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}">
+            <Panel.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition IsStaggeringEnabled="True"/>
+                </TransitionCollection>
+            </Panel.ChildrenTransitions>
+
+            <Button x:Name="CopyButton" Width="60" Height="50" Foreground="White" HorizontalAlignment="Center" 
+                    Visibility="{x:Bind BooleanToVisibilityConverter(CanvasControl.IsHitTestVisible), Mode=OneWay}">
+                <UIElement.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Control" Key="C"/>
+                </UIElement.KeyboardAccelerators>
+                <ToolTipService.ToolTip>
+                    <ToolTip x:Name="CopyToolTip" Placement="Left" Style="{StaticResource AppToolTipStyle}">
+                        Copy Bitmap to Clipboard
+                    </ToolTip>
+                </ToolTipService.ToolTip>
+                <Border Width="40" Height="40" BorderThickness="1" Background="{StaticResource Brush}">
+                    <Border.BorderBrush>
+                        <SolidColorBrush x:Name="CopyBrush" Color="White"/>
+                    </Border.BorderBrush>                    
+                    <SymbolIcon Symbol="Copy"/>
+                </Border>
+            </Button>
+
+            <Button x:Name="PasteButton" Width="60" Height="50" Foreground="White" HorizontalAlignment="Center" >
+                <UIElement.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Control" Key="V"/>
+                </UIElement.KeyboardAccelerators>
+                <ToolTipService.ToolTip>
+                    <ToolTip x:Name="PasteToolTip" Placement="Left" Style="{StaticResource AppToolTipStyle}">
+                        Paste Bitmap from Clipboard
+                    </ToolTip>
+                </ToolTipService.ToolTip>
+                <Border Width="40" Height="40" BorderThickness="1" Background="{StaticResource Brush}">
+                    <Border.BorderBrush>
+                        <SolidColorBrush x:Name="PasteBrush" Color="White"/>
+                    </Border.BorderBrush>
+                    <SymbolIcon Symbol="Paste"/>
+                </Border>
+            </Button>
+
+            <Button x:Name="AddButton" Width="60" Height="50" Foreground="White" HorizontalAlignment="Center" >
+                <UIElement.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Control" Key="N"/>
+                </UIElement.KeyboardAccelerators>
+                <ToolTipService.ToolTip>
+                    <ToolTip x:Name="AddToolTip" Placement="Left" Style="{StaticResource AppToolTipStyle}">
+                        Add Bitmap
+                    </ToolTip>
+                </ToolTipService.ToolTip>
+                <Border Width="40" Height="40" BorderThickness="1" Background="{StaticResource Brush}">
+                    <Border.BorderBrush>
+                        <SolidColorBrush x:Name="AddBrush" Color="White"/>
+                    </Border.BorderBrush>
+                    <FontIcon Glyph="&#xEB9F;" FontFamily="Segoe MDL2 Assets"/>
+                </Border>
+            </Button>
+
+        </StackPanel>
+        <Button x:Name="FloatActionButton" Width="100" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Ellipse Width="50" Height="50" StrokeThickness="1" Stroke="White" Fill="{StaticResource Brush}" />
+        </Button>
+
+
+        <!--Dialog-->
+        <Grid>
+            <FrameworkElement.Resources>
+                <!--Style-->
+                <Style TargetType="ScrollViewer" BasedOn="{StaticResource AppVerticalScrollViewerStyle}"/>
+            </FrameworkElement.Resources>
+            <local:ColorDialog x:Name="ColorDialog" />
+            <local:AboutDialog x:Name="AboutDialog" Style="{StaticResource AppContentDialogStyle}"/>
+            <local:SettingDialog x:Name="SettingDialog" Style="{StaticResource AppContentDialogStyle}"/>
+        </Grid>
 
     </Grid>
 </Page>
