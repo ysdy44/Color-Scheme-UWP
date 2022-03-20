@@ -1,0 +1,59 @@
+﻿<UserControl
+    x:Class="Color_Scheme.Controls.LinearGradientWidget"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xaml="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    d:DesignHeight="50"
+    d:DesignWidth="400"
+    >
+
+    <Grid Height="200" >
+
+        <Grid Margin="24,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" BorderThickness="1" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="White">
+            <xaml:CanvasControl x:Name="CanvasControl" Height="150"/>
+            <Canvas IsHitTestVisible="False">
+                <Ellipse x:Name="Ellipse" Canvas.Left="-12" Canvas.Top="-12" Width="24" Height="24" StrokeThickness="1" Stroke="Gray">
+                    <Ellipse.Fill>
+                        <SolidColorBrush x:Name="Brush" Color="White"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Canvas>
+        </Grid>
+
+        <Button x:Name="LeftTopButton" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Border Width="44" Height="44" CornerRadius="4" BorderThickness="1" BorderBrush="{ThemeResource SystemBaseHighColor}">
+                <Border.Background>
+                    <SolidColorBrush x:Name="LeftTopBrush" Color="LightBlue"/>
+                </Border.Background>
+            </Border>
+        </Button>
+
+        <Button x:Name="RightTopButton" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Border Width="44" Height="44" CornerRadius="4" BorderThickness="1" BorderBrush="{ThemeResource SystemBaseHighColor}">
+                <Border.Background>
+                    <SolidColorBrush x:Name="RightTopBrush" Color="LightSteelBlue"/>
+                </Border.Background>
+            </Border>
+        </Button>
+
+        <Button x:Name="RightBottomButton" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Border Width="44" Height="44" CornerRadius="4" BorderThickness="1" BorderBrush="{ThemeResource SystemBaseHighColor}">
+                <Border.Background>
+                    <SolidColorBrush x:Name="RightBottomBrush" Color="LightGoldenrodYellow"/>
+                </Border.Background>
+            </Border>
+        </Button>
+
+        <Button x:Name="LeftBottomButton" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Border Width="44" Height="44" CornerRadius="4" BorderThickness="1" BorderBrush="{ThemeResource SystemBaseHighColor}">
+                <Border.Background>
+                    <SolidColorBrush x:Name="LeftBottomBrush" Color="PaleVioletRed"/>
+                </Border.Background>
+            </Border>
+        </Button>
+
+    </Grid>
+</UserControl>
