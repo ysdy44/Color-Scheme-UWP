@@ -1,0 +1,26 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:apiContractPresent5="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract,5)">
+
+
+    <!--Brush-->
+    <SolidColorBrush x:Key="AppBackgroundDark" Color="{StaticResource AppBackgroundColorDark}"/>
+    <SolidColorBrush x:Key="AppBackgroundMediumDark" Color="{StaticResource AppBackgroundColorMediumDark}"/>
+    <SolidColorBrush x:Key="AppBackground" Color="{StaticResource AppBackgroundColor}"/>
+    <SolidColorBrush x:Key="AppBackgroundMediumLight" Color="{StaticResource AppBackgroundColorMediumLight}"/>
+    <SolidColorBrush x:Key="AppBackgroundLight" Color="{StaticResource AppBackgroundColorLight}"/>
+
+    <SolidColorBrush x:Key="AppBorderBrush" Color="{StaticResource AppBorderBrushColor}"/>
+    <SolidColorBrush x:Key="AppStroke" Color="{StaticResource AppStrokeColor}"/>
+    <SolidColorBrush x:Key="AppForeground" Color="{StaticResource AppForegroundColor}"/>
+
+    <apiContractPresent5:AcrylicBrush x:Key="AppAcrylicOverlayBrush" BackgroundSource="Backdrop" 
+         TintColor="{StaticResource AppBackgroundColorDark}" TintOpacity="0.6" FallbackColor="{StaticResource AppBackgroundColorLight}" />
+    <apiContractPresent5:AcrylicBrush x:Key="AppAcrylicElementBrush" BackgroundSource="Backdrop" 
+         TintColor="{StaticResource AppBackgroundColorLight}" TintOpacity="0.6" FallbackColor="{StaticResource AppBackgroundColorLight}" />
+    <apiContractPresent5:AcrylicBrush x:Key="AppAcrylicWindowBrush" BackgroundSource="HostBackdrop" 
+         TintColor="{StaticResource AppBackgroundColorLight}" TintOpacity="0.6" FallbackColor="{StaticResource AppBackgroundColorLight}" />
+
+    
+</ResourceDictionary>

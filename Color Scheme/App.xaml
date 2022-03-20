@@ -4,4 +4,146 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     >
 
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--Theme-->
+            <ResourceDictionary.ThemeDictionaries>
+
+                <ResourceDictionary x:Key="Light">
+
+                    <Color x:Key="AppBackgroundColorDark">#EBEBED</Color>
+                    <Color x:Key="AppBackgroundColorMediumDark">#F0F0F0</Color>
+                    <Color x:Key="AppBackgroundColor">#F2F2F2</Color>
+                    <Color x:Key="AppBackgroundColorMediumLight">#F8F8F8</Color>
+                    <Color x:Key="AppBackgroundColorLight">#FFFFFF</Color>
+
+                    <Color x:Key="AppBorderBrushColor" >#33888888</Color>
+                    <Color x:Key="AppStrokeColor" >#66817F91</Color>
+                    <Color x:Key="AppTextColor" >#88000000</Color>
+                    <Color x:Key="AppForegroundColor" >#AA000000</Color>
+
+                    <!--Brush-->
+                    <SolidColorBrush x:Key="AppButtonBrush" Color="{ThemeResource AppBackgroundColorLight}"/>
+                    <LinearGradientBrush x:Key="AppHorizontalShadowBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#22000000" Offset="0"/>
+                        <GradientStop Color="#09000000" Offset="0.2"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppVerticalShadowBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#22000000" Offset="0"/>
+                        <GradientStop Color="#09000000" Offset="0.2"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppHorizontalReverseShadowBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#09000000" Offset="0.2"/>
+                        <GradientStop Color="#22000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppVerticalReverseShadowBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#09000000" Offset="0.2"/>
+                        <GradientStop Color="#22000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppPurpleLinearGradientBrush" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#D1A9FF"/>
+                        <GradientStop Offset="1" Color="#2D2692"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppPurpleAbsoluteLinearGradientBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,100">
+                        <GradientStop Offset="0" Color="#D1A9FF"/>
+                        <GradientStop Offset="1" Color="#2D2692"/>
+                    </LinearGradientBrush>
+
+                    <Visibility x:Key="AppGridVisibility">Visible</Visibility>
+                    <Visibility x:Key="AppShadowVisibility">Visible</Visibility>
+                    <LightDismissOverlayMode x:Key="AppLightDismissOverlayMode">Off</LightDismissOverlayMode>
+
+                    <!--Merged-->
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="ms-appx:///Style/Brush.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+
+                <ResourceDictionary x:Key="Dark">
+
+                    <Color x:Key="AppBackgroundColorDark">#0C0C0C</Color>
+                    <Color x:Key="AppBackgroundColorMediumDark">#121212</Color>
+                    <Color x:Key="AppBackgroundColor">#141414</Color>
+                    <Color x:Key="AppBackgroundColorMediumLight">#161616</Color>
+                    <Color x:Key="AppBackgroundColorLight">#222323</Color>
+
+                    <Color x:Key="AppBorderBrushColor" >#33888888</Color>
+                    <Color x:Key="AppStrokeColor" >#AA050005</Color>
+                    <Color x:Key="AppTextColor" >#88FFFFFF</Color>
+                    <Color x:Key="AppForegroundColor" >#BBFFFFFF</Color>
+
+                    <!--Brush-->
+                    <SolidColorBrush x:Key="AppButtonBrush" Color="{StaticResource AppBackgroundColorDark}"/>
+                    <LinearGradientBrush x:Key="AppHorizontalShadowBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#66000000" Offset="0"/>
+                        <GradientStop Color="#44000000" Offset="0.2"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppVerticalShadowBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#66000000" Offset="0"/>
+                        <GradientStop Color="#44000000" Offset="0.2"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppHorizontalReverseShadowBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#44000000" Offset="0.2"/>
+                        <GradientStop Color="#66000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppVerticalReverseShadowBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#44000000" Offset="0.2"/>
+                        <GradientStop Color="#66000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppPurpleLinearGradientBrush" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FA97FF"/>
+                        <GradientStop Offset="1" Color="#9365FB"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="AppPurpleAbsoluteLinearGradientBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,100">
+                        <GradientStop Offset="0" Color="#FA97FF"/>
+                        <GradientStop Offset="1" Color="#9365FB"/>
+                    </LinearGradientBrush>
+
+                    <Visibility x:Key="AppGridVisibility">Visible</Visibility>
+                    <Visibility x:Key="AppShadowVisibility">Collapsed</Visibility>
+                    <LightDismissOverlayMode x:Key="AppLightDismissOverlayMode">Off</LightDismissOverlayMode>
+
+                    <!--Merged-->
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="ms-appx:///Style/Brush.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+
+            </ResourceDictionary.ThemeDictionaries>
+
+
+            <!--StaticResource-->
+            <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="White"/>
+            <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="White"/>
+            <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPressed" Color="White"/>
+            <SolidColorBrush x:Key="ListViewItemForegroundSelected" Color="Black"/>
+            <SolidColorBrush x:Key="ListViewItemForegroundSelectedPointerOver" Color="Black"/>
+            <SolidColorBrush x:Key="ListViewItemForegroundSelectedPressed" Color="Black"/>
+
+
+            <!--Merged-->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Style/Converter.xaml"/>
+                <ResourceDictionary Source="ms-appx:///Style/Resource.xaml"/>
+                <ResourceDictionary Source="ms-appx:///Style/Style.xaml"/>
+                <ResourceDictionary Source="ms-appx:///Style/Template.xaml"/>
+                <ResourceDictionary Source="ms-appx:///Style/Transition.xaml"/>
+
+                <!--Version
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls"/>-->
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+
 </Application>
