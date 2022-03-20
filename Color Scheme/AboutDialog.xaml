@@ -1,0 +1,40 @@
+﻿<ContentDialog
+    x:Class="Color_Scheme.AboutDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:elements="using:Color_Scheme.Elements"
+    mc:Ignorable="d"
+    >
+
+
+    <StackPanel>
+
+        <Panel.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition IsStaggeringEnabled="True"/>
+            </TransitionCollection>
+        </Panel.ChildrenTransitions>
+
+
+        <Panel.Children>
+
+            <elements:AccentDecorator x:Name="AccentDecorator" />
+
+            <Border Padding="12,0" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource AppRoundedBorderStyle}">
+                <TextBlock x:Name="VersionTextBlock"/>
+            </Border>
+
+            <ContentControl Height="12"/>
+            <TextBlock x:Name="GithubTextBlock" HorizontalAlignment="Center"/>
+            <HyperlinkButton x:Name="GithubHyperlinkButton" HorizontalAlignment="Center"/>
+
+            <ContentControl Height="12"/>
+            <TextBlock x:Name="FeedbackTextBlock" HorizontalAlignment="Center"/>
+            <HyperlinkButton x:Name="FeedbackHyperlinkButton" HorizontalAlignment="Center"/>
+
+        </Panel.Children>
+
+    </StackPanel>
+</ContentDialog>
