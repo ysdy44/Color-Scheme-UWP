@@ -117,6 +117,18 @@
     </AppxManifest>
     <None Include="Color Scheme_StoreKey.pfx" />
     <None Include="Color Scheme_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\zh-CN\Resources.resw" />
+    <PRIResource Include="Strings\ru\Resources.resw" />
+    <PRIResource Include="Strings\pt\Resources.resw" />
+    <PRIResource Include="Strings\nl\Resources.resw" />
+    <PRIResource Include="Strings\ko\Resources.resw" />
+    <PRIResource Include="Strings\ja\Resources.resw" />
+    <PRIResource Include="Strings\it\Resources.resw" />
+    <PRIResource Include="Strings\fr\Resources.resw" />
+    <PRIResource Include="Strings\es\Resources.resw" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\de\Resources.resw" />
+    <PRIResource Include="Strings\ar\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BadgeLogo.scale-100.png" />

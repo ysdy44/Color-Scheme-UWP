@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <xsd:schema id='root' xmlns='' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:msdata='urn:schemas-microsoft-com:xml-msdata'>
+    <xsd:import namespace='http://www.w3.org/XML/1998/namespace' />
+    <xsd:element name='root' msdata:IsDataSet='true'>
+      <xsd:complexType>
+        <xsd:choice maxOccurs='unbounded'>
+          <xsd:element name='metadata'>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name='value' type='xsd:string' minOccurs='0' />
+              </xsd:sequence>
+              <xsd:attribute name='name' use='required' type='xsd:string' />
+              <xsd:attribute name='type' type='xsd:string' />
+              <xsd:attribute name='mimetype' type='xsd:string' />
+              <xsd:attribute ref='xml:space' />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name='assembly'>
+            <xsd:complexType>
+              <xsd:attribute name='alias' type='xsd:string' />
+              <xsd:attribute name='name' type='xsd:string' />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name='data'>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name='value' type='xsd:string' minOccurs='0' msdata:Ordinal='1' />
+                <xsd:element name='comment' type='xsd:string' minOccurs='0' msdata:Ordinal='2' />
+              </xsd:sequence>
+              <xsd:attribute name='name' type='xsd:string' use='required' msdata:Ordinal='1' />
+              <xsd:attribute name='type' type='xsd:string' msdata:Ordinal='3' />
+              <xsd:attribute name='mimetype' type='xsd:string' msdata:Ordinal='4' />
+              <xsd:attribute ref='xml:space' />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name='resheader'>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name='value' type='xsd:string' minOccurs='0' msdata:Ordinal='1' />
+              </xsd:sequence>
+              <xsd:attribute name='name' type='xsd:string' use='required' />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name='resmimetype'>
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name='version'>
+    <value>2.0</value>
+  </resheader>
+  <resheader name='reader'>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name='writer'>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name='$DisplayName' xml:space='preserve'> <value>Coloring Scheme</value> </data>
+<data name='$Version' xml:space='preserve'> <value>5.0.0</value> </data>
+<data name='$GithubLink' xml:space='preserve'> <value>https://github.com/ysdy44/Color-Scheme-UWP</value> </data>
+<data name='$FeedbackLink' xml:space='preserve'> <value>ysdy44@outlook.com</value> </data>
+<data name='Github' xml:space='preserve'> <value>Github</value> </data>
+<data name='Feedback' xml:space='preserve'> <value>Realimentación</value> </data>
+<data name='$SettingPage_Close' xml:space='preserve'> <value>Cancelar</value> </data>
+<data name='$SettingPage_Primary' xml:space='preserve'> <value>OK</value> </data>
+<data name='$SettingPage_Theme' xml:space='preserve'> <value>Tema</value> </data>
+<data name='$SettingPage_Theme_Light' xml:space='preserve'> <value>Ligero</value> </data>
+<data name='$SettingPage_Theme_Dark' xml:space='preserve'> <value>Oscuro</value> </data>
+<data name='$SettingPage_Theme_UseSystem' xml:space='preserve'> <value>Usar sistema</value> </data>
+<data name='$SettingPage_Widget' xml:space='preserve'> <value>Widget</value> </data>
+<data name='$SettingPage_Apply' xml:space='preserve'> <value>Aplicar</value> </data>
+<data name='$SettingPage_Language' xml:space='preserve'> <value>Idioma</value> </data>
+<data name='$SettingPage_LanguageTip' xml:space='preserve'> <value>Reinicie la aplicación para ver los cambios.</value> </data>
+<data name='$SettingPage_Language_UseSystemSetting' xml:space='preserve'> <value>Usar configuración del sistema</value> </data>
+<data name='$SettingPage_LocalFolder' xml:space='preserve'> <value>Carpeta local</value> </data>
+<data name='$SettingPage_LocalFolder_Open' xml:space='preserve'> <value>Abierto</value> </data>
+<data name='$MainPage_About' xml:space='preserve'> <value>Sobre...</value> </data>
+<data name='$MainPage_Setting' xml:space='preserve'> <value>Configuración</value> </data>
+<data name='$MainPage_Split' xml:space='preserve'> <value>Separar</value> </data>
+<data name='$MainPage_Widget' xml:space='preserve'> <value>Widget</value> </data>
+<data name='$MainPage_Enum' xml:space='preserve'> <value>enumeración</value> </data>
+<data name='$MainPage_Bitmap' xml:space='preserve'> <value>mapa de bits</value> </data>
+<data name='$MainPage_AddBitmap' xml:space='preserve'> <value>Agregar mapa de bits</value> </data>
+<data name='$MainPage_CopyBitmap' xml:space='preserve'> <value>Copiar mapa de bits al portapapeles</value> </data>
+<data name='$MainPage_PasteBitmap' xml:space='preserve'> <value>Pegar mapa de bits desde el portapapeles</value> </data>
+<data name='$MainPage_Copy' xml:space='preserve'> <value>Dupdo</value> </data>
+<data name='$MainPage_Paste' xml:space='preserve'> <value>Pegar</value> </data>
+<data name='Colors_Wheel' xml:space='preserve'> <value>Rueda</value> </data>
+<data name='Colors_Circle' xml:space='preserve'> <value>Circulo</value> </data>
+<data name='Colors_RGB' xml:space='preserve'> <value>RGB</value> </data>
+<data name='Colors_HSV' xml:space='preserve'> <value>VHS</value> </data>
+<data name='Colors_PaletteHue' xml:space='preserve'> <value>Tono de paleta</value> </data>
+<data name='Colors_PaletteSaturation' xml:space='preserve'> <value>Saturación de paleta</value> </data>
+<data name='Colors_PaletteValue' xml:space='preserve'> <value>Valor de paleta</value> </data>
+<data name='Colors_LinearGradient' xml:space='preserve'> <value>Gradiente lineal</value> </data>
+
+ </root>
