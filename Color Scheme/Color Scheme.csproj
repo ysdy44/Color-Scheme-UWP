@@ -106,6 +106,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\ApplicationTitleBarExtension.cs" />
     <Compile Include="FileUtils\Clipboard.cs" />
     <Compile Include="FileUtils\FileUtil.cs" />
     <Compile Include="FileUtils\FileUtil.PickAndCopy.cs" />
