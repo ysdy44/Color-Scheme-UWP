@@ -113,6 +113,7 @@
       <DependentUpon>WidgetPickerContainer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\WidgetType.cs" />
+    <Compile Include="Controls\WidgetTypeContainer.cs" />
     <Compile Include="Elements\AccentDecorator.xaml.cs">
       <DependentUpon>AccentDecorator.xaml</DependentUpon>
     </Compile>
