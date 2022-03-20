@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Color_Scheme.Controls;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -24,6 +25,7 @@ namespace Color_Scheme
     /// </summary>
     sealed partial class App : Application
     {
+        public static ObservableCollection<WidgetType> ItemsSource { get; } = new ObservableCollection<WidgetType>();
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
