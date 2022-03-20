@@ -1,0 +1,110 @@
+﻿<ContentDialog
+    x:Class="Color_Scheme.SettingDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:globalization="using:System.Globalization" xmlns:control="using:Color_Scheme.Controls"
+    mc:Ignorable="d" 
+    >
+
+    <FrameworkElement.Resources>
+        <!--Template-->
+        <DataTemplate x:Name="LanguageTemplate" x:DataType="globalization:CultureInfo">
+            <TextBlock>                  
+                <Run Text="{Binding NativeName, Mode=OneTime}"/>              
+                <Run Text=" "/>                
+                <Run Text="{Binding DisplayName, Mode=OneTime}" Foreground="{ThemeResource AppForeground}"/>
+            </TextBlock>
+        </DataTemplate>
+    </FrameworkElement.Resources>
+
+
+    <ContentDialog.Title>
+        <TextBlock x:Name="TitleTextBlock" Style="{StaticResource SubtitleTextBlockStyle}">
+            Setting
+        </TextBlock>
+    </ContentDialog.Title>
+
+
+    <ScrollViewer>
+        <StackPanel>
+
+            <Panel.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition IsStaggeringEnabled="True"/>
+                </TransitionCollection>
+            </Panel.ChildrenTransitions>
+
+
+            <Panel.Children>
+
+                <!--ThemeMode-->
+                <TextBlock x:Name="ThemeTextBlock" Style="{StaticResource SubtitleTextBlockStyle}">
+                    Theme
+                </TextBlock>
+                <RadioButton x:Name="LightRadioButton">
+                    Light
+                </RadioButton>
+                <RadioButton x:Name="DarkRadioButton">
+                    Dark
+                </RadioButton>
+                <RadioButton x:Name="DefaultRadioButton">
+                    Use System
+                </RadioButton>
+                <ContentControl Height="8"/>
+
+
+                <!--Widget-->
+                <TextBlock x:Name="WidgetTextBlock" Style="{StaticResource SubtitleTextBlockStyle}">
+                    Widget
+                </TextBlock>
+                <Border BorderThickness="1" BorderBrush="{ThemeResource AppPurpleLinearGradientBrush}" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <control:WidgetEditor x:Name="Editor"/>
+                </Border>
+                <Border Margin="4" CornerRadius="20" Height="40" Background="#11FFFFFF" HorizontalAlignment="Left">
+                    <Button x:Name="WidgetApplyButton" Padding="12,0" Width="Auto" Foreground="{ThemeResource AppForeground}">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Filter"/>
+                            <ContentControl Width="8"/>
+                            <TextBlock x:Name="WidgetApplyTextBlock" VerticalAlignment="Center">
+                                Apply
+                            </TextBlock>
+                        </StackPanel>
+                    </Button>
+                </Border>
+                <ContentControl Height="8"/>
+
+
+                <!--Language-->
+                <TextBlock x:Name="LanguageTextBlock" Style="{StaticResource SubtitleTextBlockStyle}">
+                    Language
+                </TextBlock>
+                <ComboBox x:Name="LanguageComboBox" >
+                </ComboBox>
+                <HyperlinkButton x:Name="LanguageTipButton"/>
+                <ContentControl Height="8"/>
+
+
+                <!--LocalFolder-->
+                <TextBlock x:Name="LocalFolderTextBlock" Style="{StaticResource SubtitleTextBlockStyle}">
+                    Local Folder
+                </TextBlock>
+                <Border Margin="4" CornerRadius="20" Height="40" Background="#11FFFFFF" HorizontalAlignment="Left">
+                    <Button x:Name="LocalFolderButton" Padding="12,0" Width="Auto" Foreground="{ThemeResource AppForeground}">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="NewWindow"/>
+                            <ContentControl Width="8"/>
+                            <TextBlock x:Name="OpenTextBlock" VerticalAlignment="Center">
+                                Open
+                            </TextBlock>
+                        </StackPanel>
+                    </Button>
+                </Border>
+
+            </Panel.Children>
+
+        </StackPanel>
+    </ScrollViewer>
+
+</ContentDialog>

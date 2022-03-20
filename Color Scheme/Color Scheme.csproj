@@ -140,6 +140,9 @@
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\StringList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingDialog.xaml.cs">
+      <DependentUpon>SettingDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Strings\LanguageResourceDictionary.cs" />
     <Compile Include="XMLs\XML.Item.cs" />
     <Compile Include="XMLs\XML.Items.cs" />
@@ -262,6 +265,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
