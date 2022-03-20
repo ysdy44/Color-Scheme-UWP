@@ -112,6 +112,9 @@
     <Compile Include="Controls\ReorderControl.xaml.cs">
       <DependentUpon>ReorderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\WidgetEditor.xaml.cs">
+      <DependentUpon>WidgetEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WidgetPickerContainer.xaml.cs">
       <DependentUpon>WidgetPickerContainer.xaml</DependentUpon>
     </Compile>
@@ -229,6 +232,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\ReorderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\WidgetEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
