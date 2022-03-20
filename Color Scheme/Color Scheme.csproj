@@ -109,6 +109,9 @@
     <Compile Include="Controls\LinearGradientWidget.xaml.cs">
       <DependentUpon>LinearGradientWidget.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ReorderControl.xaml.cs">
+      <DependentUpon>ReorderControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WidgetPickerContainer.xaml.cs">
       <DependentUpon>WidgetPickerContainer.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Controls\LinearGradientWidget.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ReorderControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
