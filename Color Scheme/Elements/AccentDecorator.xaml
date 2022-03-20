@@ -1,0 +1,124 @@
+﻿<UserControl
+    x:Class="Color_Scheme.Elements.AccentDecorator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="400"
+    d:DesignWidth="400"
+    >
+
+
+    <FrameworkElement.Resources>
+        <!--Storyboard-->
+        <Storyboard x:Name="Storyboard" AutoReverse="True" RepeatBehavior="Forever" >
+            <DoubleAnimation Storyboard.TargetName="Transform0" Storyboard.TargetProperty="Y"
+                             From="-4" To="4" Duration="00:00:08" 
+                             AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True" />
+            <DoubleAnimation Storyboard.TargetName="Transform1" Storyboard.TargetProperty="X"
+                             From="-6" To="6" Duration="00:00:06" 
+                             AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True" />
+            <DoubleAnimation Storyboard.TargetName="Transform2" Storyboard.TargetProperty="X"
+                             From="-6" To="6" BeginTime="00:00:03" Duration="00:00:06" 
+                             AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True" />
+            <DoubleAnimation Storyboard.TargetName="Transform3" Storyboard.TargetProperty="Y"
+                             From="-8" To="8" Duration="00:00:04" 
+                             AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True" />
+            <DoubleAnimation Storyboard.TargetName="Transform4" Storyboard.TargetProperty="X"
+                             From="-12" To="12" BeginTime="00:00:01" Duration="00:00:04" 
+                             AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True" />
+        </Storyboard>
+    </FrameworkElement.Resources>
+
+    <Border CornerRadius="32" Margin="10" Width="150" Height="150" Background="Transparent">
+        <Viewbox Stretch="UniformToFill" IsHitTestVisible="False">
+            <Canvas IsHitTestVisible="False" Width="100" Height="100" Background="{ThemeResource SystemAccentColorDark3}">
+                <UIElement.Clip>
+                    <RectangleGeometry Rect="0,0,100,100"/>
+                </UIElement.Clip>
+
+
+                <Rectangle IsHitTestVisible="False" RadiusX="12" RadiusY="12" Canvas.Left="20" Canvas.Top="20" Width="80" Height="80">
+                    <UIElement.RenderTransformOrigin>
+                        0.5,0.5
+                    </UIElement.RenderTransformOrigin>
+                    <UIElement.RenderTransform>
+                        <TranslateTransform x:Name="Transform0" Y="-4"/>
+                    </UIElement.RenderTransform>
+                    <Shape.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0" Color="{ThemeResource SystemAccentColorDark2}"/>
+                            <GradientStop Offset="1" Color="{ThemeResource SystemAccentColorDark3}"/>
+                        </LinearGradientBrush>
+                    </Shape.Fill>
+                </Rectangle>
+
+
+                <Rectangle IsHitTestVisible="False" RadiusX="32" RadiusY="32" Canvas.Left="-40" Canvas.Top="40" Width="80" Height="80">
+                    <UIElement.RenderTransformOrigin>
+                        0.5,0.5
+                    </UIElement.RenderTransformOrigin>
+                    <UIElement.RenderTransform>
+                        <TranslateTransform x:Name="Transform1" X="-6"/>
+                    </UIElement.RenderTransform>
+                    <Shape.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0" Color="{ThemeResource SystemAccentColorDark1}"/>
+                            <GradientStop Offset="1" Color="{ThemeResource SystemAccentColor}"/>
+                        </LinearGradientBrush>
+                    </Shape.Fill>
+                </Rectangle>
+
+
+                <Ellipse IsHitTestVisible="False" Canvas.Left="60" Canvas.Top="30" Width="90" Height="90">
+                    <UIElement.RenderTransformOrigin>
+                        0.5,0.5
+                    </UIElement.RenderTransformOrigin>
+                    <UIElement.RenderTransform>
+                        <TranslateTransform x:Name="Transform2" X="-6"/>
+                    </UIElement.RenderTransform>
+                    <Shape.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0" Color="{ThemeResource SystemAccentColor}"/>
+                            <GradientStop Offset="1" Color="{ThemeResource SystemAccentColorLight1}"/>
+                        </LinearGradientBrush>
+                    </Shape.Fill>
+                </Ellipse>
+
+                <Ellipse IsHitTestVisible="False" Canvas.Left="30" Canvas.Top="60" Width="60" Height="60">
+                    <UIElement.RenderTransformOrigin>
+                        0.5,0.5
+                    </UIElement.RenderTransformOrigin>
+                    <UIElement.RenderTransform>
+                        <TranslateTransform x:Name="Transform3" Y="-8"/>
+                    </UIElement.RenderTransform>
+                    <Shape.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0" Color="{ThemeResource SystemAccentColorLight1}"/>
+                            <GradientStop Offset="1" Color="{ThemeResource SystemAccentColorLight2}"/>
+                        </LinearGradientBrush>
+                    </Shape.Fill>
+                </Ellipse>
+
+
+                <Ellipse IsHitTestVisible="False" Canvas.Left="-40" Canvas.Top="60" Width="60" Height="60">
+                    <UIElement.RenderTransformOrigin>
+                        0.5,0.5
+                    </UIElement.RenderTransformOrigin>
+                    <UIElement.RenderTransform>
+                        <TranslateTransform x:Name="Transform4" X="-12"/>
+                    </UIElement.RenderTransform>
+                    <Shape.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Offset="0" Color="{ThemeResource SystemAccentColorLight2}"/>
+                            <GradientStop Offset="1" Color="{ThemeResource SystemAccentColorLight3}"/>
+                        </LinearGradientBrush>
+                    </Shape.Fill>
+                </Ellipse>
+
+            </Canvas>
+        </Viewbox>
+    </Border>
+
+</UserControl>

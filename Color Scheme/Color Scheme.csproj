@@ -106,6 +106,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\AccentDecorator.xaml.cs">
+      <DependentUpon>AccentDecorator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Elements\ApplicationTitleBarExtension.cs" />
     <Compile Include="Elements\Reorder.cs" />
     <Compile Include="FileUtils\Clipboard.cs" />
@@ -203,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Elements\AccentDecorator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
