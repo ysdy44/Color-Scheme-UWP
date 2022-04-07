@@ -1,5 +1,6 @@
 ﻿using Color_Scheme.Controls;
 using Color_Scheme.Model;
+using Color_Scheme.Elements;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -132,12 +133,12 @@ namespace Color_Scheme
             this.PhoneSplitButton.Click += (s, e) => this.SplitView.IsPaneOpen = true;
 
             // Dialog
-            this.AboutButton.Click += async (s, e) => await this.AboutDialog.ShowAsync(ContentDialogPlacement.InPlace);
-            this.SettingButton.Click += async (s, e) => await this.SettingDialog.ShowAsync(ContentDialogPlacement.InPlace);
+            this.AboutButton.Click += async (s, e) => await this.AboutDialog.ShowInstance();
+            this.SettingButton.Click += async (s, e) => await this.SettingDialog.ShowInstance();
             this.SettingItem.Tapped += async (s, e) =>
             {
                 this.SplitView.IsPaneOpen = false;
-                await this.SettingDialog.ShowAsync(ContentDialogPlacement.InPlace);
+                await this.SettingDialog.ShowInstance();
             };
 
             // Setting

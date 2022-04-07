@@ -290,7 +290,7 @@
                                         <SolidColorBrush Color="{x:Bind Color}"/>
                                     </Ellipse.Fill>
                                 </Ellipse>
-                                <TextBlock Grid.Row="1" Text="{x:Bind ActualTitle}" TextTrimming="CharacterEllipsis" HorizontalAlignment="Center"/>
+                                <TextBlock Grid.Row="1" IsTextSelectionEnabled="True" Text="{x:Bind ActualTitle}" TextTrimming="CharacterEllipsis" HorizontalAlignment="Center"/>
                             </Grid>
                         </DataTemplate>
                     </GridView.ItemTemplate>
