@@ -40,7 +40,9 @@ namespace Color_Scheme
 
             this.ConstructCanvasControl();
             this.ConstructCanvasOperator();
-
+       
+            this.ConstructScroller();
+            
 
             // Drag and Drop 
             base.AllowDrop = true;

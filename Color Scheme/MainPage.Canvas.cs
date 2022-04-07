@@ -7,6 +7,7 @@ using System.Numerics;
 using Windows.Foundation;
 using Windows.Storage.Streams;
 using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 namespace Color_Scheme
@@ -14,6 +15,7 @@ namespace Color_Scheme
     public sealed partial class MainPage : Page
     {
         public bool CanWork { get => this.CanvasControl.IsHitTestVisible; set => this.CanvasControl.IsHitTestVisible = value; }
+        public UIElement Target => this.CanvasControl;
 
         Vector2 Vector;
         CanvasBitmap Bitmap;
@@ -149,12 +151,34 @@ namespace Color_Scheme
         }
 
 
+        private void ConstructScroller()
+        {
+            this.Thumb.DragStarted += async (s, e) =>
+            {
+                if (this.Target.Visibility == Visibility.Collapsed) return;
+                await this.Scroller.RenderAsync(this.Target);
+                this.Scroller.DragStarted(60, 120);
+                this.Target.Visibility = Visibility.Collapsed;
+            };
+            this.Thumb.DragDelta += (s, e) => this.Scroller.DragDelta(e.HorizontalChange, e.VerticalChange);
+            this.Thumb.DragCompleted += (s, e) => this.Scroller.DragCompleted();
 
-        public void Clean()
+            this.Scroller.DragPageDownCompleted += (s, e) => this.Target.Visibility = Visibility.Visible;
+            this.Scroller.DragPageUpCompleted += (s, e) =>
+            {
+                this.Clear();
+                this.Target.Visibility = Visibility.Visible;
+            };
+        }
+
+
+        public void Clear()
         {
             this.Bitmap?.Dispose();
             this.Bitmap = null;
             this.CanWork = false;
+
+            this.CanvasControl.Invalidate(); // Invalidate
         }
 
         public async void AddAsync(IRandomAccessStreamReference reference)

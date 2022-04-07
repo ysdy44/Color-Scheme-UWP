@@ -363,6 +363,10 @@
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ListView>
+                
+                
+                <!--Scroller-->
+                <elements:Scroller x:Name="Scroller" IsHitTestVisible="False" Grid.Row="1" Visibility="{x:Bind TwoToVisibilityConverter(SplitListView.SelectedIndex), Mode=OneWay}"/>
 
 
                 <!--Shadow-->
@@ -551,12 +555,30 @@
                 </Border>
             </Button>
 
+            <Thumb x:Name="Thumb" Width="60" Height="50" Foreground="White" HorizontalAlignment="Center" 
+                    Visibility="{x:Bind BooleanToVisibilityConverter(CanvasControl.IsHitTestVisible), Mode=OneWay}">
+                <Thumb.Template>
+                    <ControlTemplate>
+                        <Border Width="40" Height="40" BorderThickness="1" Background="{StaticResource Brush}" BorderBrush="White">
+                            <SymbolIcon Symbol="Go" >
+                                <UIElement.RenderTransformOrigin>
+                                    0.5, 0.5
+                                </UIElement.RenderTransformOrigin>
+                                <UIElement.RenderTransform>
+                                    <ScaleTransform ScaleX="-1" />
+                                </UIElement.RenderTransform>
+                            </SymbolIcon>
+                        </Border>
+                    </ControlTemplate>
+                </Thumb.Template>
+            </Thumb>
+
         </StackPanel>
         <Button x:Name="FloatActionButton" Width="100" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <Ellipse Width="50" Height="50" StrokeThickness="1" Stroke="White" Fill="{StaticResource Brush}" />
         </Button>
 
-
+        
         <!--Dialog-->
         <Grid>
             <FrameworkElement.Resources>
