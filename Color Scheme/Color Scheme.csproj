@@ -131,6 +131,7 @@
       <DependentUpon>AccentDecorator.xaml</DependentUpon>
     </Compile>
     <Compile Include="Elements\ApplicationTitleBarExtension.cs" />
+    <Compile Include="Elements\ContentDialogExtensions.cs" />
     <Compile Include="Elements\Reorder.cs" />
     <Compile Include="FileUtils\Clipboard.cs" />
     <Compile Include="FileUtils\FileUtil.cs" />
