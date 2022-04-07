@@ -1,7 +1,8 @@
-﻿using HSVColorPickers;
+﻿using Color_Scheme.Elements;
+using HSVColorPickers;
 using System;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
-using Windows.Foundation;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -79,12 +80,12 @@ namespace Color_Scheme
                 return null;
             }
         }
-        public IAsyncOperation<ContentDialogResult> ShowAsync(Color color)
+        public async Task<ContentDialogResult> ShowAsync(Color color)
         {
             this.TextBox.Text = Hex.ColorToString(color).ToUpper();
             this.TextBox.SelectAll();
             this.TextBox.Focus(FocusState.Keyboard);
-            return base.ShowAsync(ContentDialogPlacement.InPlace);
+            return await this.ShowInstance();
         }
 
     }
