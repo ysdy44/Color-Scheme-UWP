@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color Scheme", "Color Scheme\Color Scheme.csproj", "{0356B25F-617F-4F2B-BCEB-5EEEA573267C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{E2CDF2B2-38C7-4BBE-A053-B40578578212}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README-EN.md = README-EN.md
+		README-ZH.md = README-ZH.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScreenShot", "ScreenShot", "{A57451E9-77BD-4AA0-A2C8-114F40F35938}"
+	ProjectSection(SolutionItems) = preProject
+		ScreenShot\logo.png = ScreenShot\logo.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +53,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A57451E9-77BD-4AA0-A2C8-114F40F35938} = {E2CDF2B2-38C7-4BBE-A053-B40578578212}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81E81194-3942-4609-9DE5-923067C74B8C}
