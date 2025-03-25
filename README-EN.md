@@ -4,7 +4,7 @@
 
  
  Windows 10 app store address: 
-[Buy Color Scheme - Microsoft Store](https://www.microsoft.com/store/productId/9NJXVM10VX16)
+[Buy Color Scheme - Microsoft Store](https://apps.microsoft.com/detail/9njxvm10vx16)
 
 
 <br/>

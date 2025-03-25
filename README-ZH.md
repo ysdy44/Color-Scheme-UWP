@@ -4,7 +4,7 @@
 
  
  Windows 10 应用商店地址: 
-[购置 配色 - 微软商店](https://www.microsoft.com/store/productId/9NJXVM10VX16)
+[购置 配色 - 微软商店](https://apps.microsoft.com/detail/9njxvm10vx16)
 
 
 <br/>
